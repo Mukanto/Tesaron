@@ -1,0 +1,15 @@
+# Python caches and build artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+# local smoke / scratch output
+*.smoke.json
+.smoke_test_out.json

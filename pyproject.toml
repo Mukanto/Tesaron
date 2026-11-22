@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tesaron"
+version = "0.1.0.dev0"
+description = "Semantic information to data and back: fuzzy encoder, Belnap interface, two-channel Datalog decoder, constrained-Pareto criterion."
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Hazar Şimşek", email = "hazar.simsek.research@gmail.com" }]
+dependencies = ["numpy>=1.26"]
+
+[project.urls]
+Repository = "https://github.com/Mukanto/Tesaron"
+
+[project.optional-dependencies]
+audit = ["truth_gate @ git+https://github.com/Mukanto/truth_gate@v0.5.1"]
+
+[tool.setuptools.packages.find]
+include = ["tesaron*"]
