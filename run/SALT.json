@@ -1,0 +1,10 @@
+{
+  "salt": "e892db2a17e0e5105d654606ff5a6ca210f03f3d30b3705952cd697df3916ec8",
+  "freeze_commit": "8b09a6f3dbc03193c6aa7b7456c89779765bb603",
+  "core_sha256": "fc0fabd8e2cdc2dc751ba8bf0d25ecc992e0ae044af2a6cdf598e3d26d659ed0",
+  "drawn_by": "Independent session (Claude Code session rooted at E:\\Independent; task tesaron_v02_salt)",
+  "method": "python secrets.token_hex(32)",
+  "drawn_utc": "2026-11-22T16:17:50Z",
+  "remote_main_seen_before_draw": "70960f198c50e440a9321db943ab3de0725b8d8e",
+  "independent_record_sha256": "277ee9536c575cb05966ff66847bc4d3cb7b362e2ea6956623e9a3da4b3a6a18"
+}
