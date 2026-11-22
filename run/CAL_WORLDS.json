@@ -1,0 +1,202 @@
+{
+ "core_sha256": "fc0fabd8e2cdc2dc751ba8bf0d25ecc992e0ae044af2a6cdf598e3d26d659ed0",
+ "environment": {
+  "numpy": "2.4.1",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "python": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]"
+ },
+ "rejected_draws": [],
+ "rule": "D1: tau_s = min fidelity, tau_d = max deviation, tau_t = min consistency, tau_b = max uncertainty, exact fractions, fixed system at (alpha0 = 0.7, k0 = 5)",
+ "worlds": [
+  {
+   "aux_seed": null,
+   "draw": 0,
+   "enc_seed": 513731364,
+   "encoding_hash": "cab6c39c8e399f2d8e69ffa630a7f40967c64954bf1b696a73a782e0e54ad08c",
+   "h_size": 111,
+   "metrics_exact": {
+    "boundary_share": "0/1",
+    "consistency": "243/245",
+    "deviation": "1/67",
+    "fidelity": "29/34",
+    "new_false": "1/32",
+    "new_true": "8/37",
+    "uncertainty": "3/5",
+    "validation_agreement": "1/1"
+   },
+   "world_hash": "8553b4e543b3cad8e76283b0fce9ab6caa015d46645e9de5c57acf3af89edadb",
+   "world_seed": 508322424
+  },
+  {
+   "aux_seed": null,
+   "draw": 1,
+   "enc_seed": 334286553,
+   "encoding_hash": "0c464eaf5fd57c936978b9f2401c2d6f59cf3387a5e1e14da9de9a7efe342137",
+   "h_size": 98,
+   "metrics_exact": {
+    "boundary_share": "2/117",
+    "consistency": "1/1",
+    "deviation": "0/1",
+    "fidelity": "14/15",
+    "new_false": "1/28",
+    "new_true": "16/49",
+    "uncertainty": "108/215",
+    "validation_agreement": "8/9"
+   },
+   "world_hash": "8fa125bc9612f72a2b573fa59d2c1575c7f410711b93ca718601612d42546969",
+   "world_seed": 533542012
+  },
+  {
+   "aux_seed": null,
+   "draw": 2,
+   "enc_seed": 191674377,
+   "encoding_hash": "c9534d9845cde3cda28d3879bb0ea10bca8421056bf19345ee54d518388adcd0",
+   "h_size": 42,
+   "metrics_exact": {
+    "boundary_share": "0/1",
+    "consistency": "156/157",
+    "deviation": "0/1",
+    "fidelity": "15/17",
+    "new_false": "1/9",
+    "new_true": "19/42",
+    "uncertainty": "82/157",
+    "validation_agreement": "4/7"
+   },
+   "world_hash": "e5f6cd9e4fbbfe493839f54271e6742ac93afd5bf681a8014fb168eec7199244",
+   "world_seed": 911367781
+  },
+  {
+   "aux_seed": null,
+   "draw": 3,
+   "enc_seed": 727682904,
+   "encoding_hash": "52c59e50cdadb16dbb2d5b8f05d8f2cf7e0df4fd4c6ff5312c0091cdf8790623",
+   "h_size": 24,
+   "metrics_exact": {
+    "boundary_share": "2/59",
+    "consistency": "70/71",
+    "deviation": "0/1",
+    "fidelity": "49/55",
+    "new_false": "1/29",
+    "new_true": "23/24",
+    "uncertainty": "30/71",
+    "validation_agreement": "1/1"
+   },
+   "world_hash": "23203c95f2045184727f772036772bbff7762709cace12a315822e33e28a98e8",
+   "world_seed": 499676914
+  },
+  {
+   "aux_seed": null,
+   "draw": 4,
+   "enc_seed": 376414681,
+   "encoding_hash": "c9ef312cc27a90cd32f3f96d6e266b91c31c4f6561898899946a3fd1e2cfc3a5",
+   "h_size": 19,
+   "metrics_exact": {
+    "boundary_share": "2/115",
+    "consistency": "131/134",
+    "deviation": "0/1",
+    "fidelity": "17/18",
+    "new_false": "1/16",
+    "new_true": "10/19",
+    "uncertainty": "65/134",
+    "validation_agreement": "1/1"
+   },
+   "world_hash": "4af7e2de8135a3208104bd5830167d4650e425be9188124ed0102496b46a641a",
+   "world_seed": 384986954
+  },
+  {
+   "aux_seed": null,
+   "draw": 5,
+   "enc_seed": 131581481,
+   "encoding_hash": "dd01dfa4661c4e9df7c0ceaad1deab6c1dc192e7aeba1503eb6dba7d0184dd3a",
+   "h_size": 56,
+   "metrics_exact": {
+    "boundary_share": "1/142",
+    "consistency": "193/198",
+    "deviation": "3/68",
+    "fidelity": "57/70",
+    "new_false": "1/4",
+    "new_true": "39/56",
+    "uncertainty": "41/99",
+    "validation_agreement": "2/3"
+   },
+   "world_hash": "7fda2fd13cc1903592a853a3a7beeb11fb62631aff23b73416a2a263900f2abc",
+   "world_seed": 244150569
+  },
+  {
+   "aux_seed": null,
+   "draw": 6,
+   "enc_seed": 269662134,
+   "encoding_hash": "73d4efba68cb89c00eed4958a07bc79159f85b6479e2b1b00aed28d5cd7288c6",
+   "h_size": 31,
+   "metrics_exact": {
+    "boundary_share": "0/1",
+    "consistency": "1/1",
+    "deviation": "0/1",
+    "fidelity": "61/67",
+    "new_false": "1/8",
+    "new_true": "19/31",
+    "uncertainty": "13/32",
+    "validation_agreement": "8/9"
+   },
+   "world_hash": "d9a9fe8e54f2cbb285e3b25304874e540efc1a81c3b3e15edfdf139e07a5e069",
+   "world_seed": 233296988
+  },
+  {
+   "aux_seed": null,
+   "draw": 7,
+   "enc_seed": 716751550,
+   "encoding_hash": "3dcb2c21e0f676a2a9be8959fb3817f11ef38d2b2bfbf5ac30200d44f4e750e4",
+   "h_size": 27,
+   "metrics_exact": {
+    "boundary_share": "3/107",
+    "consistency": "1/1",
+    "deviation": "0/1",
+    "fidelity": "43/46",
+    "new_false": "1/6",
+    "new_true": "8/27",
+    "uncertainty": "39/67",
+    "validation_agreement": "6/7"
+   },
+   "world_hash": "7d2c59ceac60750c2ca6a70a83830ec3327363fec51da02318c93a359bb4475c",
+   "world_seed": 291396006
+  },
+  {
+   "aux_seed": null,
+   "draw": 8,
+   "enc_seed": 353107434,
+   "encoding_hash": "480b2068c55bbd8ed3248a6e662378d75b8e2462cc93d34c1b9fab146ea08e3e",
+   "h_size": 28,
+   "metrics_exact": {
+    "boundary_share": "1/127",
+    "consistency": "154/155",
+    "deviation": "0/1",
+    "fidelity": "26/31",
+    "new_false": "1/14",
+    "new_true": "5/7",
+    "uncertainty": "67/155",
+    "validation_agreement": "8/11"
+   },
+   "world_hash": "3d267a49765231aad13e403c46030eb779224aa57dc4ccb971f0099229ccd996",
+   "world_seed": 821653398
+  },
+  {
+   "aux_seed": null,
+   "draw": 9,
+   "enc_seed": 574155590,
+   "encoding_hash": "30f3892172e43ca38b019917735b4c2219fd5467be113d3c4f106b1bb5b4eb4b",
+   "h_size": 26,
+   "metrics_exact": {
+    "boundary_share": "3/122",
+    "consistency": "1/1",
+    "deviation": "0/1",
+    "fidelity": "13/14",
+    "new_false": "1/11",
+    "new_true": "6/13",
+    "uncertainty": "73/148",
+    "validation_agreement": "2/5"
+   },
+   "world_hash": "4d2c4c867c6393b215dca0870b6361f35d92db79fa4419011abe7d2859671d31",
+   "world_seed": 968910502
+  }
+ ]
+}

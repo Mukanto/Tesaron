@@ -1,0 +1,16 @@
+{
+ "cal_worlds_sha256": "61a1693c18f8ce817811762ddde8c53d1fb190f86c7c5c16d145528f75792fc1",
+ "core_sha256": "fc0fabd8e2cdc2dc751ba8bf0d25ecc992e0ae044af2a6cdf598e3d26d659ed0",
+ "info": {
+  "n_worlds": 10
+ },
+ "rule": "D1",
+ "tau_b": 0.6,
+ "tau_b_exact": "3/5",
+ "tau_d": 0.04411764705882353,
+ "tau_d_exact": "3/68",
+ "tau_s": 0.8142857142857143,
+ "tau_s_exact": "57/70",
+ "tau_t": 0.9747474747474747,
+ "tau_t_exact": "193/198"
+}
