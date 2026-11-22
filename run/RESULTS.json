@@ -1,0 +1,2755 @@
+{
+ "core_sha256": "fc0fabd8e2cdc2dc751ba8bf0d25ecc992e0ae044af2a6cdf598e3d26d659ed0",
+ "taus": {
+  "tau_b": 0.6,
+  "tau_b_exact": "3/5",
+  "tau_d": 0.04411764705882353,
+  "tau_d_exact": "3/68",
+  "tau_s": 0.8142857142857143,
+  "tau_s_exact": "57/70",
+  "tau_t": 0.9747474747474747,
+  "tau_t_exact": "193/198"
+ },
+ "worlds": [
+  {
+   "descriptive": {
+    "cross_seed": {
+     "agree_all": 89,
+     "agree_class": 51,
+     "aux_seed": 544784861,
+     "n_all": 101,
+     "n_class": 55,
+     "share_all": 0.8811881188118812,
+     "share_class": 0.9272727272727272
+    },
+    "default_feasible": false,
+    "g7b": {
+     "hypervolume": 0.45735129068462405,
+     "positive": true
+    },
+    "g8_single_atom_only": null,
+    "g8_whole_grid": {
+     "all_points_ok": true,
+     "n_points": 30,
+     "n_points_ok": 30
+    },
+    "t1_all_points": "FAILS",
+    "t1_structure": {
+     "alpha_ge_085_feasible": false,
+     "feasible_alphas": [
+      0.65,
+      0.6,
+      0.55,
+      0.5
+     ],
+     "some_alpha_le_060_feasible": true,
+     "t1_cross_080_085": null,
+     "t1_crossing_pairs": true,
+     "t1_window_pairs": null
+    }
+   },
+   "fixed": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "HOLDS",
+    "T-1": "HOLDS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "N8": {
+     "outcome": "FAILS",
+     "test": "G8"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 816600081
+  },
+  {
+   "descriptive": {
+    "cross_seed": {
+     "agree_all": 77,
+     "agree_class": 49,
+     "aux_seed": 364669305,
+     "n_all": 88,
+     "n_class": 54,
+     "share_all": 0.875,
+     "share_class": 0.9074074074074074
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.8291062801932367,
+     "positive": true
+    },
+    "g8_single_atom_only": false,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 26
+    },
+    "t1_all_points": "HOLDS",
+    "t1_structure": {
+     "alpha_ge_085_feasible": false,
+     "feasible_alphas": [
+      0.8,
+      0.75,
+      0.7,
+      0.65,
+      0.6,
+      0.55,
+      0.5
+     ],
+     "some_alpha_le_060_feasible": true,
+     "t1_cross_080_085": null,
+     "t1_crossing_pairs": true,
+     "t1_window_pairs": true
+    }
+   },
+   "fixed": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "FAILS",
+    "T-1": "HOLDS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "N8": {
+     "outcome": "FAILS",
+     "test": "G8"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 580411434
+  },
+  {
+   "descriptive": {
+    "cross_seed": {
+     "agree_all": 79,
+     "agree_class": 50,
+     "aux_seed": 522777228,
+     "n_all": 97,
+     "n_class": 57,
+     "share_all": 0.8144329896907216,
+     "share_class": 0.8771929824561403
+    },
+    "default_feasible": false,
+    "g7b": {
+     "hypervolume": 0.0,
+     "positive": false
+    },
+    "g8_single_atom_only": false,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 21
+    },
+    "t1_all_points": "FAILS",
+    "t1_structure": {
+     "alpha_ge_085_feasible": false,
+     "feasible_alphas": [],
+     "some_alpha_le_060_feasible": false,
+     "t1_cross_080_085": null,
+     "t1_crossing_pairs": null,
+     "t1_window_pairs": null
+    }
+   },
+   "fixed": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "FAILS",
+    "T-1": "UNDEFINED"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "N8": {
+     "outcome": "FAILS",
+     "test": "G8"
+    },
+    "NT": {
+     "outcome": "UNDEFINED",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 727554305
+  },
+  {
+   "descriptive": {
+    "cross_seed": {
+     "agree_all": 83,
+     "agree_class": 48,
+     "aux_seed": 742236165,
+     "n_all": 96,
+     "n_class": 54,
+     "share_all": 0.8645833333333334,
+     "share_class": 0.8888888888888888
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.4105263157894737,
+     "positive": true
+    },
+    "g8_single_atom_only": null,
+    "g8_whole_grid": {
+     "all_points_ok": true,
+     "n_points": 30,
+     "n_points_ok": 30
+    },
+    "t1_all_points": "FAILS",
+    "t1_structure": {
+     "alpha_ge_085_feasible": false,
+     "feasible_alphas": [
+      0.8,
+      0.75,
+      0.7,
+      0.65
+     ],
+     "some_alpha_le_060_feasible": false,
+     "t1_cross_080_085": null,
+     "t1_crossing_pairs": null,
+     "t1_window_pairs": true
+    }
+   },
+   "fixed": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "HOLDS",
+    "T-1": "HOLDS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "N8": {
+     "outcome": "FAILS",
+     "test": "G8"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 286102085
+  },
+  {
+   "descriptive": {
+    "cross_seed": {
+     "agree_all": 75,
+     "agree_class": 47,
+     "aux_seed": 794831148,
+     "n_all": 80,
+     "n_class": 49,
+     "share_all": 0.9375,
+     "share_class": 0.9591836734693877
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.4444444444444444,
+     "positive": true
+    },
+    "g8_single_atom_only": false,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 21
+    },
+    "t1_all_points": "FAILS",
+    "t1_structure": {
+     "alpha_ge_085_feasible": false,
+     "feasible_alphas": [
+      0.75,
+      0.7,
+      0.65
+     ],
+     "some_alpha_le_060_feasible": false,
+     "t1_cross_080_085": null,
+     "t1_crossing_pairs": null,
+     "t1_window_pairs": true
+    }
+   },
+   "fixed": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "FAILS",
+    "T-1": "HOLDS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "N8": {
+     "outcome": "FAILS",
+     "test": "G8"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 725536502
+  },
+  {
+   "descriptive": {
+    "cross_seed": {
+     "agree_all": 82,
+     "agree_class": 51,
+     "aux_seed": 174867482,
+     "n_all": 98,
+     "n_class": 59,
+     "share_all": 0.8367346938775511,
+     "share_class": 0.864406779661017
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.7272727272727273,
+     "positive": true
+    },
+    "g8_single_atom_only": false,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 21
+    },
+    "t1_all_points": "FAILS",
+    "t1_structure": {
+     "alpha_ge_085_feasible": false,
+     "feasible_alphas": [
+      0.8,
+      0.75,
+      0.7,
+      0.65
+     ],
+     "some_alpha_le_060_feasible": false,
+     "t1_cross_080_085": null,
+     "t1_crossing_pairs": null,
+     "t1_window_pairs": false
+    }
+   },
+   "fixed": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "FAILS",
+    "T-1": "FAILS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "N8": {
+     "outcome": "FAILS",
+     "test": "G8"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 322899240
+  },
+  {
+   "descriptive": {
+    "cross_seed": {
+     "agree_all": 85,
+     "agree_class": 48,
+     "aux_seed": 743248342,
+     "n_all": 97,
+     "n_class": 56,
+     "share_all": 0.8762886597938144,
+     "share_class": 0.8571428571428571
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.390625,
+     "positive": true
+    },
+    "g8_single_atom_only": false,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 21
+    },
+    "t1_all_points": "FAILS",
+    "t1_structure": {
+     "alpha_ge_085_feasible": false,
+     "feasible_alphas": [
+      0.7,
+      0.65
+     ],
+     "some_alpha_le_060_feasible": false,
+     "t1_cross_080_085": null,
+     "t1_crossing_pairs": null,
+     "t1_window_pairs": true
+    }
+   },
+   "fixed": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "FAILS",
+    "T-1": "HOLDS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "N8": {
+     "outcome": "FAILS",
+     "test": "G8"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 99450553
+  },
+  {
+   "descriptive": {
+    "cross_seed": {
+     "agree_all": 86,
+     "agree_class": 48,
+     "aux_seed": 350229825,
+     "n_all": 99,
+     "n_class": 51,
+     "share_all": 0.8686868686868687,
+     "share_class": 0.9411764705882353
+    },
+    "default_feasible": false,
+    "g7b": {
+     "hypervolume": 0.21538461538461537,
+     "positive": true
+    },
+    "g8_single_atom_only": null,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 11
+    },
+    "t1_all_points": "FAILS",
+    "t1_structure": {
+     "alpha_ge_085_feasible": false,
+     "feasible_alphas": [
+      0.7,
+      0.65
+     ],
+     "some_alpha_le_060_feasible": false,
+     "t1_cross_080_085": null,
+     "t1_crossing_pairs": null,
+     "t1_window_pairs": null
+    }
+   },
+   "fixed": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "HOLDS",
+    "T-1": "UNDEFINED"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "N8": {
+     "outcome": "FAILS",
+     "test": "G8"
+    },
+    "NT": {
+     "outcome": "UNDEFINED",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 513263691
+  },
+  {
+   "descriptive": {
+    "cross_seed": {
+     "agree_all": 92,
+     "agree_class": 48,
+     "aux_seed": 75429764,
+     "n_all": 102,
+     "n_class": 55,
+     "share_all": 0.9019607843137255,
+     "share_class": 0.8727272727272727
+    },
+    "default_feasible": false,
+    "g7b": {
+     "hypervolume": 0.0,
+     "positive": false
+    },
+    "g8_single_atom_only": false,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 9
+    },
+    "t1_all_points": "FAILS",
+    "t1_structure": {
+     "alpha_ge_085_feasible": false,
+     "feasible_alphas": [],
+     "some_alpha_le_060_feasible": false,
+     "t1_cross_080_085": null,
+     "t1_crossing_pairs": null,
+     "t1_window_pairs": null
+    }
+   },
+   "fixed": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "FAILS",
+    "T-1": "UNDEFINED"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "N8": {
+     "outcome": "FAILS",
+     "test": "G8"
+    },
+    "NT": {
+     "outcome": "UNDEFINED",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 682198850
+  },
+  {
+   "descriptive": {
+    "cross_seed": {
+     "agree_all": 89,
+     "agree_class": 51,
+     "aux_seed": 451969938,
+     "n_all": 97,
+     "n_class": 56,
+     "share_all": 0.9175257731958762,
+     "share_class": 0.9107142857142857
+    },
+    "default_feasible": false,
+    "g7b": {
+     "hypervolume": 0.0,
+     "positive": false
+    },
+    "g8_single_atom_only": false,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 17
+    },
+    "t1_all_points": "FAILS",
+    "t1_structure": {
+     "alpha_ge_085_feasible": false,
+     "feasible_alphas": [],
+     "some_alpha_le_060_feasible": false,
+     "t1_cross_080_085": null,
+     "t1_crossing_pairs": null,
+     "t1_window_pairs": null
+    }
+   },
+   "fixed": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "FAILS",
+    "T-1": "UNDEFINED"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "N8": {
+     "outcome": "FAILS",
+     "test": "G8"
+    },
+    "NT": {
+     "outcome": "UNDEFINED",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 155058206
+  },
+  {
+   "descriptive": {
+    "cross_seed": {
+     "agree_all": 94,
+     "agree_class": 52,
+     "aux_seed": 585596273,
+     "n_all": 103,
+     "n_class": 57,
+     "share_all": 0.912621359223301,
+     "share_class": 0.9122807017543859
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.3666666666666667,
+     "positive": true
+    },
+    "g8_single_atom_only": null,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 21
+    },
+    "t1_all_points": "FAILS",
+    "t1_structure": {
+     "alpha_ge_085_feasible": false,
+     "feasible_alphas": [
+      0.8,
+      0.75,
+      0.7,
+      0.65
+     ],
+     "some_alpha_le_060_feasible": false,
+     "t1_cross_080_085": null,
+     "t1_crossing_pairs": null,
+     "t1_window_pairs": true
+    }
+   },
+   "fixed": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "HOLDS",
+    "T-1": "HOLDS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "N8": {
+     "outcome": "FAILS",
+     "test": "G8"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 768170714
+  },
+  {
+   "descriptive": {
+    "cross_seed": {
+     "agree_all": 87,
+     "agree_class": 45,
+     "aux_seed": 942431848,
+     "n_all": 96,
+     "n_class": 49,
+     "share_all": 0.90625,
+     "share_class": 0.9183673469387755
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.46938775510204084,
+     "positive": true
+    },
+    "g8_single_atom_only": null,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 21
+    },
+    "t1_all_points": "FAILS",
+    "t1_structure": {
+     "alpha_ge_085_feasible": false,
+     "feasible_alphas": [
+      0.8,
+      0.75,
+      0.7,
+      0.65
+     ],
+     "some_alpha_le_060_feasible": false,
+     "t1_cross_080_085": null,
+     "t1_crossing_pairs": null,
+     "t1_window_pairs": true
+    }
+   },
+   "fixed": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "HOLDS",
+    "T-1": "HOLDS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "N8": {
+     "outcome": "FAILS",
+     "test": "G8"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 945819467
+  },
+  {
+   "descriptive": {
+    "cross_seed": {
+     "agree_all": 94,
+     "agree_class": 56,
+     "aux_seed": 903135185,
+     "n_all": 100,
+     "n_class": 56,
+     "share_all": 0.94,
+     "share_class": 1.0
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.404040404040404,
+     "positive": true
+    },
+    "g8_single_atom_only": null,
+    "g8_whole_grid": {
+     "all_points_ok": true,
+     "n_points": 30,
+     "n_points_ok": 30
+    },
+    "t1_all_points": "FAILS",
+    "t1_structure": {
+     "alpha_ge_085_feasible": false,
+     "feasible_alphas": [
+      0.8,
+      0.75,
+      0.7,
+      0.65
+     ],
+     "some_alpha_le_060_feasible": false,
+     "t1_cross_080_085": null,
+     "t1_crossing_pairs": null,
+     "t1_window_pairs": true
+    }
+   },
+   "fixed": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "HOLDS",
+    "T-1": "HOLDS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "N8": {
+     "outcome": "FAILS",
+     "test": "G8"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 309075756
+  },
+  {
+   "descriptive": {
+    "cross_seed": {
+     "agree_all": 85,
+     "agree_class": 52,
+     "aux_seed": 844501184,
+     "n_all": 95,
+     "n_class": 55,
+     "share_all": 0.8947368421052632,
+     "share_class": 0.9454545454545454
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.4394829612220917,
+     "positive": true
+    },
+    "g8_single_atom_only": null,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 21
+    },
+    "t1_all_points": "FAILS",
+    "t1_structure": {
+     "alpha_ge_085_feasible": false,
+     "feasible_alphas": [
+      0.8,
+      0.75,
+      0.7,
+      0.65
+     ],
+     "some_alpha_le_060_feasible": false,
+     "t1_cross_080_085": null,
+     "t1_crossing_pairs": null,
+     "t1_window_pairs": true
+    }
+   },
+   "fixed": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "HOLDS",
+    "T-1": "HOLDS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "N8": {
+     "outcome": "FAILS",
+     "test": "G8"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 993348267
+  },
+  {
+   "descriptive": {
+    "cross_seed": {
+     "agree_all": 88,
+     "agree_class": 48,
+     "aux_seed": 650209284,
+     "n_all": 101,
+     "n_class": 53,
+     "share_all": 0.8712871287128713,
+     "share_class": 0.9056603773584906
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.5698005698005698,
+     "positive": true
+    },
+    "g8_single_atom_only": false,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 19
+    },
+    "t1_all_points": "FAILS",
+    "t1_structure": {
+     "alpha_ge_085_feasible": false,
+     "feasible_alphas": [
+      0.8,
+      0.75,
+      0.7,
+      0.65
+     ],
+     "some_alpha_le_060_feasible": false,
+     "t1_cross_080_085": null,
+     "t1_crossing_pairs": null,
+     "t1_window_pairs": true
+    }
+   },
+   "fixed": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "FAILS",
+    "T-1": "HOLDS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "N8": {
+     "outcome": "FAILS",
+     "test": "G8"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 487596835
+  },
+  {
+   "descriptive": {
+    "cross_seed": {
+     "agree_all": 99,
+     "agree_class": 55,
+     "aux_seed": 477358085,
+     "n_all": 103,
+     "n_class": 57,
+     "share_all": 0.9611650485436893,
+     "share_class": 0.9649122807017544
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.6698412698412698,
+     "positive": true
+    },
+    "g8_single_atom_only": null,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 26
+    },
+    "t1_all_points": "FAILS",
+    "t1_structure": {
+     "alpha_ge_085_feasible": false,
+     "feasible_alphas": [
+      0.8,
+      0.75,
+      0.7,
+      0.65,
+      0.6,
+      0.55,
+      0.5
+     ],
+     "some_alpha_le_060_feasible": true,
+     "t1_cross_080_085": null,
+     "t1_crossing_pairs": false,
+     "t1_window_pairs": true
+    }
+   },
+   "fixed": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "HOLDS",
+    "T-1": "FAILS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "N8": {
+     "outcome": "FAILS",
+     "test": "G8"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 868207235
+  },
+  {
+   "descriptive": {
+    "cross_seed": {
+     "agree_all": 98,
+     "agree_class": 48,
+     "aux_seed": 506923448,
+     "n_all": 101,
+     "n_class": 50,
+     "share_all": 0.9702970297029703,
+     "share_class": 0.96
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.18461538461538463,
+     "positive": true
+    },
+    "g8_single_atom_only": true,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 21
+    },
+    "t1_all_points": "FAILS",
+    "t1_structure": {
+     "alpha_ge_085_feasible": false,
+     "feasible_alphas": [
+      0.8,
+      0.75,
+      0.7,
+      0.65
+     ],
+     "some_alpha_le_060_feasible": false,
+     "t1_cross_080_085": null,
+     "t1_crossing_pairs": null,
+     "t1_window_pairs": false
+    }
+   },
+   "fixed": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "FAILS",
+    "T-1": "FAILS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "N8": {
+     "outcome": "FAILS",
+     "test": "G8"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 318260273
+  },
+  {
+   "descriptive": {
+    "cross_seed": {
+     "agree_all": 89,
+     "agree_class": 54,
+     "aux_seed": 195298501,
+     "n_all": 97,
+     "n_class": 56,
+     "share_all": 0.9175257731958762,
+     "share_class": 0.9642857142857143
+    },
+    "default_feasible": false,
+    "g7b": {
+     "hypervolume": 0.4745098039215686,
+     "positive": true
+    },
+    "g8_single_atom_only": false,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 23
+    },
+    "t1_all_points": "FAILS",
+    "t1_structure": {
+     "alpha_ge_085_feasible": false,
+     "feasible_alphas": [
+      0.8,
+      0.75,
+      0.7,
+      0.65,
+      0.55,
+      0.5
+     ],
+     "some_alpha_le_060_feasible": true,
+     "t1_cross_080_085": null,
+     "t1_crossing_pairs": false,
+     "t1_window_pairs": true
+    }
+   },
+   "fixed": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "FAILS",
+    "T-1": "FAILS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "N8": {
+     "outcome": "FAILS",
+     "test": "G8"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 822668002
+  },
+  {
+   "descriptive": {
+    "cross_seed": {
+     "agree_all": 79,
+     "agree_class": 52,
+     "aux_seed": 52842313,
+     "n_all": 89,
+     "n_class": 57,
+     "share_all": 0.8876404494382022,
+     "share_class": 0.9122807017543859
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.24621212121212122,
+     "positive": true
+    },
+    "g8_single_atom_only": null,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 21
+    },
+    "t1_all_points": "FAILS",
+    "t1_structure": {
+     "alpha_ge_085_feasible": false,
+     "feasible_alphas": [
+      0.7,
+      0.65
+     ],
+     "some_alpha_le_060_feasible": false,
+     "t1_cross_080_085": null,
+     "t1_crossing_pairs": null,
+     "t1_window_pairs": null
+    }
+   },
+   "fixed": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "HOLDS",
+    "T-1": "UNDEFINED"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "N8": {
+     "outcome": "FAILS",
+     "test": "G8"
+    },
+    "NT": {
+     "outcome": "UNDEFINED",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 590938104
+  },
+  {
+   "descriptive": {
+    "cross_seed": {
+     "agree_all": 82,
+     "agree_class": 52,
+     "aux_seed": 999815392,
+     "n_all": 86,
+     "n_class": 56,
+     "share_all": 0.9534883720930233,
+     "share_class": 0.9285714285714286
+    },
+    "default_feasible": false,
+    "g7b": {
+     "hypervolume": 0.23696145124716556,
+     "positive": true
+    },
+    "g8_single_atom_only": null,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 21
+    },
+    "t1_all_points": "FAILS",
+    "t1_structure": {
+     "alpha_ge_085_feasible": false,
+     "feasible_alphas": [
+      0.65
+     ],
+     "some_alpha_le_060_feasible": false,
+     "t1_cross_080_085": null,
+     "t1_crossing_pairs": null,
+     "t1_window_pairs": null
+    }
+   },
+   "fixed": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "HOLDS",
+    "T-1": "UNDEFINED"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "N8": {
+     "outcome": "FAILS",
+     "test": "G8"
+    },
+    "NT": {
+     "outcome": "UNDEFINED",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 426170469
+  },
+  {
+   "descriptive": {
+    "cross_seed": {
+     "agree_all": 80,
+     "agree_class": 49,
+     "aux_seed": 784961057,
+     "n_all": 88,
+     "n_class": 53,
+     "share_all": 0.9090909090909091,
+     "share_class": 0.9245283018867925
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.8205128205128205,
+     "positive": true
+    },
+    "g8_single_atom_only": false,
+    "g8_whole_grid": {
+     "all_points_ok": true,
+     "n_points": 30,
+     "n_points_ok": 30
+    },
+    "t1_all_points": "HOLDS",
+    "t1_structure": {
+     "alpha_ge_085_feasible": false,
+     "feasible_alphas": [
+      0.8,
+      0.75,
+      0.7,
+      0.65,
+      0.6,
+      0.55,
+      0.5
+     ],
+     "some_alpha_le_060_feasible": true,
+     "t1_cross_080_085": null,
+     "t1_crossing_pairs": true,
+     "t1_window_pairs": true
+    }
+   },
+   "fixed": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "FAILS",
+    "T-1": "HOLDS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "N8": {
+     "outcome": "FAILS",
+     "test": "G8"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 612645885
+  },
+  {
+   "descriptive": {
+    "cross_seed": {
+     "agree_all": 81,
+     "agree_class": 46,
+     "aux_seed": 129073650,
+     "n_all": 92,
+     "n_class": 51,
+     "share_all": 0.8804347826086957,
+     "share_class": 0.9019607843137255
+    },
+    "default_feasible": false,
+    "g7b": {
+     "hypervolume": 0.17269736842105263,
+     "positive": true
+    },
+    "g8_single_atom_only": null,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 21
+    },
+    "t1_all_points": "FAILS",
+    "t1_structure": {
+     "alpha_ge_085_feasible": false,
+     "feasible_alphas": [
+      0.65
+     ],
+     "some_alpha_le_060_feasible": false,
+     "t1_cross_080_085": null,
+     "t1_crossing_pairs": null,
+     "t1_window_pairs": null
+    }
+   },
+   "fixed": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "HOLDS",
+    "T-1": "UNDEFINED"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "N8": {
+     "outcome": "FAILS",
+     "test": "G8"
+    },
+    "NT": {
+     "outcome": "UNDEFINED",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 983565408
+  },
+  {
+   "descriptive": {
+    "cross_seed": {
+     "agree_all": 91,
+     "agree_class": 52,
+     "aux_seed": 475243128,
+     "n_all": 102,
+     "n_class": 57,
+     "share_all": 0.8921568627450981,
+     "share_class": 0.9122807017543859
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.46761699227623804,
+     "positive": true
+    },
+    "g8_single_atom_only": null,
+    "g8_whole_grid": {
+     "all_points_ok": true,
+     "n_points": 30,
+     "n_points_ok": 30
+    },
+    "t1_all_points": "FAILS",
+    "t1_structure": {
+     "alpha_ge_085_feasible": false,
+     "feasible_alphas": [
+      0.8,
+      0.75,
+      0.7,
+      0.65,
+      0.6,
+      0.55,
+      0.5
+     ],
+     "some_alpha_le_060_feasible": true,
+     "t1_cross_080_085": null,
+     "t1_crossing_pairs": false,
+     "t1_window_pairs": true
+    }
+   },
+   "fixed": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "HOLDS",
+    "T-1": "FAILS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "N8": {
+     "outcome": "FAILS",
+     "test": "G8"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 114870193
+  },
+  {
+   "descriptive": {
+    "cross_seed": {
+     "agree_all": 82,
+     "agree_class": 53,
+     "aux_seed": 175322228,
+     "n_all": 94,
+     "n_class": 56,
+     "share_all": 0.8723404255319149,
+     "share_class": 0.9464285714285714
+    },
+    "default_feasible": false,
+    "g7b": {
+     "hypervolume": 0.0,
+     "positive": false
+    },
+    "g8_single_atom_only": null,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 9
+    },
+    "t1_all_points": "FAILS",
+    "t1_structure": {
+     "alpha_ge_085_feasible": false,
+     "feasible_alphas": [],
+     "some_alpha_le_060_feasible": false,
+     "t1_cross_080_085": null,
+     "t1_crossing_pairs": null,
+     "t1_window_pairs": null
+    }
+   },
+   "fixed": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "HOLDS",
+    "T-1": "UNDEFINED"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "N8": {
+     "outcome": "FAILS",
+     "test": "G8"
+    },
+    "NT": {
+     "outcome": "UNDEFINED",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 255449487
+  },
+  {
+   "descriptive": {
+    "cross_seed": {
+     "agree_all": 83,
+     "agree_class": 50,
+     "aux_seed": 863740322,
+     "n_all": 91,
+     "n_class": 54,
+     "share_all": 0.9120879120879121,
+     "share_class": 0.9259259259259259
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.4814814814814814,
+     "positive": true
+    },
+    "g8_single_atom_only": null,
+    "g8_whole_grid": {
+     "all_points_ok": true,
+     "n_points": 30,
+     "n_points_ok": 30
+    },
+    "t1_all_points": "HOLDS",
+    "t1_structure": {
+     "alpha_ge_085_feasible": false,
+     "feasible_alphas": [
+      0.8,
+      0.75,
+      0.7,
+      0.65
+     ],
+     "some_alpha_le_060_feasible": false,
+     "t1_cross_080_085": null,
+     "t1_crossing_pairs": null,
+     "t1_window_pairs": true
+    }
+   },
+   "fixed": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "HOLDS",
+    "T-1": "HOLDS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "N8": {
+     "outcome": "FAILS",
+     "test": "G8"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 530555007
+  },
+  {
+   "descriptive": {
+    "cross_seed": {
+     "agree_all": 83,
+     "agree_class": 48,
+     "aux_seed": 646599716,
+     "n_all": 91,
+     "n_class": 53,
+     "share_all": 0.9120879120879121,
+     "share_class": 0.9056603773584906
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.5706340378197997,
+     "positive": true
+    },
+    "g8_single_atom_only": false,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 26
+    },
+    "t1_all_points": "FAILS",
+    "t1_structure": {
+     "alpha_ge_085_feasible": false,
+     "feasible_alphas": [
+      0.8,
+      0.75,
+      0.7,
+      0.65
+     ],
+     "some_alpha_le_060_feasible": false,
+     "t1_cross_080_085": null,
+     "t1_crossing_pairs": null,
+     "t1_window_pairs": null
+    }
+   },
+   "fixed": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "FAILS",
+    "T-1": "UNDEFINED"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "N8": {
+     "outcome": "FAILS",
+     "test": "G8"
+    },
+    "NT": {
+     "outcome": "UNDEFINED",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 461088552
+  },
+  {
+   "descriptive": {
+    "cross_seed": {
+     "agree_all": 91,
+     "agree_class": 46,
+     "aux_seed": 781519606,
+     "n_all": 107,
+     "n_class": 53,
+     "share_all": 0.8504672897196262,
+     "share_class": 0.8679245283018868
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.29411764705882354,
+     "positive": true
+    },
+    "g8_single_atom_only": null,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 21
+    },
+    "t1_all_points": "FAILS",
+    "t1_structure": {
+     "alpha_ge_085_feasible": false,
+     "feasible_alphas": [
+      0.8,
+      0.75,
+      0.7,
+      0.65
+     ],
+     "some_alpha_le_060_feasible": false,
+     "t1_cross_080_085": null,
+     "t1_crossing_pairs": null,
+     "t1_window_pairs": true
+    }
+   },
+   "fixed": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "HOLDS",
+    "T-1": "HOLDS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "N8": {
+     "outcome": "FAILS",
+     "test": "G8"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 990879660
+  },
+  {
+   "descriptive": {
+    "cross_seed": {
+     "agree_all": 86,
+     "agree_class": 47,
+     "aux_seed": 484805026,
+     "n_all": 95,
+     "n_class": 51,
+     "share_all": 0.9052631578947369,
+     "share_class": 0.9215686274509803
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.3137254901960784,
+     "positive": true
+    },
+    "g8_single_atom_only": false,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 21
+    },
+    "t1_all_points": "FAILS",
+    "t1_structure": {
+     "alpha_ge_085_feasible": false,
+     "feasible_alphas": [
+      0.75,
+      0.7,
+      0.65
+     ],
+     "some_alpha_le_060_feasible": false,
+     "t1_cross_080_085": null,
+     "t1_crossing_pairs": null,
+     "t1_window_pairs": true
+    }
+   },
+   "fixed": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "FAILS",
+    "T-1": "HOLDS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "N8": {
+     "outcome": "FAILS",
+     "test": "G8"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 2978049
+  },
+  {
+   "descriptive": {
+    "cross_seed": {
+     "agree_all": 85,
+     "agree_class": 48,
+     "aux_seed": 969152898,
+     "n_all": 91,
+     "n_class": 48,
+     "share_all": 0.9340659340659341,
+     "share_class": 1.0
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.43645773433007473,
+     "positive": true
+    },
+    "g8_single_atom_only": false,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 21
+    },
+    "t1_all_points": "FAILS",
+    "t1_structure": {
+     "alpha_ge_085_feasible": false,
+     "feasible_alphas": [
+      0.8,
+      0.75,
+      0.7,
+      0.65
+     ],
+     "some_alpha_le_060_feasible": false,
+     "t1_cross_080_085": null,
+     "t1_crossing_pairs": null,
+     "t1_window_pairs": true
+    }
+   },
+   "fixed": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "FAILS",
+    "T-1": "HOLDS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "N8": {
+     "outcome": "FAILS",
+     "test": "G8"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 743347966
+  },
+  {
+   "descriptive": {
+    "cross_seed": {
+     "agree_all": 85,
+     "agree_class": 53,
+     "aux_seed": 971816919,
+     "n_all": 93,
+     "n_class": 53,
+     "share_all": 0.9139784946236559,
+     "share_class": 1.0
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.44746376811594196,
+     "positive": true
+    },
+    "g8_single_atom_only": false,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 17
+    },
+    "t1_all_points": "FAILS",
+    "t1_structure": {
+     "alpha_ge_085_feasible": false,
+     "feasible_alphas": [
+      0.8,
+      0.75,
+      0.7,
+      0.65
+     ],
+     "some_alpha_le_060_feasible": false,
+     "t1_cross_080_085": null,
+     "t1_crossing_pairs": null,
+     "t1_window_pairs": true
+    }
+   },
+   "fixed": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "FAILS",
+    "T-1": "HOLDS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "N8": {
+     "outcome": "FAILS",
+     "test": "G8"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 669705668
+  }
+ ]
+}
