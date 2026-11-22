@@ -1,0 +1,100 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "F3 agent output (PREREG section 6.1; read by audit/f3_compare.py)",
+  "description": "The F3 agent writes one file <world_seed>.json per test world and one verdict_table.json into its output folder. Every fraction is a string \"p/q\" in lowest terms with q >= 1 (an integer n is written \"n/1\", zero \"0/1\"); an undefined metric is null. No floats anywhere. Configuration keys are written exactly as in the input's \"configs\" (alpha as printed there, a vertical bar, k), for example \"0.95|0\" and \"0.7|5\".",
+  "definitions": {
+    "fraction": {"type": "string", "pattern": "^[0-9]+/[1-9][0-9]*$"},
+    "fractionOrNull": {"oneOf": [{"$ref": "#/definitions/fraction"}, {"type": "null"}]},
+    "configKey": {"type": "string", "pattern": "^[0-9.]+[|](0|5|10)$"},
+    "outcome": {"enum": ["HOLDS", "FAILS", "UNDEFINED"]},
+    "metrics": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["fidelity", "deviation", "consistency", "uncertainty", "new_true", "new_false", "validation_agreement", "boundary_share"],
+      "properties": {
+        "fidelity": {"$ref": "#/definitions/fractionOrNull"},
+        "deviation": {"$ref": "#/definitions/fractionOrNull"},
+        "consistency": {"$ref": "#/definitions/fractionOrNull"},
+        "uncertainty": {"$ref": "#/definitions/fractionOrNull"},
+        "new_true": {"$ref": "#/definitions/fractionOrNull"},
+        "new_false": {"$ref": "#/definitions/fractionOrNull"},
+        "validation_agreement": {"$ref": "#/definitions/fractionOrNull"},
+        "boundary_share": {"$ref": "#/definitions/fractionOrNull"}
+      }
+    }
+  },
+  "per_world_file": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["world_seed", "metrics", "feasible", "pareto_front", "hypervolume", "outcomes", "t1_structure"],
+    "properties": {
+      "world_seed": {"type": "integer"},
+      "metrics": {
+        "description": "Every metric of SPEC section 8 at every one of the 30 grid points: {\"<alpha>|<k>\": {metric: fraction or null}}.",
+        "type": "object",
+        "patternProperties": {"^[0-9.]+[|](0|5|10)$": {"$ref": "#/definitions/metrics"}}
+      },
+      "feasible": {
+        "description": "Configuration keys of the feasible points under tau (fidelity >= tau_s, deviation <= tau_d, consistency >= tau_t, uncertainty <= tau_b; all four defined, and new_true defined), in any order.",
+        "type": "array", "items": {"$ref": "#/definitions/configKey"}
+      },
+      "pareto_front": {
+        "description": "Configuration keys of the non-dominated feasible points (x = 1 - new_false, y = new_true), ordered x descending, then y descending, then alpha ascending, then k ascending.",
+        "type": "array", "items": {"$ref": "#/definitions/configKey"}
+      },
+      "hypervolume": {
+        "description": "Area of the union of the rectangles [0, x] x [0, y] over the feasible points, exactly.",
+        "$ref": "#/definitions/fraction"
+      },
+      "outcomes": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["G7a", "G8", "T-1"],
+        "properties": {
+          "G7a": {"$ref": "#/definitions/outcome"},
+          "G8": {"$ref": "#/definitions/outcome"},
+          "T-1": {"$ref": "#/definitions/outcome"}
+        }
+      },
+      "t1_structure": {
+        "description": "The T-1 structure of the world (PREREG section 3.2, I-5), defined as audit/descriptive.t1_structure does: feasible points are those of the feasible set; the two flags are booleans; each of the three pair fields is true (every considered pair holds), false (some considered pair violates the bound 1/20) or null (no considered pair has distinct uncertainty).",
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["some_alpha_le_060_feasible", "alpha_ge_085_feasible", "t1_window_pairs", "t1_crossing_pairs", "t1_cross_080_085"],
+        "properties": {
+          "some_alpha_le_060_feasible": {"type": "boolean"},
+          "alpha_ge_085_feasible": {"type": "boolean"},
+          "t1_window_pairs": {"type": ["boolean", "null"]},
+          "t1_crossing_pairs": {"type": ["boolean", "null"]},
+          "t1_cross_080_085": {"type": ["boolean", "null"]}
+        }
+      }
+    }
+  },
+  "verdict_table_file": {
+    "description": "verdict_table.json: one row per test (G1..G6 from the given per-world outcomes, G7 = G7a, G8, T-1), by the rules of PREREG sections 3.3 and 4. The Wilson lower bound is a string with three decimals for G8 and T-1 (as printed in the verdict text) and null for the deterministic tests.",
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["rows"],
+    "properties": {
+      "rows": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["test", "verdict", "n_holds", "n_fails", "n_undefined", "n_defined", "wilson_lower", "first_failing_world"],
+          "properties": {
+            "test": {"enum": ["G1", "G2", "G3", "G4", "G5", "G6", "G7", "G8", "T-1"]},
+            "verdict": {"enum": ["HOLDS", "FAILS", "INSUFFICIENT"]},
+            "n_holds": {"type": "integer"},
+            "n_fails": {"type": "integer"},
+            "n_undefined": {"type": "integer"},
+            "n_defined": {"type": "integer"},
+            "wilson_lower": {"oneOf": [{"type": "string", "pattern": "^[0-9][.][0-9]{3}$"}, {"type": "null"}]},
+            "first_failing_world": {"description": "The world_seed of the FAILS world with the smallest draw_index, or null if no world FAILS.", "type": ["integer", "null"]}
+          }
+        }
+      }
+    }
+  }
+}

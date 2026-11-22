@@ -1,0 +1,105 @@
+{
+  "review": "Targeted blind review 3 of Tesaron v0.2 PREREG draft 5 and the code changed for it",
+  "repairs": [
+    {"id": "R2-1", "status": "fixed", "evidence": "Claim narrowed in PREREG §1 l.38-39, §3.2 l.113, audit/aggregate.py:21-22 and audit/gate/g7_study.py:35; check unchanged (checks.py:331-366); §2 l.54 records echo+F/echo+T; l.72-73 says how each baseline fails. AQ4 carried out correctly and honestly. Under all 40 DRAW_STUDY tau on the 30 development test worlds no baseline was feasible with a positive score and the oracle anchor held; all_true's smallest deviation 3/11 and all_false's 3/7 against a largest tau_d of 6/53 (deviation alone excludes them; tau_s alone would not: all_true's largest fidelity 18/25 vs smallest tau_s 13/18)."},
+    {"id": "R2-2", "status": "fixed", "evidence": "run_v02.py:116-125 (exactly one commit per manifest, SALT, CAL_WORLDS, TAU), :183-195 (frozen files tracked, clean, identical to the freeze commit), :198-223 (SALT strict descendant, names freeze commit and core hash), :226-235 (CAL/TAU after the salt), :143-149 and §8 l.369-370 (local remote-tracking ref stated); post-run audit of salt provenance and the public remote in §8 l.394-399; git tests in test_audit_runner_fidelity.py:235-499 (skipped here). Residues in R3-7."},
+    {"id": "R2-3", "status": "fixed", "evidence": "Computed T-1 sentence aggregate.py:93-99; structure arm with alpha >= 0.85 flag and 0.80/0.85 arm descriptive.py:72-97; counts printed with the verdict aggregate.py:83-90, 197-204; HOLDS caveat :37-39; directional item §10 l.494-504. AQ5 carried out correctly: judge_t1 and the design unchanged, reporting strengthened; §1 l.21-25, §2 l.74-80 and I-5 honest. Residues: R3-5, R3-9, R3-3."},
+    {"id": "R2-4", "status": "fixed", "evidence": "Every figure of §7 l.311-325 reproduces from prereg/DRAW_STUDY.json (defined 11-30, median 23; insufficient 3/40; 16-19 in 5; default feasible 9-29; no feasible point 0-15; alpha >= 0.85 in 13 draws; tau ranges; G7a defined 30/30; mean P(HOLDS|r) 0.588/0.264/0.098/0.032); 16-19 row correct; regenerating DRAW_STUDY.json gives the same bytes; 'insufficient worlds' in §2 l.59-60 and aggregate.py:42-43; G7a feasibility sentence in §2 l.53 corrected."},
+    {"id": "R2-5", "status": "fixed", "evidence": "Raw denominators n_I and n_decided per alpha (checks.py:378-384, 394-395) used in descriptive.py:100-117; they equal SPEC §8's denominators; unit tests with 2/40 and 9/18 at test_audit_checks.py:348-374."},
+    {"id": "R2-6", "status": "fixed", "evidence": "audit/indep/abduction.py:40-76 follows SPEC §7.3 literally (observed head, exactly one missing literal by position, groundness, vocabulary, value U, score = distinct (rule, theta), ranking score then (channel, pred, args), POS first per S-9), brute force over all entity assignments, no import of tesaron.decoder/encoder/belnap; F1 compares the full ranked list with scores at every alpha, the top-k at every (alpha, k), pass 2 from the independent hypotheses and statuses (fidelity.py:54-99); F4 adds relation units and interface facts (indep/units.py, fidelity.py:127-155); F4_PREFREEZE.json regenerates byte-identical (7353 candidates, 600 configurations). Residue R3-8."},
+    {"id": "R2-7", "status": "fixed", "evidence": "audit/f3/INSTRUCTIONS_F3.md, OUTPUT_SCHEMA.json and audit/f3_compare.py exist and are frozen (§9); resolution rule §6.1 l.215-221; given G1-G6 outcomes in the blind input (run_v02.py:285-312). A partial dry run of steps 1-6 written from the instruction text matched the run on 5 development worlds (1200/1200 metric fields, feasible sets, fronts, hypervolumes, G7a). Residues R3-2, R3-3, R3-4."},
+    {"id": "R2-8", "status": "fixed", "evidence": "SPEC §1 l.33-35 and §11 l.374-376 (S-8); prereg/README.md written and outside the manifest (§9 l.412); §2 l.47 'S-1–S-9'; audit/system.py:19 'S-1..S-7' is accurate (S-8, S-9 changed no code). Residue: audit/README.md (R3-10)."},
+    {"id": "R2-9", "status": "fixed", "evidence": "aggregate.CLAIMS equals §3.2; the nine gate study names equal the claims; certificates regenerated (module hashes match the study files, all FALSIFIABLE, verify exit 0 in GATE_TOOL.json)."},
+    {"id": "R2-10", "status": "fixed", "evidence": "Salt enters the freeze record in step 8 (§8 l.361-362, l.367-368); perm and n2 indices stated in §7 l.295, matching per_world.py:30, 38."},
+    {"id": "R2-11", "status": "partly fixed", "evidence": "Per-world outputs are held in memory during the loop (run_v02.py:434-443) and the rerun is described (§8 l.392-393), but outputs_results and RESULTS.json are written before verdict_table/VERDICTS.json (:441-457 vs :473-504), and the described rerun in a fresh clone of the result commit is refused by the no-overwrite rule (:239-241, :426-431). See R3-6."},
+    {"id": "R2-12", "status": "partly fixed", "evidence": "audit/prefreeze_check.py checks GATE_TOOL.json against the current files (90/90 hashes match here) and the freeze walk against git ls-files; certify.py:78-83 refuses untracked files. But review 2's 'freeze from a clean checkout' was replaced by a file-set check that does not compare bytes with the committed blobs, so a tree a fresh clone does not reproduce passes (R3-1)."},
+    {"id": "R2-13", "status": "fixed", "evidence": "G1 (ii) checks mu_neg = 0 on every class unit (checks.py:111-113); failed parts recorded (per_world.py:104-105, run_v02.py:347) and printed (aggregate.py:180-181; §3.2 l.107, §4 l.161)."}
+  ],
+  "counts": {
+    "repairs": {"fixed": 11, "partly_fixed": 2, "not_fixed": 0, "made_worse": 0},
+    "findings": {"blocking": 0, "major": 1, "minor": 9, "total": 10}
+  },
+  "findings": [
+    {
+      "id": "R3-1",
+      "severity": "major",
+      "where": "audit/prefreeze_check.py:77-110; audit/freeze.py:27-32 (the Truth_Gate freeze.py warning, protocol/tools/freeze.py:21-22, not carried over); audit/run_v02.py:190-195; no .gitattributes; PREREG §6.3 l.276-278, §8 l.359-361, l.392-393, l.397-399",
+      "quote": "the files the freeze verifier would hash are exactly the git-tracked files under the manifest paths (no ignored or untracked file)",
+      "reason": "The pre-freeze check compares file sets, not the bytes a fresh clone receives. The tree has mixed line endings: of 116 files under the §9 manifest paths, 53 are CRLF-only (run_v02.py, checks.py, aggregate.py, all certificates and study files, GATE_TOOL.json, F4_PREFREEZE.json, DRAW_STUDY.json, ...) and 63 LF-only (SPEC, PREREG, f3_compare.py, prefreeze_check.py, indep/*, ...). With CRLF->LF, 41 of GATE_TOOL's 90 hashes and all 9 certificate module hashes change. With core.autocrlf=true (Git for Windows default) or input, the blobs are LF-normalised and no checkout reproduces a mixed tree; with false, a clone made with autocrlf=true converts the LF files. git status/diff (pre-freeze check and runner) ignore eol conversion, and verify_manifest passes on the unchanged working tree, so nothing notices before the step-11 rerun or the step-12 clone, after the run; the byte-for-byte reproduction and public verification of the freeze would then fail, possibly unrecoverably. Uncommitted edits to tracked files also pass the pre-freeze check and are refused by the runner only after the freeze is public and the salt drawn. Whether it bites depends on git settings I cannot inspect (no git here).",
+      "fix": "Add .gitattributes ('* -text' or one fixed eol) and renormalise before the freeze, then re-run certify all --verify. In prefreeze_check require, for every walked file, SHA-256 of the working-tree bytes = SHA-256 of 'git cat-file blob :<path>', and an empty 'git status --porcelain --untracked-files=all -- <paths>'. Add to §8 step 7: after the freeze commit and before the push, clone it to a temporary folder and run 'py -m audit.freeze verify prereg/FREEZE_v0.2.json' there; record the result in FREEZE_RECORD.md. Optionally let the runner compare manifest hashes with the freeze commit's blobs. Port the Truth_Gate line-ending warning into audit/freeze.py."
+    },
+    {
+      "id": "R3-2",
+      "severity": "minor",
+      "where": "PREREG §6.1 l.215-221; audit/f3_compare.py:16-19, 36-37; audit/f3/INSTRUCTIONS_F3.md l.90-93",
+      "quote": "The affected tests get no verdict in this version",
+      "reason": "f3_compare marks a disagreement only with a boolean affects_verdict, not which tests. A fidelity disagreement feeds G8 directly and T-1 through feasibility; whether T-1 is 'affected' when the feasible sets agree is chosen with the numbers in view. A table-only disagreement has no 'disagreeing worlds' for the second agent. The handling of the agent's NOTES.md is not stated.",
+      "fix": "A fixed map in f3_compare writing affected_tests per disagreement (fidelity, deviation -> G8, T-1; consistency, uncertainty, new_true, new_false, feasible -> T-1; outcomes.X and verdict_table[X] -> X; missing world or file -> G7a, G8, T-1); state that a table-only disagreement is recomputed in full by the second agent; state that NOTES.md is reported with F3_COMPARE.json and changes nothing."
+    },
+    {
+      "id": "R3-3",
+      "severity": "minor",
+      "where": "audit/f3/OUTPUT_SCHEMA.json; audit/f3_compare.py; audit/aggregate.py:64-99, 102-120, 155; PREREG §6.1 l.212",
+      "quote": "every G7a, G8 and T-1 outcome, and the verdict table",
+      "reason": "Numbers printed with the verdicts are not cross-checked by F3: the T-1 structure counts and computed sentence (the AQ5 safeguard against a draw-only HOLDS; computable from metrics F3 already recomputes), the first failing world (needs the world order; the blind input has no draw index), and the G8 hypothesis summary (the number of kept hypotheses cannot be derived from the full/verdict lists, since pass-2 consequences also have full not U and verdict U).",
+      "fix": "Add per-world t1_structure (five fields) to the schema and comparison; add the draw index to the blind input and the first failing world to the table rows; either have F3 recompute the kept hypotheses from rules and units or state in §6.1 that the hypothesis summary is not covered."
+    },
+    {
+      "id": "R3-4",
+      "severity": "minor",
+      "where": "audit/f3/INSTRUCTIONS_F3.md l.15-16, l.40-41, l.56-57",
+      "quote": "`SPEC.md` (sections 1, 5, 6, 8, 9 and 10)",
+      "reason": "H is defined in SPEC §8 through seminaive_eval, but the rule semantics (NEG body literal = a NEG fact is present; a NEG head adds a NEG fact) are in SPEC §7.1-§7.2, which the agent may not read; NEG heads (R5, R6) affect H. The oracle's verdict view is not stated (the baselines' is), and uncertainty, new_true and new_false read verdict. In my dry run I had to choose both (strong negation; oracle verdict = full); with those choices all fields matched.",
+      "fix": "Add SPEC §7.1-§7.2 to the reading list or write the two rules into the instructions; add 'the oracle has the same value in full and verdict'."
+    },
+    {
+      "id": "R3-5",
+      "severity": "minor",
+      "where": "PREREG §2 l.63; audit/aggregate.py:44-45 (printed next to T-1 and G8), against §2 l.78-80 and aggregate.py:37-39",
+      "quote": "A different outcome would mean that the test worlds differ from the development worlds.",
+      "reason": "For T-1 the draft itself says a HOLDS can result from the calibration draw alone; on a T-1 HOLDS the report would print both statements.",
+      "fix": "'A different outcome would mean that the test worlds, or for T-1 the calibrated bounds, differ from the development ones (see the structure counts).'"
+    },
+    {
+      "id": "R3-6",
+      "severity": "minor",
+      "where": "audit/run_v02.py:441-457 vs :473-504; :239-241, :426-431; PREREG §8 l.386-387, l.392-393",
+      "quote": "It holds the per-world outputs in memory and writes them only after the last world, so a crash leaves no outcome on disk (R2-11).",
+      "reason": "outputs_results (fixed outcomes and check data) and RESULTS.json are written before verdict_table and VERDICTS.json, so an exception in aggregation, the twin summary or a write leaves every outcome on disk. The rerun 'in a fresh clone of that result commit' is refused because the clone holds run/TEST_WORLDS.json and the outputs and real mode never overwrites; the needed steps (delete result files except SALT/CAL/TAU, run, compare with the committed VERDICTS.json, and how bytes are compared) are not stated.",
+      "fix": "Compute the table and the descriptive summary before writing, or write into run/.partial/ and rename at the end; state the rerun steps or add a --reproduce mode writing to run_repro/ and comparing bytes with run/VERDICTS.json."
+    },
+    {
+      "id": "R3-7",
+      "severity": "minor",
+      "where": "audit/run_v02.py:119; :100-105 and :165-180; :389-401",
+      "quote": "Refuses unless exactly one commit in the history of HEAD touches it",
+      "reason": "git log -- <path> uses default history simplification, so a side-branch commit that touched the manifest, SALT or TAU is hidden when a merge keeps the other side's content (low risk: HEAD contents are still checked; salt provenance is audited). Only the runner file must be in the manifest; a manifest written from a subset of the §9 paths would pass and unlisted imported modules would not be covered by check_frozen_tree. recheck_calibration compares tau with TAU.json but not the regenerated calibration worlds with CAL_WORLDS.json (only the sha link between the two files).",
+      "fix": "Use git log --full-history; refuse unless the manifest's file set equals the files tracked under prefreeze_check.MANIFEST_PATHS in the freeze commit (or every loaded module under ROOT is listed); compare regenerated world records with CAL_WORLDS.json['worlds']."
+    },
+    {
+      "id": "R3-8",
+      "severity": "minor",
+      "where": "PREREG §6.1 l.204-206; audit/fidelity.py:118-155; audit/indep/units.py:33; audit/indep/pcm_loop.py:53, :57-84",
+      "quote": "they are covered only by G2 and G5",
+      "reason": "G2 tests reproducibility and G5 non-leakage; neither tests that selection and split follow SPEC §5 steps 1-2. Also taken from the system unchecked: the support degrees (ctx.support), unit statuses, class-unit provenance (which G3 ablates by), and PCM's converged and degenerate flags, which decide world validity (D5) and NOT_COMPUTED. The independent loop returns converged and the iteration count, but F4 discards them.",
+      "fix": "List these as not covered, or add to F4 the converged flag and iteration count, a recomputed degeneracy check, class-unit provenance and status, and support degrees from the world's reliabilities."
+    },
+    {
+      "id": "R3-9",
+      "severity": "minor",
+      "where": "PREREG §4 l.161, l.168-179; audit/aggregate.py:21, 115, 181, 200-204",
+      "quote": "Only with a HOLDS: \"A HOLDS can result from calibrated bounds that exclude the 0.60 source on most worlds; see the structure counts.\"",
+      "reason": "The code prints the T-1 regime sentence, then the HOLDS caveat, then the structure counts; §4 lists the structure counts before the caveat, which refers to them. With 'insufficient worlds' the code drops the regime sentence (not in §4). The G8 median with even n adds '(the mean of the two middle values)' (not in §4). Capitals differ: 'Failed parts' vs §4 'failed parts'; 'G7a holds: None of the five ...'.",
+      "fix": "Align §4 or the code; the sentence order is the substantive item."
+    },
+    {
+      "id": "R3-10",
+      "severity": "minor",
+      "where": "audit/README.md (frozen with audit/**)",
+      "quote": "F1 (brute-force closure at every grid configuration), F2 (brute-force H) and F4 (separate PCM loop, centers and mu-plus)",
+      "reason": "Stale after draft 5: it omits the abduction enumerator, relation units and interface facts, and does not list f3/, f3_compare.py, prefreeze_check.py or design/.",
+      "fix": "Update it before the final certify all --verify (its hash is in GATE_TOOL.json)."
+    }
+  ],
+  "readiness": "Not ready to freeze until R3-1 is fixed. The fix is cheap (.gitattributes, a content check in the pre-freeze check, verification in a fresh clone before the push), but it changes file bytes, so the certificates, GATE_TOOL.json and the pre-freeze check must be redone. The minor findings can be repaired in the same pass (R3-2, R3-3 and R3-5 touch AQ5's reporting and F3). After that the draft is ready to freeze; no further blind review is needed, only a check that the manifest verifies in a fresh clone. The review-2 repairs are otherwise careful: the runner's commit and salt binding works, the abduction enumerator follows SPEC §7.3 literally, the F3 instructions are followable for steps 1-6, all §7 figures, F4_PREFREEZE.json and DRAW_STUDY.json reproduce exactly, and 319 tests pass (23 skipped)."
+}

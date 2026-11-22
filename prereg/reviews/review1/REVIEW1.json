@@ -1,0 +1,182 @@
+{
+  "counts": {"blocking": 2, "major": 13, "minor": 7, "total": 22},
+  "findings": [
+    {
+      "id": "R1-1",
+      "severity": "blocking",
+      "where": "PREREG §1 line 24, §3.2 G7 row line 75, §6.3 line 171; audit/aggregate.py:21; audit/checks.py:305-334; audit/gate/g7_study.py; audit/gate/g7.cert.json",
+      "quote": "no false high score is possible / G7 and G8: these are empirical claims about the system",
+      "reason": "The claim is a property of the criterion; the check is a property of the system (HOLDS iff hv_system > 0 and every baseline's per-alpha score is lower). A world with feasible points and hv 0 FAILS and would be reported as 'the wisdom criterion cannot give a false high score' not holding, although no baseline scored. The baselines cannot score by definition: echo is U on every H atom (H and E are disjoint), so new_true = 0 and score 0; all_unknown and all_both have fidelity 0 (infeasible for tau_s > 0); all_false breaks tau_d; all_true is feasible only with at most a tau_d share of F-encoded atoms. On 30 dev worlds no baseline scored above 0 at any alpha (echo feasible at 77 world-alpha pairs, always 0). So G7 reduces to hv_system > 0. The certificate's minus changes only 'hv_system' (hv_baselines identical), so it certifies the anchor only; 42/100 minus samples are UNDEFINED. The baseline 'hypervolume over every alpha' is ambiguous (front over alpha vs per-alpha point; code uses per-alpha, checks.py:313-320).",
+      "fix": "Rename and reword G7 in §1, §3.2, §4 wording, aggregate.CLAIMS and the study name to what is tested ('the system's constrained hypervolume is positive and above every degenerate baseline's'), and state that by the baselines' definitions it is in practice hv_system > 0. If the criterion property is wanted, add a deterministic check G7c: on every test world every baseline at every alpha is infeasible or scores 0 (one FAILS fails), with a gate minus that makes a baseline feasible with positive score. State one baseline rule (front over the 10 alpha values, or per alpha) and make collect_g7 match."
+    },
+    {
+      "id": "R1-2",
+      "severity": "blocking",
+      "where": "PREREG §2 line 49; §3.2 T-1 row line 77; §7 lines 199-200; SPEC §3 source reliabilities, §7.4/§8",
+      "quote": "T-1 is not decided by definition: a point's uncertainty and its new_false are computed from different atom sets (K and the complement of I).",
+      "reason": "Uncertainty and new_false are k-invariant (R1-5), so T-1 compares at most 10 alpha levels. Relation atoms have three regimes (supports 0.95/0.80/0.60). On 20/20 dev worlds tau_b excluded every alpha >= 0.85, so the feasible set tops out at 0.80. Inside 0.65-0.80 only own-class atoms change and the largest new_false rise toward lower uncertainty was 0.000 on 20/20 dev worlds: T-1 cannot fail there. It can fail only if some alpha <= 0.60 (third source) is feasible; on every dev world where 0.60 was feasible, new_false rose by >= 0.071 > delta from 0.65 to 0.60. Feasibility of 0.60 is decided mainly by fidelity >= tau_s and consistency >= tau_t (failing on 12 and 10 of 20 worlds), i.e. by the extremes of the default on 10 calibration worlds and by each world's draw of wrong third-source reports. Per world T-1 is thus roughly 'the D1 bounds exclude the third source'; the median feasible uncertainty span was 0.047. The §2 argument is also inaccurate: E minus I and H lie in both K and the complement of I, which shrinks as alpha falls. The verdict would be read as evidence on the general thesis while it measures a regime switch under calibrated bounds.",
+      "fix": "Correct §2; add interpretation I-5 to §5 stating the structural reading, with a descriptive arm per world: feasible alpha set, whether alpha <= 0.60 is feasible, T-1 on pairs crossing the 0.60/0.65 boundary vs pairs inside the window. Then either accept T-1 as a test of the third-source switch and reword the claim and verdict sentence, or redesign before the freeze so T-1 has graded variation (e.g. per-world source reliabilities from a continuous range, or a definedness condition that the feasible set crosses a relation-regime boundary or has a stated minimum uncertainty span). The author decides, with the §2 pilot in view and saying so."
+    },
+    {
+      "id": "R1-3",
+      "severity": "major",
+      "where": "PREREG §2 line 38, §7 line 210, §9; audit/seeds.py:32-34; truthgate/truth_gate/freeze.py:38-41; audit/run_v02.py:63-83",
+      "quote": "Their seeds are derived from the freeze hash after the freeze (§7), so nobody can have seen them",
+      "reason": "core_sha256 is the SHA-256 of the sorted path:sha256 lines, a pure function of file contents the designer controls (no time, no external input). Anyone can compute it for a candidate tree, derive seed('world-test', i), run the checks, and edit a comment and re-freeze if the result is unwelcome. The runner needs only a manifest that verifies; it does not check that the manifest is committed or pushed. Blindness rests on trust, not on the design (protocol rule 17).",
+      "fix": "Mix a value fixed after the freeze into every seed: seed(role,i) = 1e6 + (first 8 bytes of SHA-256('<core>|<salt>|<role>|<i>')) mod 1e9, with salt = 32 random bytes drawn by the Independent session after it receives the pushed freeze commit (recorded with the commit id in run/SALT.json) or a public beacon value at a stated time after the push. The runner refuses unless FREEZE_v0.2.json is committed in HEAD, HEAD is on the remote branch, and SALT.json is committed after it."
+    },
+    {
+      "id": "R1-4",
+      "severity": "major",
+      "where": "PREREG §8 step 7 line 240; audit/run_v02.py:211-217 and 90-100",
+      "quote": "τ goes into `run/TAU.json`, which is hashed and committed before any test world is generated.",
+      "reason": "run_test reads tau from TAU.json and compares only core_sha256; check_tau_committed requires only that the file is tracked, committed and unmodified. An edited and committed TAU.json passes; cal_worlds_sha256 is written but never checked; the commit can be local.",
+      "fix": "In run_test regenerate the 10 calibration worlds from seed('world-cal'/'enc-cal', i), recompute tau by D1, and refuse unless it equals TAU.json exactly, unless sha256(CAL_WORLDS.json) equals cal_worlds_sha256, and unless the TAU commit descends from the freeze commit."
+    },
+    {
+      "id": "R1-5",
+      "severity": "major",
+      "where": "PREREG §3.1 line 57, §7 line 199; SPEC §7.4, §8; tesaron/decoder/decode.py:22, 40-45, 85-94",
+      "quote": "Finer α steps resolve the class atoms and give T-1 more pairs.",
+      "reason": "Pass-2 facts are HYPOTHESIS and verdict ignores them, so uncertainty, new_true and new_false at (alpha, k) equal those at (alpha, 0) (max difference 0.0 over 30 dev worlds). Every Pareto point and every T-1 coordinate depends on alpha only; k changes only fidelity, deviation and consistency, hence feasibility (differing across k at some alpha on 8/30 dev worlds). G7's 'hypervolume over the grid' is over at most 10 distinct points and abduction can never raise it. This is not stated.",
+      "fix": "State in §3.1 and the report that, by A-6, the Pareto axes and T-1 coordinates are k-invariant; G7 and T-1 depend on k only through feasibility; T-1 compares alpha levels (<= 10 distinct uncertainty values). Ask the author whether hypotheses are meant to count anywhere in the wisdom criterion."
+    },
+    {
+      "id": "R1-6",
+      "severity": "major",
+      "where": "PREREG §2 lines 45-47, §4 line 109, §6.3 line 170; audit/aggregate.py:12; audit/checks.py:96-157, 254-279; tesaron/encoder/core.py:35-80; tesaron/decoder/decode.py:71-78",
+      "quote": "G2, G4 and G5 are properties the code is designed to have. They are tests of the implementation, not discoveries / G1–G6: these are properties the design guarantees",
+      "reason": "G1 (ii) holds because class mu_neg is hard-coded 0 (core.py:57); G1 (i) holds by generator geometry (outliers at radius 7, prototypes at 3, eta 0.72 give typicality about 0.04). G3: a unit exists iff it has rows in D_derive, so removing its provenance always removes it; decided_after is False by construction. G3 tests only necessity of provenance, not completeness: class-unit degrees depend on all D_derive feature rows via the fitted centers, which are not in the provenance. G6: decode gives OBSERVED/DERIVED exactly to the pass-1 fixpoint, and the naive recomputation shares its engine (R1-11). §6.3 already says G1-G6 are guaranteed by design, contradicting §2 and §4.",
+      "fix": "Label G1-G6 all '(a test of the implementation, not a discovery)' in §2, §4 and aggregate.IMPLEMENTATION_TESTS, and call them regression checks (protocol rule 1.1). Reword G3: 'removing a unit's provenance removes the unit (necessity); class-unit provenance does not include the rows that fit the centers'."
+    },
+    {
+      "id": "R1-7",
+      "severity": "major",
+      "where": "PREREG §3.2 G8 row line 76, §7 line 204, §10 Q-ε_d; audit/checks.py:351-361; audit/aggregate.py FAILS wording",
+      "quote": "fidelity(α, 0) − fidelity(α, k) ≤ ε_f and deviation(α, k) − deviation(α, 0) ≤ ε_d",
+      "reason": "Deviation denominators on 30 dev worlds: 18-43 at alpha >= 0.85, 36-70 at 0.65-0.80, 52-92 at <= 0.60; |I| 18-96. With eps_d = 0.02 one changed atom fails the world wherever the denominator is below 50 (almost every alpha >= 0.65); with eps_f = 0.05 wherever |I| < 20. G8 is thus a zero-tolerance check over 20 (alpha, k) comparisons per world, then needs >= 28/30 worlds. 'G8 does not hold' reads as 'abduction does not preserve meaning'. The anchor equals the definedness condition, so it never binds on real data. A NaN fidelity is treated as no violation (checks.py:358) without a rule in §3.2.",
+      "fix": "Add to §3.2 and §4: 'At most alpha eps_d is below one atom; a world FAILS if abduction changes the value of one decided encoded atom at any alpha.' FAILS wording: 'G8 does not hold: in <n_fails> of <n_defined> worlds abduction changed at least one decided encoded atom beyond the tolerance.' State the NaN rule. Do not change eps."
+    },
+    {
+      "id": "R1-8",
+      "severity": "major",
+      "where": "PREREG §7 line 204; audit/checks.py:356-359 (G8), 407-408 (T-1)",
+      "quote": "Both are well above the floating-point resolution, since the metrics are ratios of integers.",
+      "reason": "eps_f = 1/20, eps_d = 1/50 and delta = 1/20 are attainable ratios. With |I| = 20, 4/20 - 3/20 = 0.05000000000000002 > 0.05, a violation although the rule (<= eps) holds exactly. Over equal denominators 18-99, 79 of 194 exact-0.05 differences and 34 of 50 exact-0.02 differences evaluate as violations. Dev worlds have |I| of 20, 40, 60, 80 and decided denominators of 50.",
+      "fix": "Compare exact rationals (fractions.Fraction of the integer counts, or integer cross-multiplication), or pre-register a margin (violation iff difference > eps + 1e-9). State the rule in §3.2."
+    },
+    {
+      "id": "R1-9",
+      "severity": "major",
+      "where": "PREREG §7 line 211; §3.3 lines 91-95",
+      "quote": "P(HOLDS) is 0.81 if the true per-world rate is 0.95, and 0.41 if it is 0.90 … A HOLDS verdict means a per-world rate of roughly 0.9 or more",
+      "reason": "Wilson minimum HOLDS: n = 16-19 needs n of n; 20-27 needs n-1; 28-30 needs n-2. P(HOLDS | 0.95) = 0.81 at n=30, 0.84 at 28, 0.61 at 27, 0.62 at 26, 0.74 at 20, 0.38-0.44 at 16-19. On dev worlds G7 had no feasible point on 3/30 and T-1 was undefined on 4/30, so n of about 26-27 is realistic (power about 0.61). 'Roughly 0.9 or more' is wrong: at n=30 P(HOLDS) is 0.15 at rate 0.85 and 0.04 at 0.80.",
+      "fix": "Replace the power row by a table P(HOLDS | rate, n_defined) for n = 16-30; raise N_TEST (e.g. draw until each quantitative test has 30 defined worlds, pre-registered, or N_TEST = 34) or state the lower power. Reword: 'HOLDS: the per-world rate is at least 0.80 at one-sided 95% confidence.'"
+    },
+    {
+      "id": "R1-10",
+      "severity": "major",
+      "where": "PREREG §2 line 37 (pilot disclosure); §7 line 211",
+      "quote": "T-1 HOLDS on 12 of 17 defined development worlds; G8 on 6 of 20",
+      "reason": "Under the 28/30 rule, a per-world rate of 0.71 gives P(HOLDS) about 0.003 and 0.30 gives about 0. If test worlds resemble development worlds (test tau will differ), the T-1 and G8 verdicts are almost known before the freeze; presenting them as prospective results overstates their information.",
+      "fix": "Add to §2: 'Expected verdicts given the pilot: T-1 FAILS (P(HOLDS) about 0.003 at rate 0.71), G8 FAILS (about 0 at 0.30); a different outcome would mean the test worlds differ from the development worlds.' Print the same sentence next to these verdicts in the report."
+    },
+    {
+      "id": "R1-11",
+      "severity": "major",
+      "where": "PREREG §2 line 47, §6.1 lines 129-139; audit/fidelity.py:14-31, 45-50; tesaron/decoder/datalog.py:164-225; audit/checks.py:254-262; audit/run_v02.py:144-178",
+      "quote": "These are independent implementations of the code paths that decide verdicts.",
+      "reason": "naive_eval and seminaive_eval are one function (_fixpoint) with a flag, sharing match_literals, _match, instantiate, build_index, the vocabulary filter and the record logic; a substitution bug would be common to the decoder, F1, G4's fixpoint check and G6. The truly independent closure (audit/indep/h_closure.py) is used only for H. F3: world_payload gives the agent the run's own metrics, check data and outcomes; §6.1 omits G7 baselines, G8 and the Wilson aggregation; no consequence of a disagreement is stated. F4 compares fitted centers only (class-unit typicalities unchecked); §6.1 says 20 dev worlds before the freeze, the unit test uses 4 (20 run here: max difference 1.3e-15).",
+      "fix": "F1 and G6: compare the decoder's pass-1 and pass-2 fact sets with brute_force_closure (audit/indep) at every grid configuration (keep naive vs semi-naive for records). F3: give only truth, rules, units and full/verdict lists; move metrics, check_data and fixed_outcomes to a separate file compared by script afterwards; cover all G7, G8, T-1 outcomes and the verdict table; pre-register that a verdict-relevant disagreement means no verdict for the affected tests until resolved. F4: also compare class-unit mu_pos to 1e-12 and record the 20-world pre-freeze run."
+    },
+    {
+      "id": "R1-12",
+      "severity": "major",
+      "where": "PREREG §3.1 line 61, §6.1 line 138; audit/run_v02.py:237-247",
+      "quote": "A crash is not UNDEFINED; it is a failure of the run and is reported as such.",
+      "reason": "run_test evaluates world by world; the outcomes of all worlds before a failing F1/F2/F4 control are already written to outputs/ when the run stops, so a repair and rerun would be made with partial results seen. What follows a stop or a crash (new version? rerun? which outputs count?) is not stated.",
+      "fix": "Run F1, F2 and F4 on all test worlds first; evaluate checks only if all agree. Add to §8: 'A stop or crash ends the run with no verdict; any code change is a new version with a deviation note and new seeds (salt); the first complete run is the result; a rerun with frozen code must reproduce VERDICTS.json byte for byte and is reported.'"
+    },
+    {
+      "id": "R1-13",
+      "severity": "major",
+      "where": "PREREG §3.2 G7 and T-1 UNDEFINED; §5 I-3 line 122; §7 tau rule line 200",
+      "quote": "By construction, the default is feasible on every calibration world.",
+      "reason": "Tau are extremes over 10 calibration worlds; with discrete metrics tau_d was 1/52 on dev, so one deviating atom decides feasibility. On 30 dev worlds the default (0.7, 5) was infeasible on 7, 3 had no feasible point (G7 UNDEFINED) and T-1 was UNDEFINED on 4. A world with no feasible point is among the system's worst; excluding it raises G7's HOLDS share. I-3 only reports the count.",
+      "fix": "Add a descriptive sensitivity arm next to the G7 and T-1 verdicts (Wilson share with UNDEFINED counted as FAILS) and report for each test world whether the default is feasible."
+    },
+    {
+      "id": "R1-14",
+      "severity": "major",
+      "where": "PREREG §3.2 G2/G4, §7 drift line 212; pyproject.toml:14; audit/run_v02.py outputs",
+      "quote": "the pipeline is deterministic (G2, G4), so run-to-run drift is zero by construction.",
+      "reason": "NumPy does not guarantee Generator method streams across versions (NEP 19); permutation, integers, normal and uniform build worlds and splits. PCM uses a BLAS matrix product whose low-order bits can differ across CPUs; a typicality near an alpha can flip; 12-digit rounding does not make hashes portable. G2/G4 compare within one machine. pyproject allows numpy>=1.26; TAU/TEST_WORLDS/VERDICTS record no versions and the runner accepts any, so a rerun elsewhere can give another verdict and a choice between runs.",
+      "fix": "Record sys.version, numpy.__version__, platform and a canonical hash of each world and encoding in CAL_WORLDS, TEST_WORLDS and VERDICTS; freeze the versions used for the certificates (Python 3.14.2, NumPy 2.4.1) in §7 and make the runner refuse others; scope the G2/G4 claims to 'the same machine and NumPy build'."
+    },
+    {
+      "id": "R1-15",
+      "severity": "major",
+      "where": "PREREG §6.3 lines 163-193; audit/gate/*.cert.json; audit/gate/GATE_TOOL.json; audit/gate/common.py:119-141",
+      "quote": "Required certificate: every certificate must be FALSIFIABLE.",
+      "reason": "Certificates hash only the study file (module_sha256), not checks.py, twins, plus_systems or tesaron. Not exercised: PYTHONHASHSEED parts of G2/G4 (stated); the real-run N4 mechanism (set order across processes; the gate N4 uses an in-process rng order); G7's baseline comparison (R1-1); tau calibration, aggregation, seeds, validity, F-controls; T-1 on data with the real structure (synthetic plus: 30 distinct continuous uncertainties, flat new_false 0.10 +- 0.01; real: <= 10 levels, k duplicates, a regime jump). Unclear: INSTRUCTIONS.md says the G7/G8 certificates predate draft 3, GATE_TOOL.json says they were regenerated after P3-1..P3-3, and their module_sha256 match the current g7/g8 study files (created 05:31Z, 05:33Z); the gate was not rerun here.",
+      "fix": "Just before the freeze run 'certify all --verify' on the frozen tree and record its output and the SHA-256 of the files in audit/ and tesaron/ in GATE_TOOL.json. Add a T-1 study whose plus/minus use dev-world metric arrays (plus restricted to alpha >= 0.65; minus with NT applied). If G7c is adopted, give it a minus that changes a baseline."
+    },
+    {
+      "id": "R1-16",
+      "severity": "minor",
+      "where": "PREREG lines 3, 10-11, §9 lines 252-256; audit/README.md line 5",
+      "quote": "Status: DRAFT 3 … Version: draft 2 / Manifest core hash: to be filled in.",
+      "reason": "Version labels disagree. The §9 freeze fields sit in a frozen file; filling them in after 'freeze write' changes the file and breaks the manifest, so the runner then refuses.",
+      "fix": "Use draft 3 everywhere; keep the freeze record (date, core hash, salt, sign-off) in a separate file outside the manifest (e.g. prereg/FREEZE_RECORD.md) and say so in §9."
+    },
+    {
+      "id": "R1-17",
+      "severity": "minor",
+      "where": "PREREG §7 lines 206, 210; §6.2 N2 line 149; audit/seeds.py:18; audit/worldset.py:76-85; audit/tau.py:18-21",
+      "quote": "with roles `world-cal`, `world-test`, `enc-cal`, `enc-test`, `aux` and `perm`",
+      "reason": "Role n2 is used but not listed; 'test world i' (N2, perm) is the draw index including rejected draws; generator failure (RuntimeError) is a replacement reason not in D5, and 'except RuntimeError' also swallows RecursionError/NotImplementedError from encode; compute_taus silently skips worlds with a None metric, not in D1.",
+      "fix": "List n2; write 'i is the draw index'; add 'a world whose generator fails after max_attempts is replaced' and catch only a dedicated exception class; treat a calibration world with an undefined metric as invalid under D5 and replace it instead of skipping it."
+    },
+    {
+      "id": "R1-18",
+      "severity": "minor",
+      "where": "audit/checks.py:78-82, 102 (G1), 223-250 (G5); audit/per_world.py:17, 61-62 (G2); PREREG §3.2 G6 line 74",
+      "quote": "every fact with status OBSERVED or DERIVED is in the pass-1 fixpoint … and every other fact has status HYPOTHESIS",
+      "reason": "G1 (ii) covers outlier entities only and silently skips an outlier with no D_derive rows; a twin deriving mu_neg from mu_pos for normal entities only would pass. G5 compares unit value arrays without atom keys, provenance or status. G2's subprocess uses PYTHONHASHSEED=1, but nothing makes the parent's seed differ. G6's 'every other fact has status HYPOTHESIS' is vacuous (three statuses); the code checks the meaningful 'every fact outside the recomputed fixpoint is HYPOTHESIS'. G5's claim is reversed ('pattern computation does not leak into validation data').",
+      "fix": "G1 (ii) over all entities' class atoms; G5 compare dicts atom -> (mu_pos, mu_neg, status, provenance); G2 set the parent's PYTHONHASHSEED explicitly or compare two subprocesses with different seeds; reword G6 and G5 ('validation data do not leak into pattern computation')."
+    },
+    {
+      "id": "R1-19",
+      "severity": "minor",
+      "where": "PREREG §4 lines 105-107; audit/aggregate.py:79-86",
+      "quote": "<Id> does not hold: <n_fails> of <n_defined> defined test worlds fail; the first failing world is <seed>.",
+      "reason": "For G7, G8 and T-1 the FAILS sentence gives only the number failing and HOLDS omits the Wilson bound; a FAILS with 27/30 holding reads like one with 5/30.",
+      "fix": "For quantitative tests add: '<n_holds> of <n_defined> defined worlds hold (Wilson lower bound <b>, threshold 0.80); <n_undefined> undefined.'"
+    },
+    {
+      "id": "R1-20",
+      "severity": "minor",
+      "where": "truthgate/protocol/PROTOCOL.md §1.3 and checklist; PREREG §3, §7, §8",
+      "quote": "2 to 4 primary criteria",
+      "reason": "Nine confirmatory verdicts with no statement on multiplicity (three quantitative tests at one-sided 5% each); the not-applicable items (input dates, new-inputs condition) and the model-test/data-replicate label are not written; T-1 is an absence-of-trade-off claim that generic factors (narrow feasible sets, k duplicates) push toward HOLDS (R1-2).",
+      "fix": "Name T-1, G7 and G8 as primary and G1-G6 as implementation checks; add a multiplicity sentence (no combined verdict; each quantitative test at 5%; family-wise error up to about 14% for three); write 'not applicable (synthetic worlds)' for the dates and new-inputs items; label the run 'model test on new worlds'."
+    },
+    {
+      "id": "R1-21",
+      "severity": "minor",
+      "where": "PREREG §6.2 lines 158-161",
+      "quote": "It is a diagnostic, not a world filter.",
+      "reason": "The expected outcome is FAILS but no reading is pre-registered for a twin that does not fail. On 20 dev worlds every real-run twin failed on 20/20 except N7 (13 FAILS, 7 UNDEFINED) and NT (17 FAILS, 3 UNDEFINED, where the fixed system is undefined); for N4 a score tie straddled the k0 cut on 30/30 dev worlds.",
+      "fix": "Add: 'For each test report the number of worlds where both the fixed system and its twin HOLD; if above 0, qualify the HOLDS verdict: detector did not separate on <n> worlds.'"
+    },
+    {
+      "id": "R1-22",
+      "severity": "minor",
+      "where": "audit/run_v02.py:54-60",
+      "quote": "sys.path.insert(0, os.environ.get(\"TRUTH_GATE_DIR\", r\"E:\\Claude Projects\\kapi-oss\"))",
+      "reason": "verify_freeze imports truth_gate.freeze from TRUTH_GATE_DIR or a default path in the designer's workspace and does not check its version at run time, while certify.py checks the tag.",
+      "fix": "Check truth_gate.__version__ == '0.5.1' and the SHA-256 of truth_gate/freeze.py against a value in GATE_TOOL.json, or copy the short verifier into audit/ so it is frozen."
+    }
+  ],
+  "overall": "Worth running once the two blocking findings and the integrity findings (R1-3, R1-4, R1-11, R1-12, R1-14) are fixed, with narrower claims than draft 3 states. The audit layer follows the text closely (collect/judge pairs, aggregation, seed formula and D5 match apart from details), every twin acts on (nearly) every development world, and F2 and F4 agree to 1e-15. But most of the content is settled before the run: G1-G6 are regression checks that hold by construction; G7 reduces to 'the system's hypervolume is positive' because no baseline can score; G8 is in practice a zero-tolerance test of whether abduction changes any decided encoded atom; T-1 mainly measures whether the D1 bounds admit the 0.60 source; and the disclosed pilot predicts FAILS for T-1 and G8. The draft should say this in its claims and fixed wording, make seed derivation and the tau commitment verifiable, and pre-register what follows a stop, a crash or an F3 disagreement. Making T-1 test a graded relation between uncertainty and new false conclusions would be a design change for the author to decide openly with the pilot disclosure in view."
+}

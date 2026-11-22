@@ -19,9 +19,14 @@ Something being computable does not make it true. Tesaron measures truth only ag
 ## Status
 
 v0.1 is the core pipeline: world generator, encoder, Belnap interface, decoder, metrics, constrained Pareto and
-baselines. It comes with unit tests and a smoke command. It is not a result: no hypothesis has been tested yet. The
-pre-registered tests G1–G8 and the author's thesis T-1 come in v0.2. The implementation spec, including the revisions
-made before any freeze, is in [`SPEC.md`](SPEC.md).
+baselines. It comes with unit tests and a smoke command. The implementation spec, including the revisions made before
+any freeze, is in [`SPEC.md`](SPEC.md).
+
+v0.2 is the pre-registration of the tests G1–G8 and of the author's thesis in the form T-1:
+[`prereg/PREREG_v0.2.md`](prereg/PREREG_v0.2.md), with its audit layer in [`audit/`](audit/). It was reviewed blind
+three times ([`prereg/reviews/`](prereg/reviews/)) and frozen by the manifest `prereg/FREEZE_v0.2.json`; the freeze
+record is [`prereg/FREEZE_RECORD.md`](prereg/FREEZE_RECORD.md). It is not a result: the calibration and test worlds
+are drawn only after the freeze, and no test has been run on them yet.
 
 ```
 py -m unittest discover -s tests

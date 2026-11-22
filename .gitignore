@@ -13,3 +13,6 @@ venv/
 # local smoke / scratch output
 *.smoke.json
 .smoke_test_out.json
+*.quick.cert.json
+run_dev/
+run_repro/

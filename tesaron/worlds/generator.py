@@ -28,6 +28,10 @@ from tesaron.enums import Channel
 _X, _Y, _Z = "X", "Y", "Z"
 
 
+class WorldGenerationError(RuntimeError):
+    """The acceptance loop found no acceptable world within params.max_attempts draws (SPEC S-7)."""
+
+
 @dataclass(frozen=True)
 class WorldParams:
     n_entities: int = 20
@@ -179,7 +183,7 @@ def _accepted(rules: tuple[Rule, ...], true_atoms: frozenset[Atom]) -> bool:
 
 
 def generate_world(seed: int, params: WorldParams = WorldParams()) -> World:
-    """Deterministic world for a seed. Raises RuntimeError after params.max_attempts failed draws."""
+    """Deterministic world for a seed. Raises WorldGenerationError (a RuntimeError) after params.max_attempts failed draws."""
     rng = np.random.Generator(np.random.PCG64(seed))
     p = params
     entities = entity_names(p.n_entities)
@@ -221,7 +225,7 @@ def generate_world(seed: int, params: WorldParams = WorldParams()) -> World:
         if _accepted(rules, true_atoms):
             break
     else:
-        raise RuntimeError(f"no acceptable world in {p.max_attempts} attempts (seed {seed})")
+        raise WorldGenerationError(f"no acceptable world in {p.max_attempts} attempts (seed {seed})")
 
     # 4. feature rows (after acceptance).
     protos = np.array(p.prototypes())

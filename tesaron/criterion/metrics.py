@@ -10,10 +10,11 @@ W(a) in {T, F} is the world truth. Sets:
 from __future__ import annotations
 
 from dataclasses import dataclass
+from fractions import Fraction
 from typing import Callable, Iterable, Mapping, Protocol
 
 from tesaron.atoms import Atom
-from tesaron.belnap import boundary_share, unit_value
+from tesaron.belnap import boundary_share, on_boundary, unit_value
 from tesaron.decoder.datalog import Rule, seminaive_eval
 from tesaron.enums import Belnap, Channel
 from tesaron.meaning import MeaningUnit
@@ -86,7 +87,7 @@ def _share(num: int, den: int, empty: float | None) -> float | None:
     return empty if den == 0 else num / den
 
 
-def compute_metrics(
+def compute_metrics_exact(
     *,
     truth: Callable[[Atom], bool],
     vocab: frozenset[Atom],
@@ -96,8 +97,11 @@ def compute_metrics(
     alpha: float,
     epsilon_band: float,
     output: Output,
-) -> Metrics:
-    """All metrics of SPEC section 8 for one configuration. In the formulas B and U never equal W."""
+) -> tuple[Metrics, dict]:
+    """All metrics of SPEC section 8 for one configuration, and exact companions (SPEC S-7): a dict with the keys
+    fidelity, deviation, consistency, uncertainty, new_true, new_false, validation_agreement, boundary_share whose
+    values are fractions.Fraction of the integer counts (None where the metric is undefined, as for the floats).
+    The float values are exactly those of compute_metrics. In the formulas B and U never equal W."""
     world_rules = tuple(world_rules)
     vocab_sorted = sorted(vocab)
     E = sorted(units)
@@ -107,20 +111,26 @@ def compute_metrics(
     H = compute_H(E, truth, world_rules, vocab)  # H always uses the WORLD's rules (S-5)
     K = sorted(set(E) | set(H))
 
-    fidelity = _share(sum(1 for a in I if output.full(a) is _w(truth, a)), len(I), None)
+    n_fid = sum(1 for a in I if output.full(a) is _w(truth, a))
+    fidelity = _share(n_fid, len(I), None)
 
     decided_enc = [a for a in I if enc[a] in (Belnap.T, Belnap.F)]
-    deviation = _share(sum(1 for a in decided_enc if output.full(a) is not enc[a]), len(decided_enc), 0.0)
+    n_dev = sum(1 for a in decided_enc if output.full(a) is not enc[a])
+    deviation = _share(n_dev, len(decided_enc), 0.0)
 
-    consistency = _share(sum(1 for a in K if output.full(a) is Belnap.B), len(K), None)
+    n_both = sum(1 for a in K if output.full(a) is Belnap.B)
+    consistency = _share(n_both, len(K), None)
     consistency = None if consistency is None else 1.0 - consistency
-    uncertainty = _share(sum(1 for a in K if output.verdict(a) is Belnap.U), len(K), None)
+    n_unc = sum(1 for a in K if output.verdict(a) is Belnap.U)
+    uncertainty = _share(n_unc, len(K), None)
 
-    new_true = _share(sum(1 for a in H if output.verdict(a) is _w(truth, a)), len(H), None)
+    n_nt = sum(1 for a in H if output.verdict(a) is _w(truth, a))
+    new_true = _share(n_nt, len(H), None)
 
     outside = [a for a in vocab_sorted if a not in I_set]
     decided_out = [a for a in outside if output.verdict(a) in (Belnap.T, Belnap.F)]
-    new_false = _share(sum(1 for a in decided_out if output.verdict(a) is not _w(truth, a)), len(decided_out), 0.0)
+    n_nf = sum(1 for a in decided_out if output.verdict(a) is not _w(truth, a))
+    new_false = _share(n_nf, len(decided_out), 0.0)
 
     hyp_atoms = [
         a for a in vocab_sorted
@@ -137,7 +147,19 @@ def compute_metrics(
             agree += v is d
     validation_agreement = _share(agree, total, None)
 
-    return Metrics(
+    n_units = len(units)
+    n_boundary = sum(1 for a in sorted(units) if on_boundary(units[a], alpha, epsilon_band))
+    exact = {
+        "fidelity": Fraction(n_fid, len(I)) if I else None,
+        "deviation": Fraction(n_dev, len(decided_enc)) if decided_enc else Fraction(0),
+        "consistency": Fraction(len(K) - n_both, len(K)) if K else None,
+        "uncertainty": Fraction(n_unc, len(K)) if K else None,
+        "new_true": Fraction(n_nt, len(H)) if H else None,
+        "new_false": Fraction(n_nf, len(decided_out)) if decided_out else Fraction(0),
+        "validation_agreement": Fraction(agree, total) if total else None,
+        "boundary_share": Fraction(n_boundary, n_units) if n_units else None,
+    }
+    metrics = Metrics(
         fidelity=fidelity,
         deviation=deviation,  # type: ignore[arg-type]
         consistency=consistency,
@@ -153,6 +175,12 @@ def compute_metrics(
         size_H=len(H),
         size_K=len(K),
     )
+    return metrics, exact
+
+
+def compute_metrics(**kwargs) -> Metrics:
+    """All metrics of SPEC section 8 for one configuration (see compute_metrics_exact for the arguments)."""
+    return compute_metrics_exact(**kwargs)[0]
 
 
 def compute_metrics_for(world, context, encoding, output: Output) -> Metrics:
@@ -161,6 +189,20 @@ def compute_metrics_for(world, context, encoding, output: Output) -> Metrics:
         truth=world.truth,
         vocab=context.vocabulary,
         world_rules=world.rules,  # never context.rules: H must not move with the decoder's rules (S-5)
+        units=encoding.units,
+        validation_units=encoding.validation_units,
+        alpha=context.alpha,
+        epsilon_band=context.epsilon_band,
+        output=output,
+    )
+
+
+def compute_metrics_for_exact(world, context, encoding, output: Output) -> tuple[Metrics, dict]:
+    """compute_metrics_for with the exact companions of compute_metrics_exact (SPEC S-7)."""
+    return compute_metrics_exact(
+        truth=world.truth,
+        vocab=context.vocabulary,
+        world_rules=world.rules,
         units=encoding.units,
         validation_units=encoding.validation_units,
         alpha=context.alpha,

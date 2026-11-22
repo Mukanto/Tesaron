@@ -31,7 +31,8 @@ Those come in v0.2. Seeds are restricted (§11).
 - **Python and dependencies:** Python ≥ 3.12 (developed on 3.14, run as `py`). numpy and the standard library only; no
   other runtime dependency.
 - **Package layout:** package `tesaron/` with the subpackages `worlds`, `encoder`, `meaning`, `belnap`, `decoder` and
-  `criterion`. The top-level directories `audit/` and `prereg/` hold only a README placeholder (they are for v0.2).
+  `criterion`. In v0.1 the top-level directories `audit/` and `prereg/` held only a README placeholder; v0.2 fills
+  them (revision S-8).
 - **Determinism:**
   - Every random draw uses a `numpy.random.Generator(numpy.random.PCG64(seed))` that is passed explicitly. Never use
     the global numpy RNG, the `random` module, or `hash()` for ordering.
@@ -275,7 +276,8 @@ and the validation units.
 
      The candidate is then the missing literal as `(channel, atom)`. No existential guessing.
    - **Score:** the number of distinct `(rule_id, θ)` instances the candidate completes.
-   - **Ranking:** score descending, then `(channel, pred, args)` ascending. Keep the top `k_abduction`. With k = 0
+   - **Ranking:** score descending, then `(channel, pred, args)` ascending, with `POS` before `NEG` (revision S-9).
+     Keep the top `k_abduction`. With k = 0
      there is no abduction.
 3. **Pass 2:** add the kept candidates as facts with status `HYPOTHESIS` and deduce again from F1 plus the hypotheses.
    Facts that are new in pass 2 get status `HYPOTHESIS`. Pass-1 facts keep their status.
@@ -369,8 +371,9 @@ in v0.2.
 ## 11. Seeds
 
 - v0.1 code, tests and smoke runs use only seeds in the range 900000–900999, for both world and encoder seeds.
-- The calibration and test seeds of v0.2 will be derived after the freeze from the freeze-manifest hash. They are
-  therefore neither chosen nor seen in advance.
+- The calibration and test seeds of v0.2 are derived from the freeze manifest's core hash and a salt that is drawn
+  only after the freeze commit is public (PREREG v0.2 §7; revision S-8). They are therefore neither chosen nor seen in
+  advance.
 
 ## 12. Smoke command
 
@@ -472,8 +475,9 @@ dependencies or use seeds outside §11.
 
 ## 15. Revisions before any freeze
 
-These revisions were found on development seeds (900000–900099) during the first smoke checks of v0.1. They were made
-before any calibration or test world existed and before any hypothesis was evaluated. All of them are Claude's repairs
+S-1–S-5 were found on development seeds (900000–900099) during the first smoke checks of v0.1; S-6–S-9 came from the
+v0.2 pre-registration work. All were made before any calibration or test world existed and before any hypothesis was
+evaluated. All of them are Claude's repairs
 of Claude's own defaults; none of them touches an author decision.
 
 | # | Change | Reason |
@@ -483,3 +487,7 @@ of Claude's own defaults; none of them touches an author decision.
 | S-3 | A degeneracy check on the fitted centers (§5) | In those runs the converged flag was True while the centers coincided, so the failure was silent. |
 | S-4 | max_iter changed from 100 to 1000 (§4) | With η = 0.72, 4 of 100 development fits did not converge within 100 iterations. With 1000 all four converged (in 109–142 iterations) to well-separated centers, and the result is the same with 10000. This is a computational budget only; tol is unchanged. |
 | S-5 | H uses the world's rules, not the decoder's (§8) | A latent defect the main session found in code review: the metrics took H's rules from the context. |
+| S-6 | `encode_from_rows(world, context, derive_ids, validate_ids)` was split out of `encode` (§5, steps 3–6); `encode` calls it after sampling and the split | Grounding test G3 (v0.2) re-encodes a changed D_derive. There is no behaviour change: the smoke output hash for 900001/900101 is unchanged (`0c8497d0…`), and all v0.1 tests pass. |
+| S-7 | Exact companions for the metrics (`compute_metrics_exact`, `compute_metrics_for_exact`, which return the metrics and a dict of `Fraction` values); `compute_metrics` is now a thin wrapper. A dedicated `WorldGenerationError(RuntimeError)` is raised when the acceptance loop is exhausted. | Pre-registration v0.2, draft 4: exact comparisons (R1-8) and a dedicated replacement reason (R1-17). No float value changed; the smoke output hash is unchanged (`0c8497d0…`). |
+| S-8 | §1 and §11 brought up to date for v0.2: `audit/` and `prereg/` are no longer placeholders, and the v0.2 seeds also use a salt drawn after the freeze commit is public (PREREG v0.2 §7) | Blind review 2 of the pre-registration (R2-8): the text was stale. No code changed. |
+| S-9 | §7.3: the channel order in the ranking is stated (`POS` before `NEG`, the order of the `Channel` enum the code has used since v0.1) | The independent candidate enumerator of F1 (PREREG v0.2 §6.1) needed the order written down. No code changed. |

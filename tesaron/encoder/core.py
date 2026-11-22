@@ -98,6 +98,18 @@ def encode(world, context: Context) -> Encoding:
     n_der = round(context.derive_fraction * n)
     derive = sorted(selected[int(i)] for i in perm2[:n_der])
     validate = sorted(selected[int(i)] for i in perm2[n_der:])
+
+    return encode_from_rows(world, context, derive, validate)
+
+
+def encode_from_rows(world, context: Context, derive_ids, validate_ids) -> Encoding:
+    """Steps 3-6 of the encoder for a given split: PCM on the feature rows of D_derive only, units from D_derive,
+    validation units from D_validate with the same fitted centers. `encode` calls this after sampling and split;
+    a caller that wants to re-encode with a changed D_derive (for example a grounding test) calls it directly."""
+    _check_degrees(context)
+    derive = sorted(derive_ids)
+    validate = sorted(validate_ids)
+    selected = sorted(derive + validate)
     derive_set, validate_set = frozenset(derive), frozenset(validate)
 
     # 3. PCM on the feature rows of D_derive only.

@@ -1,0 +1,140 @@
+{
+  "repairs": [
+    {"id": "R1-1", "status": "partly fixed", "evidence": "AQ2 is implemented in code: G7a deterministic (aggregate.py:10); collect_g7a/judge_g7a (checks.py:313-353) test the five baselines per alpha as single points with the oracle (oracle.py) as anchor and UNDEFINED rule; N7 = unconstrained criterion (twins/n7.py); G7b descriptive (descriptive.py:210-219); new g7.cert.json minus changes 'base_feasible', 0 UNDEFINED in 100 minus samples. But the claim 'gives no degenerate strategy a positive score' (PREREG l.36, l.104; aggregate.py:21) overreaches and is false in these worlds (R2-1)."},
+    {"id": "R1-2", "status": "fixed", "evidence": "PREREG §1 l.19-25, §2 l.67-71 (tautology answer corrected), I-5 l.175, structure arm §3.2 l.115-119 and descriptive.t1_structure (l.222-240), verdict sentence §4 l.156-157 and aggregate.py:36-39, 114-115. The decision is carried out honestly. Caveat: the fixed sentence is not true under every calibration draw (R2-3)."},
+    {"id": "R1-3", "status": "partly fixed", "evidence": "Salt in the seed formula (seeds.py:24-37; PREREG §7 l.260) and commit-order checks (run_v02.py:144-166, 426-430). But the verified manifest and the salt are not bound to the freeze commit (oldest add commit; manifest not checked as committed/unmodified; SALT.json carries no core hash), so the old salt is accepted after a code change; 'on the remote branch' is the local ref origin/main; salt provenance unchecked (R2-2)."},
+    {"id": "R1-4", "status": "fixed", "evidence": "recheck_calibration (run_v02.py:298-310) regenerates the calibration worlds, recomputes tau exactly and checks sha256(CAL_WORLDS.json); TAU committed after the salt (run_v02.py:162-166). Push of TAU not checked (part of R2-2)."},
+    {"id": "R1-5", "status": "fixed", "evidence": "PREREG §3.1 l.82-84 and §7 grid row l.249 state k-invariance and that k acts only through feasibility."},
+    {"id": "R1-6", "status": "fixed", "evidence": "G1-G7a labelled as decided by construction (PREREG §1 l.28-36, §2 l.60-66); DETERMINISTIC_NOTE printed (aggregate.py:31, 99-100); G3 '(necessity)' in §3.2 l.100. Residue: printed claim aggregate.py:17 drops '(necessity)' (R2-9)."},
+    {"id": "R1-7", "status": "fixed", "evidence": "Undefined-fidelity skip rule (PREREG l.105; checks.py:388-394), FAILS sentence (§4 l.154-155; aggregate.py:32-35, 112-113), I-6 (§5 l.176). The I-6 arm's code miscounts (R2-5)."},
+    {"id": "R1-8", "status": "fixed", "evidence": "PREREG §3.1 l.86-88; tau, feasibility, G8 and T-1 on fractions.Fraction (exact.py; checks.py:398-459); NT exact (twins/nt.py). Only the Wilson bound is a float comparison; smallest margin to 0.80 over n = 16-30 is 9.1e-4 (n = 27, 25 holds)."},
+    {"id": "R1-9", "status": "partly fixed", "evidence": "Power table (PREREG l.265-276) reproduced except the 16-19 row (r = 0.90: 0.135-0.185; r = 0.80: 0.014-0.028); HOLDS meaning fixed (l.133). But l.279-280 ('3-4 of 30 UNDEFINED ... 26-27 defined', P = 0.61) contradicts §2 l.50 and the calibration-draw study (T-1 defined on 10-30 of 30, median 22) (R2-4)."},
+    {"id": "R1-10", "status": "fixed", "evidence": "PREREG §2 l.53-58; aggregate.EXPECTED_PARAGRAPH (l.40-45) attached to G8 and T-1 (l.131). It omits 'insufficient worlds' as an outcome (R2-4)."},
+    {"id": "R1-11", "status": "fixed", "evidence": "F1 brute-force closure for pass 1 and pass 2 at every grid configuration (fidelity.py:122-157; indep/h_closure.py); G6 uses it (checks.py:270-284); F3 blind input (run_v02.py:216-238, test asserts no metrics/outcomes); disagreement rule (PREREG l.188); F4 checks mu-plus (indep/pcm_loop.py:124-151) and the 20-world record exists (max 2.2e-15 / 4.4e-16). New gaps: R2-6 (abduction, relation units), R2-7 (F3 comparison and resolution)."},
+    {"id": "R1-12", "status": "fixed", "evidence": "F1/F2/F4 on all test worlds before any check, only STOPPED.json on a disagreement (run_v02.py:327-334); stop/crash/rerun rules (PREREG §8 step 11, l.330-334). Not enforced: 'new freeze and new salt' (R2-2); per-world outputs written inside the loop (R2-11)."},
+    {"id": "R1-13", "status": "fixed", "evidence": "descriptive.default_feasibility (l.263-265), aggregate.undefined_as_fails (l.137-141), reported in VERDICTS (run_v02.py:395-396); PREREG §3.2 l.120-121."},
+    {"id": "R1-14", "status": "partly fixed", "evidence": "Versions pinned and refused (run_v02.py:55-56, 75-80); environment in CAL_WORLDS/TEST_WORLDS/VERDICTS (l.278, 337, 401); world and encoding hashes (l.210-213); PREREG §3.2 limits G2/G4. The printed claims (aggregate.py:16, 18) drop '(same machine, same NumPy build)' (R2-9)."},
+    {"id": "R1-15", "status": "fixed", "evidence": "certify all --verify writes GATE_TOOL.json with verify exit codes and SHA-256 of 82 files (certify.py:254-291); all 82 match the current tree; all nine certificates FALSIFIABLE, verify exit 0; T-1 study on real-shaped window data (gate/common.py:124-157); G7a study with N7 minus. Residue: no tool checks GATE_TOOL.json against the frozen tree (R2-12)."},
+    {"id": "R1-16", "status": "fixed", "evidence": "'DRAFT 4'/'draft 4' (PREREG l.3, l.10; audit/README.md); FREEZE_RECORD.md outside the manifest (§9 l.349). Residue: salt recorded at freeze before it is drawn (R2-10); stale SPEC/prereg README (R2-8)."},
+    {"id": "R1-17", "status": "fixed", "evidence": "PREREG §7 l.255-260 (n2 role, draw index, replacement reasons); worldset.py:93 catches only WorldGenerationError; calibration world with undefined default metric invalid (worldset.py:47-54); compute_taus raises (exact.py:119-132). Residue: perm index 3i + p not stated in §7 (R2-10)."},
+    {"id": "R1-18", "status": "fixed", "evidence": "G1 (ii) over all class units (checks.py:79, 95-96, 107-109); G5 full unit-map digest (checks.py:230-266); G2 explicit subprocess seeds 0 and 1 (per_world.py:19); G5/G6 wording in §3.2. Residue: g3/g5 study names keep old wording (R2-9)."},
+    {"id": "R1-19", "status": "fixed", "evidence": "PREREG §4 l.150-153; aggregate.py:104-111 print counts and the Wilson bound."},
+    {"id": "R1-20", "status": "fixed", "evidence": "Primary tests named (§1), multiplicity (§3.3 l.136-137), run label (l.38), n/a checklist items (§10 l.401-403). Residue: the 'directional hypotheses' checklist item is not written (R2-3)."},
+    {"id": "R1-21", "status": "fixed", "evidence": "PREREG §6.2 l.208-212; both_hold and the qualifier (run_v02.py:365-379; aggregate.py:116-119)."},
+    {"id": "R1-22", "status": "fixed", "evidence": "audit/freeze.py frozen with audit/; the runner uses it (run_v02.py:40, 84-105) and does not import truth_gate (tested)."}
+  ],
+  "counts": {
+    "repairs": {"fixed": 18, "partly fixed": 4, "not fixed": 0, "made worse": 0},
+    "blocking": 1,
+    "major": 6,
+    "minor": 6,
+    "total": 13
+  },
+  "findings": [
+    {
+      "id": "R2-1",
+      "severity": "blocking",
+      "where": "PREREG §1 l.36, §3.2 G7 row l.104, §2 l.66; audit/aggregate.py:21; audit/gate/g7_study.py:35",
+      "quote": "The wisdom criterion gives no degenerate strategy a positive score / the baselines cannot score by their definitions",
+      "reason": "The check tests five named baselines (checks.py:318-353); the claim covers all degenerate strategies. Two equally degenerate strategies score: 'echo+F' (enc(a) on atoms with a unit, F elsewhere; the closed-world default) and 'echo+T'. Under the gate tau (D1 on ten dev calibration worlds), on 30 dev worlds, echo+F was feasible with a positive score at some alpha on 29 worlds and echo+T on 30; the oracle was feasible on 30 (design quantities, no system output used). On I they equal the oracle (full = enc): same fidelity and consistency, deviation 0, uncertainty 0, so they are feasible wherever G7a is defined; their new_true is the share of false (true) H atoms and new_false < 1. A HOLDS would print a sentence that is false in these worlds. Also 'by their definitions' holds only for echo, all_unknown and all_both; all_true and all_false are excluded by the calibrated tau_d and tau_s (tau_d ranged 0 to 4/59 over 40 dev calibration draws).",
+      "fix": "Author decides (AQ2 claim text). Narrow the claim in §1, §3.2, aggregate.CLAIMS and the study name to 'None of the five degenerate baselines of SPEC §10 (echo, all_true, all_false, all_unknown, all_both) gets a positive score under the criterion', and add to §2 that strategies keeping enc on I and a constant elsewhere are feasible wherever the oracle is and score > 0 on dev worlds. If the general claim is wanted, add echo+F and echo+T to G7a's baselines and state that G7a is then expected to FAIL. Reword 'by their definitions' accordingly."
+    },
+    {
+      "id": "R2-2",
+      "severity": "major",
+      "where": "audit/run_v02.py:112-118, 144-159, 162-166, 426-430; PREREG §8 steps 8, 9, 11 (l.311-334); tests/test_audit_runner_fidelity.py:266, 319",
+      "quote": "Any change to the code after that is a new version, with a deviation note, a new freeze and a new salt / the commit that added FREEZE_v0.2.json is on the remote branch",
+      "reason": "verify_freeze checks the working-tree manifest against working-tree files; nothing checks that the manifest or the frozen files are committed or equal their content in the freeze commit (check_committed_clean is applied to SALT.json and TAU.json only). add_commit returns the OLDEST commit with status A, so a manifest rewritten later still maps to the first freeze commit. SALT.json carries no core hash. Hence: edit code, rewrite the manifest (even uncommitted), recalibrate, commit a new TAU.json, and the runner accepts the old salt; the new core gives new seeds, i.e. a new test-world set, the forking path step 11 forbids. The legitimate new freeze with a new SALT.json naming it is refused while the manifest path is unchanged. A committed modification of SALT.json with another valid salt is accepted (only the first add commit is checked; the test at l.319 does exactly that and is refused only for bad hex). The 'remote' check reads the local ref origin/main, which the tests create with git update-ref (l.266); TAU's push is not checked. Salt provenance cannot be checked by the runner and no post-run check is pre-registered. Checklist: steps before the data must be enforced by the runner.",
+      "fix": "Record core_sha256 in SALT.json and refuse unless it equals the verified manifest's core. Refuse unless the manifest and all frozen files are committed, unmodified and identical to the freeze commit (git diff --quiet <freeze> -- <paths>; empty git status --porcelain for them). Refuse unless exactly one commit touches each of the manifest, SALT.json and TAU.json (or take the last commit touching the manifest and refuse later changes). Pre-register a post-run check by the Independent session that SALT.json's salt and freeze commit equal those it drew and recorded, and that the freeze, salt and TAU commits are on the public remote. State in §8 that the runner sees only the local remote-tracking ref."
+    },
+    {
+      "id": "R2-3",
+      "severity": "major",
+      "where": "PREREG §1 l.21-23, I-5 l.175, §4 l.156-157, §2 l.71; audit/aggregate.py:36-39; CHECKLIST 'Directional hypotheses are identified'",
+      "quote": "In these worlds this compares the window α 0.65–0.80, where only class atoms change, with the regime where the 0.60 source is admitted.",
+      "reason": "The sentence is fixed text whose premise (no alpha >= 0.85 feasible) holds under the dev tau but not under every D1 draw. Design study: 40 calibration draws of 10 dev worlds, same 30 dev test worlds: in 15 draws some test world had a feasible alpha >= 0.85 (0.80 source excluded); in 4 draws on 6, 15, 24 and 27 of 30 worlds. tau_b ranged 0.504-0.804, tau_s 0.769-0.889, tau_t 0.951-0.987, tau_d 0 to 4/59. With alpha 0.85 feasible, T-1 also compares across the 0.80-source boundary and the sentence misdescribes the test. Since §2 says T-1 is mostly decided by whether the bounds admit alpha <= 0.60, and those bounds move strongly with the draw, a tight draw alone can produce HOLDS on most defined worlds (the checklist's directional-hypothesis item, not addressed in §10). The structure arm is only listed per world, not next to the verdict.",
+      "fix": "Print next to the T-1 verdict, from t1_structure: the number of defined worlds with some alpha <= 0.60 feasible, with some alpha >= 0.85 feasible, and the window and crossing outcomes. Make the sentence computed ('On <a> of <n> defined worlds the feasible set reached alpha <= 0.60; on <b> it reached alpha >= 0.85'). Add to HOLDS: 'A HOLDS can result from bounds that exclude the 0.60 source on most worlds.' Write the directional-hypothesis item in §10."
+    },
+    {
+      "id": "R2-4",
+      "severity": "major",
+      "where": "PREREG §7 l.278-282; §2 l.50; §2 l.53-58; audit/aggregate.py:40-45",
+      "quote": "On development worlds 3–4 of 30 were UNDEFINED, which means about 26–27 defined worlds. There, P(HOLDS | 0.95) is about 0.61.",
+      "reason": "§2 (draft 4) says definedness depends strongly on the calibration draw; §7 keeps review 1's single-draw figure. Design study (40 draws, 30 worlds): T-1 defined on 10-30 worlds (median 22); fewer than 16 (insufficient worlds) in 2 of 40 draws; 16-19 (every defined world must hold, P(HOLDS | 0.95) 0.38-0.44) in 6 more; no feasible point on 0-17 worlds (median 6); default (0.7, 5) feasible on 6-25 of 30 (median 17). So 'insufficient worlds' is a realistic T-1 outcome and P(HOLDS | r) averaged over draws is below the n = 30 figure (0.70 at n = 22). The printed expected-verdict paragraph names only FAIL. §2 'G8 and G7a do not use feasibility' is wrong for G7a (baselines and UNDEFINED rule use it; the oracle was feasible on 30/30 in every draw, so it is robust).",
+      "fix": "Replace l.279-280 with the draw dependence (range, P(insufficient), P(HOLDS | r) averaged over calibration draws from a short dev simulation). Add 'T-1 may also end in insufficient worlds' to the expected-verdict paragraph. Correct the 16-19 row (r = 0.90: 0.14-0.19; r = 0.80: 0.01-0.03). Correct the G7a sentence in §2."
+    },
+    {
+      "id": "R2-5",
+      "severity": "major",
+      "where": "audit/descriptive.py:256-259 (g8_single_atom_only); audit/exact.py:140-146; tesaron/criterion/metrics.py:152-161",
+      "quote": "if bad_f and drop * int(fid[i, j, 1]) > 1:  # the raw denominator is the number of atoms of I",
+      "reason": "Fractions are stored in lowest terms, so the stored denominator is |I|/gcd, not |I| (and 1 for a value of 0). On synthetic G8 data (scripts/i6_check.py) a deviation rise 0 -> 2/40 (stored 1/20) and a fidelity drop 11/18 -> 9/18 (stored 1/2) are both reported as single-atom-only = True. The pre-registered count 'g8_failing_only_through_single_atom_changes' would be inflated, favouring the reading that G8 fails only through single atoms.",
+      "fix": "Have collect_g8 pass the raw denominators (|I| and the number of decided encoded atoms per alpha; both independent of k) as integer arrays and compute atom changes from them; add unit tests with 2/40 and 9/18."
+    },
+    {
+      "id": "R2-6",
+      "severity": "major",
+      "where": "PREREG §6.1 l.182; audit/fidelity.py:139-145; tesaron/decoder/abduction.py:29-81; tesaron/encoder/core.py (relation units); tesaron/belnap/interface.py:38-55",
+      "quote": "These are independent implementations of the code paths that decide verdicts.",
+      "reason": "F1 recomputes pass 2 from the decoder's own hypotheses; candidate existence, scores, ranking and the top-k cut are checked by no independent code, and F3 inherits them through the full/verdict lists. G8 (primary) compares k > 0 with k = 0, and the k > 0 outputs come from exactly this step; G6's definedness depends on it too. Relation-unit degrees (max support of positive/negative reports in D_derive) and the interface facts are not independently recomputed either; F4 covers only PCM and class mu-plus.",
+      "fix": "Add to audit/indep a brute-force candidate enumerator per SPEC §7.3 (ground each rule over all entity assignments; OBSERVED head; exactly one missing, ground, in-vocabulary body literal whose atom is U; score = distinct (rule, theta); rank by score then (channel, pred, args)) and compare the full ranked list at every (alpha, k > 0) in F1; recompute relation units and interface facts independently. Or narrow the §6.1 sentence to the covered paths."
+    },
+    {
+      "id": "R2-7",
+      "severity": "major",
+      "where": "PREREG §6.1 F3 row l.188; §8 step 12; audit/run_v02.py:216-259 (no comparison script in audit/)",
+      "quote": "compared by a script after the agent has written its results / no verdict for the affected tests until it is resolved",
+      "reason": "No comparison script exists; written after the run, with the run's numbers visible, the definition of a disagreement (fields, equality) is a free choice. 'Until it is resolved' is undefined: repairing the run's code conflicts with §8 step 11, and a second F3 agent is not described; either path is post hoc. The scope includes 'the verdict table', but the blind input has no G1-G6 outcomes. The F3 instruction and output format are not fixed.",
+      "fix": "Write and freeze audit/f3_compare.py (fields, exact equality of p/q strings, output) and the F3 instruction and output schema before the freeze. Pre-register resolution: a disagreement traced to the run's code means no verdict for the affected tests in this version (new version, freeze, salt); one traced to the agent means a second fresh agent recomputes, both reported. For the verdict table, give the agent the G1-G6 per-world outcomes after the blind part."
+    },
+    {
+      "id": "R2-8",
+      "severity": "minor",
+      "where": "SPEC §11 l.372-373, SPEC §1 l.34 and title; PREREG §2 l.44; prereg/README.md l.4-6; audit/system.py:237",
+      "quote": "The calibration and test seeds of v0.2 will be derived after the freeze from the freeze-manifest hash.",
+      "reason": "Stale text: no salt in the frozen SPEC; 'S-1–S-6' although S-7 exists; prereg/README.md is still a placeholder; SPEC titled 'for v0.1'.",
+      "fix": "Update these texts; say in §9 whether prereg/README.md is frozen."
+    },
+    {
+      "id": "R2-9",
+      "severity": "minor",
+      "where": "audit/aggregate.py:16-18; audit/gate/g5_study.py:35; audit/gate/g3_study.py:35",
+      "quote": "Encoding is reproducible in the same context / pattern computation does not leak into validation data",
+      "reason": "Printed G2/G4 claims drop '(same machine, same NumPy build)' (R1-14); G3 drops '(necessity)'; the G5 study name keeps the backwards wording R1-18 corrected; G3's study name keeps 'grounded in data'.",
+      "fix": "Align with §3.2; change the study names before the planned certify all --verify (module hashes change)."
+    },
+    {
+      "id": "R2-10",
+      "severity": "minor",
+      "where": "PREREG §8 step 7 l.308; §7 l.260; audit/seeds.py:6; audit/per_world.py:36-38",
+      "quote": "The freeze record (date, core hash, freeze commit, salt, sign-off) goes into prereg/FREEZE_RECORD.md / i is the draw index",
+      "reason": "The salt is recorded at the freeze although it is drawn in step 8; perm seeds use index 3i + p, not the draw index.",
+      "fix": "Record the salt in step 8; state perm's index in §7."
+    },
+    {
+      "id": "R2-11",
+      "severity": "minor",
+      "where": "audit/run_v02.py:342-349, 170-172; PREREG §8 step 11",
+      "quote": "A rerun with the frozen code must reproduce VERDICTS.json byte for byte",
+      "reason": "Per-world files with fixed outcomes are written inside the loop, so a crash leaves earlier worlds' outcomes on disk. Real mode writes only to run/ and refuses to overwrite, so the rerun has no stated procedure (where, which machine).",
+      "fix": "Write per-world files after the loop (or into a temporary folder renamed at the end). State that the reproduction runs in a fresh clone of the result commit on the machine whose platform string is recorded in FREEZE_RECORD.md; commit VERDICTS.json at once."
+    },
+    {
+      "id": "R2-12",
+      "severity": "minor",
+      "where": "audit/gate/certify.py:242-247; audit/freeze.py:41-54; PREREG §6.3 l.242-243",
+      "quote": "certify all --verify is run on the tree to be frozen",
+      "reason": "Nothing checks GATE_TOOL.json against the frozen tree (all 82 hashes match today; checked here). The tag check (git diff --quiet v0.5.1 -- ...) ignores untracked files. The freeze walk includes git-ignored local files (e.g. *.quick.cert.json) that a fresh clone lacks, so verifying a clone would fail.",
+      "fix": "Check GATE_TOOL['files'] against current hashes at the freeze; add git status --porcelain --untracked-files=all -- truth_gate kapi protocol to the tag check; freeze from a clean checkout."
+    },
+    {
+      "id": "R2-13",
+      "severity": "minor",
+      "where": "audit/checks.py:107-112; PREREG §3.2 G1 row",
+      "quote": "no class atom of any entity has an encoded value of F at α₀ (μ⁻ is never derived from μ⁺)",
+      "reason": "(ii) checks only 'encoded F at alpha0'; a twin with mu_neg = mu_pos/2 would pass. The FAILS sentence does not name the failing part; a failure of anchor (iii) would read as 'membership degrees are turned into probabilities'. Low risk: on 30 dev worlds the lowest per-world median own-class typicality was 0.720.",
+      "fix": "Make (ii) 'every class unit has mu_neg = 0' (SPEC §5); record which part failed in the check data and the FAILS sentence."
+    }
+  ],
+  "readiness": "Not ready to freeze in this state. Needed first: the author's decision on R2-1 (narrow G7a's claim, or widen its baselines and expect a FAIL) and the six major repairs R2-2 to R2-7. Four of them change frozen code (runner commit/salt checks, the I-6 arm, an independent abduction check, an F3 comparison script); then re-run the unit tests, re-certify (study names change) and regenerate GATE_TOOL.json. With those fixed the draft is ready to freeze; the minor findings can be repaired in the same pass, and a short targeted re-check of the changed runner checks and new F-control code is advisable. The review-1 repairs are otherwise careful: the machinery matches the text, all nine certificates are FALSIFIABLE and current, and the exact arithmetic is sound. What the run can show stays narrow: G1-G7a are decided by construction, G8 is close to zero-tolerance, T-1 depends mainly on whether calibrated bounds that vary strongly between calibration draws admit the 0.60 source, both primary tests are expected to FAIL, and T-1 may end in 'insufficient worlds'."
+}
