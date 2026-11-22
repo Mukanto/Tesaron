@@ -1,0 +1,15 @@
+{
+ "affected_tests": [],
+ "all_equal": true,
+ "disagreements": [],
+ "n_affecting_verdict": 0,
+ "n_disagreements": 0,
+ "n_disagreements_by_affected_test": {
+  "G7a": 0,
+  "G8": 0,
+  "T-1": 0
+ },
+ "n_worlds_agent": 30,
+ "n_worlds_run": 30,
+ "what": "F3: the run's numbers against the F3 agent's results (audit/f3_compare.py, frozen before the run)"
+}

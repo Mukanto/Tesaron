@@ -1,0 +1,94 @@
+{
+ "rows": [
+  {
+   "test": "G1",
+   "verdict": "HOLDS",
+   "n_holds": 30,
+   "n_fails": 0,
+   "n_undefined": 0,
+   "n_defined": 30,
+   "wilson_lower": null,
+   "first_failing_world": null
+  },
+  {
+   "test": "G2",
+   "verdict": "HOLDS",
+   "n_holds": 30,
+   "n_fails": 0,
+   "n_undefined": 0,
+   "n_defined": 30,
+   "wilson_lower": null,
+   "first_failing_world": null
+  },
+  {
+   "test": "G3",
+   "verdict": "HOLDS",
+   "n_holds": 30,
+   "n_fails": 0,
+   "n_undefined": 0,
+   "n_defined": 30,
+   "wilson_lower": null,
+   "first_failing_world": null
+  },
+  {
+   "test": "G4",
+   "verdict": "HOLDS",
+   "n_holds": 30,
+   "n_fails": 0,
+   "n_undefined": 0,
+   "n_defined": 30,
+   "wilson_lower": null,
+   "first_failing_world": null
+  },
+  {
+   "test": "G5",
+   "verdict": "HOLDS",
+   "n_holds": 30,
+   "n_fails": 0,
+   "n_undefined": 0,
+   "n_defined": 30,
+   "wilson_lower": null,
+   "first_failing_world": null
+  },
+  {
+   "test": "G6",
+   "verdict": "HOLDS",
+   "n_holds": 30,
+   "n_fails": 0,
+   "n_undefined": 0,
+   "n_defined": 30,
+   "wilson_lower": null,
+   "first_failing_world": null
+  },
+  {
+   "test": "G7",
+   "verdict": "HOLDS",
+   "n_holds": 30,
+   "n_fails": 0,
+   "n_undefined": 0,
+   "n_defined": 30,
+   "wilson_lower": null,
+   "first_failing_world": null
+  },
+  {
+   "test": "G8",
+   "verdict": "FAILS",
+   "n_holds": 15,
+   "n_fails": 15,
+   "n_undefined": 0,
+   "n_defined": 30,
+   "wilson_lower": "0.356",
+   "first_failing_world": 580411434
+  },
+  {
+   "test": "T-1",
+   "verdict": "FAILS",
+   "n_holds": 16,
+   "n_fails": 5,
+   "n_undefined": 9,
+   "n_defined": 21,
+   "wilson_lower": "0.585",
+   "first_failing_world": 322899240
+  }
+ ]
+}

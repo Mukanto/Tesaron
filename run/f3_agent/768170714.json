@@ -1,0 +1,337 @@
+{
+ "world_seed": 768170714,
+ "metrics": {
+  "0.55|0": {
+   "fidelity": "31/40",
+   "deviation": "0/1",
+   "consistency": "147/152",
+   "uncertainty": "27/76",
+   "new_true": "7/12",
+   "new_false": "3/11",
+   "validation_agreement": "5/7",
+   "boundary_share": "9/64"
+  },
+  "0.55|10": {
+   "fidelity": "61/80",
+   "deviation": "1/75",
+   "consistency": "73/76",
+   "uncertainty": "27/76",
+   "new_true": "7/12",
+   "new_false": "3/11",
+   "validation_agreement": "5/7",
+   "boundary_share": "9/64"
+  },
+  "0.55|5": {
+   "fidelity": "31/40",
+   "deviation": "0/1",
+   "consistency": "147/152",
+   "uncertainty": "27/76",
+   "new_true": "7/12",
+   "new_false": "3/11",
+   "validation_agreement": "5/7",
+   "boundary_share": "9/64"
+  },
+  "0.5|0": {
+   "fidelity": "7/9",
+   "deviation": "0/1",
+   "consistency": "147/152",
+   "uncertainty": "53/152",
+   "new_true": "7/12",
+   "new_false": "3/11",
+   "validation_agreement": "11/15",
+   "boundary_share": "1/128"
+  },
+  "0.5|10": {
+   "fidelity": "62/81",
+   "deviation": "1/76",
+   "consistency": "73/76",
+   "uncertainty": "53/152",
+   "new_true": "7/12",
+   "new_false": "3/11",
+   "validation_agreement": "11/15",
+   "boundary_share": "1/128"
+  },
+  "0.5|5": {
+   "fidelity": "7/9",
+   "deviation": "0/1",
+   "consistency": "147/152",
+   "uncertainty": "53/152",
+   "new_true": "7/12",
+   "new_false": "3/11",
+   "validation_agreement": "11/15",
+   "boundary_share": "1/128"
+  },
+  "0.65|0": {
+   "fidelity": "11/13",
+   "deviation": "0/1",
+   "consistency": "149/152",
+   "uncertainty": "9/19",
+   "new_true": "11/24",
+   "new_false": "1/5",
+   "validation_agreement": "7/8",
+   "boundary_share": "1/128"
+  },
+  "0.65|10": {
+   "fidelity": "11/13",
+   "deviation": "0/1",
+   "consistency": "149/152",
+   "uncertainty": "9/19",
+   "new_true": "11/24",
+   "new_false": "1/5",
+   "validation_agreement": "7/8",
+   "boundary_share": "1/128"
+  },
+  "0.65|5": {
+   "fidelity": "11/13",
+   "deviation": "0/1",
+   "consistency": "149/152",
+   "uncertainty": "9/19",
+   "new_true": "11/24",
+   "new_false": "1/5",
+   "validation_agreement": "7/8",
+   "boundary_share": "1/128"
+  },
+  "0.6|0": {
+   "fidelity": "31/40",
+   "deviation": "0/1",
+   "consistency": "147/152",
+   "uncertainty": "27/76",
+   "new_true": "7/12",
+   "new_false": "3/11",
+   "validation_agreement": "5/7",
+   "boundary_share": "17/128"
+  },
+  "0.6|10": {
+   "fidelity": "61/80",
+   "deviation": "1/75",
+   "consistency": "73/76",
+   "uncertainty": "27/76",
+   "new_true": "7/12",
+   "new_false": "3/11",
+   "validation_agreement": "5/7",
+   "boundary_share": "17/128"
+  },
+  "0.6|5": {
+   "fidelity": "31/40",
+   "deviation": "0/1",
+   "consistency": "147/152",
+   "uncertainty": "27/76",
+   "new_true": "7/12",
+   "new_false": "3/11",
+   "validation_agreement": "5/7",
+   "boundary_share": "17/128"
+  },
+  "0.75|0": {
+   "fidelity": "26/31",
+   "deviation": "0/1",
+   "consistency": "149/152",
+   "uncertainty": "77/152",
+   "new_true": "3/8",
+   "new_false": "2/9",
+   "validation_agreement": "5/6",
+   "boundary_share": "1/32"
+  },
+  "0.75|10": {
+   "fidelity": "26/31",
+   "deviation": "0/1",
+   "consistency": "149/152",
+   "uncertainty": "77/152",
+   "new_true": "3/8",
+   "new_false": "2/9",
+   "validation_agreement": "5/6",
+   "boundary_share": "1/32"
+  },
+  "0.75|5": {
+   "fidelity": "26/31",
+   "deviation": "0/1",
+   "consistency": "149/152",
+   "uncertainty": "77/152",
+   "new_true": "3/8",
+   "new_false": "2/9",
+   "validation_agreement": "5/6",
+   "boundary_share": "1/32"
+  },
+  "0.7|0": {
+   "fidelity": "27/32",
+   "deviation": "0/1",
+   "consistency": "149/152",
+   "uncertainty": "75/152",
+   "new_true": "3/8",
+   "new_false": "2/9",
+   "validation_agreement": "5/6",
+   "boundary_share": "3/128"
+  },
+  "0.7|10": {
+   "fidelity": "27/32",
+   "deviation": "0/1",
+   "consistency": "149/152",
+   "uncertainty": "75/152",
+   "new_true": "3/8",
+   "new_false": "2/9",
+   "validation_agreement": "5/6",
+   "boundary_share": "3/128"
+  },
+  "0.7|5": {
+   "fidelity": "27/32",
+   "deviation": "0/1",
+   "consistency": "149/152",
+   "uncertainty": "75/152",
+   "new_true": "3/8",
+   "new_false": "2/9",
+   "validation_agreement": "5/6",
+   "boundary_share": "3/128"
+  },
+  "0.85|0": {
+   "fidelity": "38/39",
+   "deviation": "0/1",
+   "consistency": "1/1",
+   "uncertainty": "13/19",
+   "new_true": "1/4",
+   "new_false": "0/1",
+   "validation_agreement": "1/1",
+   "boundary_share": "25/128"
+  },
+  "0.85|10": {
+   "fidelity": "38/39",
+   "deviation": "0/1",
+   "consistency": "1/1",
+   "uncertainty": "13/19",
+   "new_true": "1/4",
+   "new_false": "0/1",
+   "validation_agreement": "1/1",
+   "boundary_share": "25/128"
+  },
+  "0.85|5": {
+   "fidelity": "38/39",
+   "deviation": "0/1",
+   "consistency": "1/1",
+   "uncertainty": "13/19",
+   "new_true": "1/4",
+   "new_false": "0/1",
+   "validation_agreement": "1/1",
+   "boundary_share": "25/128"
+  },
+  "0.8|0": {
+   "fidelity": "5/6",
+   "deviation": "0/1",
+   "consistency": "149/152",
+   "uncertainty": "10/19",
+   "new_true": "3/8",
+   "new_false": "4/17",
+   "validation_agreement": "5/6",
+   "boundary_share": "13/64"
+  },
+  "0.8|10": {
+   "fidelity": "5/6",
+   "deviation": "0/1",
+   "consistency": "149/152",
+   "uncertainty": "10/19",
+   "new_true": "3/8",
+   "new_false": "4/17",
+   "validation_agreement": "5/6",
+   "boundary_share": "13/64"
+  },
+  "0.8|5": {
+   "fidelity": "5/6",
+   "deviation": "0/1",
+   "consistency": "149/152",
+   "uncertainty": "10/19",
+   "new_true": "3/8",
+   "new_false": "4/17",
+   "validation_agreement": "5/6",
+   "boundary_share": "13/64"
+  },
+  "0.95|0": {
+   "fidelity": "31/32",
+   "deviation": "0/1",
+   "consistency": "1/1",
+   "uncertainty": "29/38",
+   "new_true": "1/6",
+   "new_false": "0/1",
+   "validation_agreement": null,
+   "boundary_share": "19/64"
+  },
+  "0.95|10": {
+   "fidelity": "31/32",
+   "deviation": "0/1",
+   "consistency": "1/1",
+   "uncertainty": "29/38",
+   "new_true": "1/6",
+   "new_false": "0/1",
+   "validation_agreement": null,
+   "boundary_share": "19/64"
+  },
+  "0.95|5": {
+   "fidelity": "31/32",
+   "deviation": "0/1",
+   "consistency": "1/1",
+   "uncertainty": "29/38",
+   "new_true": "1/6",
+   "new_false": "0/1",
+   "validation_agreement": null,
+   "boundary_share": "19/64"
+  },
+  "0.9|0": {
+   "fidelity": "37/38",
+   "deviation": "0/1",
+   "consistency": "1/1",
+   "uncertainty": "105/152",
+   "new_true": "1/4",
+   "new_false": "0/1",
+   "validation_agreement": "1/1",
+   "boundary_share": "39/128"
+  },
+  "0.9|10": {
+   "fidelity": "37/38",
+   "deviation": "0/1",
+   "consistency": "1/1",
+   "uncertainty": "105/152",
+   "new_true": "1/4",
+   "new_false": "0/1",
+   "validation_agreement": "1/1",
+   "boundary_share": "39/128"
+  },
+  "0.9|5": {
+   "fidelity": "37/38",
+   "deviation": "0/1",
+   "consistency": "1/1",
+   "uncertainty": "105/152",
+   "new_true": "1/4",
+   "new_false": "0/1",
+   "validation_agreement": "1/1",
+   "boundary_share": "39/128"
+  }
+ },
+ "feasible": [
+  "0.65|0",
+  "0.65|10",
+  "0.65|5",
+  "0.75|0",
+  "0.75|10",
+  "0.75|5",
+  "0.7|0",
+  "0.7|10",
+  "0.7|5",
+  "0.8|0",
+  "0.8|10",
+  "0.8|5"
+ ],
+ "pareto_front": [
+  "0.65|0",
+  "0.65|5",
+  "0.65|10"
+ ],
+ "hypervolume": "11/30",
+ "outcomes": {
+  "G7a": "HOLDS",
+  "G8": "HOLDS",
+  "T-1": "HOLDS"
+ },
+ "t1_structure": {
+  "some_alpha_le_060_feasible": false,
+  "alpha_ge_085_feasible": false,
+  "t1_window_pairs": true,
+  "t1_crossing_pairs": null,
+  "t1_cross_080_085": null
+ }
+}
