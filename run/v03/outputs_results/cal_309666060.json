@@ -1,0 +1,30 @@
+{
+ "controls": {
+  "F1": {
+   "detail": "",
+   "ok": true
+  },
+  "F2": {
+   "detail": "",
+   "ok": true
+  },
+  "F4": {
+   "detail": "",
+   "ok": true
+  }
+ },
+ "metrics_exact": {
+  "0.7|0": {
+   "boundary_share": "17/117",
+   "consistency": "1/1",
+   "deviation": "0/1",
+   "fidelity": "46/53",
+   "n_q": 16,
+   "new_false": "1/4",
+   "new_true": "2/5",
+   "uncertainty": "17/33",
+   "validation_agreement": "5/7"
+  }
+ },
+ "world_seed": 309666060
+}

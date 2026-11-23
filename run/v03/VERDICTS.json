@@ -1,0 +1,1669 @@
+{
+ "core_sha256": "2bfd7ec16225e721e2e4e01d21877da22e77b2528730f03fb2da2b29ab2d67a8",
+ "descriptive": {
+  "all_true": {
+   "n_worlds": 50,
+   "n_worlds_feasible": 31,
+   "n_worlds_scoring": 31,
+   "scoring_by_alpha": {
+    "0.85": 3,
+    "0.9": 8,
+    "0.95": 31
+   }
+  },
+  "cross_seed_pooled": {
+   "all_atoms": {
+    "agree": 3761,
+    "n": 4065
+   },
+   "class_atoms": {
+    "agree": 2525,
+    "n": 2706
+   }
+  },
+  "default_feasible_worlds": 35,
+  "detector_diagnostic": {
+   "N1a": {
+    "FAILS": 50,
+    "HOLDS": 0,
+    "UNDEFINED": 0,
+    "both_hold": 0,
+    "test": "G1"
+   },
+   "N1b": {
+    "FAILS": 50,
+    "HOLDS": 0,
+    "UNDEFINED": 0,
+    "both_hold": 0,
+    "test": "G1"
+   },
+   "N2": {
+    "FAILS": 50,
+    "HOLDS": 0,
+    "UNDEFINED": 0,
+    "both_hold": 0,
+    "test": "G2"
+   },
+   "N3": {
+    "FAILS": 50,
+    "HOLDS": 0,
+    "UNDEFINED": 0,
+    "both_hold": 0,
+    "test": "G3"
+   },
+   "N4": {
+    "FAILS": 50,
+    "HOLDS": 0,
+    "UNDEFINED": 0,
+    "both_hold": 0,
+    "test": "G4"
+   },
+   "N5": {
+    "FAILS": 50,
+    "HOLDS": 0,
+    "UNDEFINED": 0,
+    "both_hold": 0,
+    "test": "G5"
+   },
+   "N6": {
+    "FAILS": 50,
+    "HOLDS": 0,
+    "UNDEFINED": 0,
+    "both_hold": 0,
+    "test": "G6"
+   },
+   "N7": {
+    "FAILS": 47,
+    "HOLDS": 3,
+    "UNDEFINED": 0,
+    "both_hold": 3,
+    "test": "G7"
+   },
+   "NT": {
+    "FAILS": 35,
+    "HOLDS": 0,
+    "UNDEFINED": 15,
+    "both_hold": 0,
+    "test": "T-1"
+   }
+  },
+  "draw_sensitivity": {
+   "defined": [
+    42,
+    39,
+    38,
+    39,
+    40,
+    38,
+    39,
+    31,
+    38,
+    41,
+    42,
+    40,
+    40,
+    42,
+    33,
+    38,
+    39,
+    41,
+    38,
+    45
+   ],
+   "defined_max": 45,
+   "defined_min": 31,
+   "fails": 20,
+   "holds": 0,
+   "insufficient": 0,
+   "n_draws": 20,
+   "n_no_tau": 0,
+   "verdicts": [
+    "FAILS",
+    "FAILS",
+    "FAILS",
+    "FAILS",
+    "FAILS",
+    "FAILS",
+    "FAILS",
+    "FAILS",
+    "FAILS",
+    "FAILS",
+    "FAILS",
+    "FAILS",
+    "FAILS",
+    "FAILS",
+    "FAILS",
+    "FAILS",
+    "FAILS",
+    "FAILS",
+    "FAILS",
+    "FAILS"
+   ]
+  },
+  "g7b_positive_worlds": 43,
+  "g8_whole_grid_all_points_ok": 6,
+  "t1_all_points": {
+   "outcomes": {
+    "FAILS": 45,
+    "HOLDS": 5,
+    "UNDEFINED": 0
+   },
+   "verdict": "FAILS"
+  },
+  "t1_i6": {
+   "outcomes": {
+    "FAILS": 14,
+    "HOLDS": 22,
+    "UNDEFINED": 14
+   },
+   "verdict": "FAILS"
+  },
+  "t1_i7": {
+   "outcomes": {
+    "FAILS": 23,
+    "HOLDS": 22,
+    "UNDEFINED": 5
+   },
+   "verdict": "FAILS"
+  },
+  "t1_i8": {
+   "outcomes": {
+    "FAILS": 27,
+    "HOLDS": 20,
+    "UNDEFINED": 3
+   },
+   "verdict": "FAILS"
+  },
+  "t1_i9": {
+   "outcomes": {
+    "FAILS": 14,
+    "HOLDS": 21,
+    "UNDEFINED": 15
+   },
+   "verdict": "FAILS"
+  },
+  "t1_structure": [
+   {
+    "alpha_max": 0.7,
+    "alpha_min": 0.65,
+    "defined": true,
+    "feasible_alphas": [
+     0.7,
+     0.65
+    ],
+    "largest_increase": "1/84",
+    "sources_spanned": 1,
+    "world_seed": 948874812,
+    "wrong_class_atoms_spanned": 0
+   },
+   {
+    "alpha_max": null,
+    "alpha_min": null,
+    "defined": false,
+    "feasible_alphas": [],
+    "largest_increase": null,
+    "sources_spanned": null,
+    "world_seed": 275390111,
+    "wrong_class_atoms_spanned": null
+   },
+   {
+    "alpha_max": 0.85,
+    "alpha_min": 0.5,
+    "defined": true,
+    "feasible_alphas": [
+     0.85,
+     0.8,
+     0.75,
+     0.7,
+     0.65,
+     0.6,
+     0.55,
+     0.5
+    ],
+    "largest_increase": "3/20",
+    "sources_spanned": 4,
+    "world_seed": 127381466,
+    "wrong_class_atoms_spanned": 1
+   },
+   {
+    "alpha_max": null,
+    "alpha_min": null,
+    "defined": false,
+    "feasible_alphas": [],
+    "largest_increase": null,
+    "sources_spanned": null,
+    "world_seed": 479649863,
+    "wrong_class_atoms_spanned": null
+   },
+   {
+    "alpha_max": null,
+    "alpha_min": null,
+    "defined": false,
+    "feasible_alphas": [
+     0.75
+    ],
+    "largest_increase": null,
+    "sources_spanned": null,
+    "world_seed": 343068960,
+    "wrong_class_atoms_spanned": null
+   },
+   {
+    "alpha_max": null,
+    "alpha_min": null,
+    "defined": false,
+    "feasible_alphas": [],
+    "largest_increase": null,
+    "sources_spanned": null,
+    "world_seed": 278779483,
+    "wrong_class_atoms_spanned": null
+   },
+   {
+    "alpha_max": 0.8,
+    "alpha_min": 0.5,
+    "defined": true,
+    "feasible_alphas": [
+     0.8,
+     0.75,
+     0.7,
+     0.65,
+     0.6,
+     0.55,
+     0.5
+    ],
+    "largest_increase": "23/600",
+    "sources_spanned": 3,
+    "world_seed": 752318559,
+    "wrong_class_atoms_spanned": 1
+   },
+   {
+    "alpha_max": 0.85,
+    "alpha_min": 0.65,
+    "defined": true,
+    "feasible_alphas": [
+     0.85,
+     0.8,
+     0.75,
+     0.7,
+     0.65
+    ],
+    "largest_increase": "0/1",
+    "sources_spanned": 2,
+    "world_seed": 808895628,
+    "wrong_class_atoms_spanned": 0
+   },
+   {
+    "alpha_max": 0.7,
+    "alpha_min": 0.5,
+    "defined": true,
+    "feasible_alphas": [
+     0.7,
+     0.65,
+     0.6,
+     0.55,
+     0.5
+    ],
+    "largest_increase": "43/1248",
+    "sources_spanned": 3,
+    "world_seed": 98061968,
+    "wrong_class_atoms_spanned": 0
+   },
+   {
+    "alpha_max": null,
+    "alpha_min": null,
+    "defined": false,
+    "feasible_alphas": [
+     0.7
+    ],
+    "largest_increase": null,
+    "sources_spanned": null,
+    "world_seed": 542242031,
+    "wrong_class_atoms_spanned": null
+   },
+   {
+    "alpha_max": 0.7,
+    "alpha_min": 0.6,
+    "defined": true,
+    "feasible_alphas": [
+     0.7,
+     0.65,
+     0.6
+    ],
+    "largest_increase": "0/1",
+    "sources_spanned": 1,
+    "world_seed": 259285267,
+    "wrong_class_atoms_spanned": 1
+   },
+   {
+    "alpha_max": null,
+    "alpha_min": null,
+    "defined": false,
+    "feasible_alphas": [
+     0.85
+    ],
+    "largest_increase": null,
+    "sources_spanned": null,
+    "world_seed": 36655350,
+    "wrong_class_atoms_spanned": null
+   },
+   {
+    "alpha_max": null,
+    "alpha_min": null,
+    "defined": false,
+    "feasible_alphas": [],
+    "largest_increase": null,
+    "sources_spanned": null,
+    "world_seed": 846264557,
+    "wrong_class_atoms_spanned": null
+   },
+   {
+    "alpha_max": 0.75,
+    "alpha_min": 0.5,
+    "defined": true,
+    "feasible_alphas": [
+     0.75,
+     0.7,
+     0.65,
+     0.6,
+     0.55,
+     0.5
+    ],
+    "largest_increase": "0/1",
+    "sources_spanned": 3,
+    "world_seed": 473885028,
+    "wrong_class_atoms_spanned": 0
+   },
+   {
+    "alpha_max": 0.75,
+    "alpha_min": 0.7,
+    "defined": true,
+    "feasible_alphas": [
+     0.75,
+     0.7
+    ],
+    "largest_increase": "0/1",
+    "sources_spanned": 0,
+    "world_seed": 875115563,
+    "wrong_class_atoms_spanned": 0
+   },
+   {
+    "alpha_max": null,
+    "alpha_min": null,
+    "defined": false,
+    "feasible_alphas": [],
+    "largest_increase": null,
+    "sources_spanned": null,
+    "world_seed": 923026488,
+    "wrong_class_atoms_spanned": null
+   },
+   {
+    "alpha_max": 0.8,
+    "alpha_min": 0.6,
+    "defined": true,
+    "feasible_alphas": [
+     0.8,
+     0.75,
+     0.7,
+     0.65,
+     0.6
+    ],
+    "largest_increase": "11/96",
+    "sources_spanned": 3,
+    "world_seed": 493984890,
+    "wrong_class_atoms_spanned": 0
+   },
+   {
+    "alpha_max": 0.65,
+    "alpha_min": 0.6,
+    "defined": true,
+    "feasible_alphas": [
+     0.65,
+     0.6
+    ],
+    "largest_increase": "73/553",
+    "sources_spanned": 1,
+    "world_seed": 929432979,
+    "wrong_class_atoms_spanned": 0
+   },
+   {
+    "alpha_max": 0.85,
+    "alpha_min": 0.6,
+    "defined": true,
+    "feasible_alphas": [
+     0.85,
+     0.8,
+     0.75,
+     0.7,
+     0.65,
+     0.6
+    ],
+    "largest_increase": "124/2205",
+    "sources_spanned": 3,
+    "world_seed": 653148153,
+    "wrong_class_atoms_spanned": 0
+   },
+   {
+    "alpha_max": 0.85,
+    "alpha_min": 0.6,
+    "defined": true,
+    "feasible_alphas": [
+     0.85,
+     0.8,
+     0.75,
+     0.7,
+     0.65,
+     0.6
+    ],
+    "largest_increase": "25/132",
+    "sources_spanned": 4,
+    "world_seed": 392347110,
+    "wrong_class_atoms_spanned": 0
+   },
+   {
+    "alpha_max": 0.85,
+    "alpha_min": 0.75,
+    "defined": true,
+    "feasible_alphas": [
+     0.85,
+     0.8,
+     0.75
+    ],
+    "largest_increase": "1/22",
+    "sources_spanned": 4,
+    "world_seed": 25865271,
+    "wrong_class_atoms_spanned": 0
+   },
+   {
+    "alpha_max": 0.8,
+    "alpha_min": 0.5,
+    "defined": true,
+    "feasible_alphas": [
+     0.8,
+     0.75,
+     0.7,
+     0.65,
+     0.6,
+     0.55,
+     0.5
+    ],
+    "largest_increase": "0/1",
+    "sources_spanned": 4,
+    "world_seed": 947506285,
+    "wrong_class_atoms_spanned": 1
+   },
+   {
+    "alpha_max": 0.7,
+    "alpha_min": 0.5,
+    "defined": true,
+    "feasible_alphas": [
+     0.7,
+     0.65,
+     0.6,
+     0.55,
+     0.5
+    ],
+    "largest_increase": "1/28",
+    "sources_spanned": 2,
+    "world_seed": 89132085,
+    "wrong_class_atoms_spanned": 0
+   },
+   {
+    "alpha_max": 0.75,
+    "alpha_min": 0.65,
+    "defined": true,
+    "feasible_alphas": [
+     0.75,
+     0.7,
+     0.65
+    ],
+    "largest_increase": "-4/357",
+    "sources_spanned": 1,
+    "world_seed": 211918494,
+    "wrong_class_atoms_spanned": 0
+   },
+   {
+    "alpha_max": 0.85,
+    "alpha_min": 0.65,
+    "defined": true,
+    "feasible_alphas": [
+     0.85,
+     0.8,
+     0.75,
+     0.7,
+     0.65
+    ],
+    "largest_increase": "-1/36",
+    "sources_spanned": 1,
+    "world_seed": 76023758,
+    "wrong_class_atoms_spanned": 0
+   },
+   {
+    "alpha_max": null,
+    "alpha_min": null,
+    "defined": false,
+    "feasible_alphas": [],
+    "largest_increase": null,
+    "sources_spanned": null,
+    "world_seed": 453393852,
+    "wrong_class_atoms_spanned": null
+   },
+   {
+    "alpha_max": null,
+    "alpha_min": null,
+    "defined": false,
+    "feasible_alphas": [],
+    "largest_increase": null,
+    "sources_spanned": null,
+    "world_seed": 521341742,
+    "wrong_class_atoms_spanned": null
+   },
+   {
+    "alpha_max": 0.75,
+    "alpha_min": 0.7,
+    "defined": true,
+    "feasible_alphas": [
+     0.75,
+     0.7
+    ],
+    "largest_increase": "-9/80",
+    "sources_spanned": 1,
+    "world_seed": 253077148,
+    "wrong_class_atoms_spanned": 0
+   },
+   {
+    "alpha_max": 0.85,
+    "alpha_min": 0.5,
+    "defined": true,
+    "feasible_alphas": [
+     0.85,
+     0.8,
+     0.75,
+     0.7,
+     0.65,
+     0.6,
+     0.55,
+     0.5
+    ],
+    "largest_increase": "3/29",
+    "sources_spanned": 5,
+    "world_seed": 952385107,
+    "wrong_class_atoms_spanned": 0
+   },
+   {
+    "alpha_max": null,
+    "alpha_min": null,
+    "defined": false,
+    "feasible_alphas": [
+     0.75
+    ],
+    "largest_increase": null,
+    "sources_spanned": null,
+    "world_seed": 595102708,
+    "wrong_class_atoms_spanned": null
+   },
+   {
+    "alpha_max": 0.85,
+    "alpha_min": 0.5,
+    "defined": true,
+    "feasible_alphas": [
+     0.85,
+     0.8,
+     0.75,
+     0.7,
+     0.65,
+     0.6,
+     0.55,
+     0.5
+    ],
+    "largest_increase": "99/1258",
+    "sources_spanned": 4,
+    "world_seed": 859820095,
+    "wrong_class_atoms_spanned": 1
+   },
+   {
+    "alpha_max": 0.7,
+    "alpha_min": 0.5,
+    "defined": true,
+    "feasible_alphas": [
+     0.7,
+     0.65,
+     0.6,
+     0.55,
+     0.5
+    ],
+    "largest_increase": "110/637",
+    "sources_spanned": 4,
+    "world_seed": 438357742,
+    "wrong_class_atoms_spanned": 1
+   },
+   {
+    "alpha_max": 0.8,
+    "alpha_min": 0.65,
+    "defined": true,
+    "feasible_alphas": [
+     0.8,
+     0.75,
+     0.7,
+     0.65
+    ],
+    "largest_increase": "1/9",
+    "sources_spanned": 2,
+    "world_seed": 816022633,
+    "wrong_class_atoms_spanned": 0
+   },
+   {
+    "alpha_max": 0.75,
+    "alpha_min": 0.7,
+    "defined": true,
+    "feasible_alphas": [
+     0.75,
+     0.7
+    ],
+    "largest_increase": "39/136",
+    "sources_spanned": 2,
+    "world_seed": 337976282,
+    "wrong_class_atoms_spanned": 0
+   },
+   {
+    "alpha_max": null,
+    "alpha_min": null,
+    "defined": false,
+    "feasible_alphas": [
+     0.65
+    ],
+    "largest_increase": null,
+    "sources_spanned": null,
+    "world_seed": 573065031,
+    "wrong_class_atoms_spanned": null
+   },
+   {
+    "alpha_max": 0.75,
+    "alpha_min": 0.65,
+    "defined": true,
+    "feasible_alphas": [
+     0.75,
+     0.7,
+     0.65
+    ],
+    "largest_increase": "0/1",
+    "sources_spanned": 2,
+    "world_seed": 859957369,
+    "wrong_class_atoms_spanned": 0
+   },
+   {
+    "alpha_max": 0.85,
+    "alpha_min": 0.6,
+    "defined": true,
+    "feasible_alphas": [
+     0.85,
+     0.8,
+     0.75,
+     0.7,
+     0.65,
+     0.6
+    ],
+    "largest_increase": "9/130",
+    "sources_spanned": 3,
+    "world_seed": 171300882,
+    "wrong_class_atoms_spanned": 0
+   },
+   {
+    "alpha_max": null,
+    "alpha_min": null,
+    "defined": false,
+    "feasible_alphas": [
+     0.75,
+     0.7,
+     0.65
+    ],
+    "largest_increase": null,
+    "sources_spanned": null,
+    "world_seed": 193452299,
+    "wrong_class_atoms_spanned": null
+   },
+   {
+    "alpha_max": 0.8,
+    "alpha_min": 0.5,
+    "defined": true,
+    "feasible_alphas": [
+     0.8,
+     0.75,
+     0.7,
+     0.65,
+     0.6,
+     0.55,
+     0.5
+    ],
+    "largest_increase": "23/510",
+    "sources_spanned": 4,
+    "world_seed": 664168305,
+    "wrong_class_atoms_spanned": 0
+   },
+   {
+    "alpha_max": 0.8,
+    "alpha_min": 0.6,
+    "defined": true,
+    "feasible_alphas": [
+     0.8,
+     0.75,
+     0.7,
+     0.65,
+     0.6
+    ],
+    "largest_increase": "0/1",
+    "sources_spanned": 2,
+    "world_seed": 337712865,
+    "wrong_class_atoms_spanned": 0
+   },
+   {
+    "alpha_max": null,
+    "alpha_min": null,
+    "defined": false,
+    "feasible_alphas": [
+     0.8
+    ],
+    "largest_increase": null,
+    "sources_spanned": null,
+    "world_seed": 780101032,
+    "wrong_class_atoms_spanned": null
+   },
+   {
+    "alpha_max": 0.9,
+    "alpha_min": 0.7,
+    "defined": true,
+    "feasible_alphas": [
+     0.9,
+     0.85,
+     0.8,
+     0.75,
+     0.7
+    ],
+    "largest_increase": "0/1",
+    "sources_spanned": 1,
+    "world_seed": 481541604,
+    "wrong_class_atoms_spanned": 0
+   },
+   {
+    "alpha_max": null,
+    "alpha_min": null,
+    "defined": false,
+    "feasible_alphas": [
+     0.75
+    ],
+    "largest_increase": null,
+    "sources_spanned": null,
+    "world_seed": 665146477,
+    "wrong_class_atoms_spanned": null
+   },
+   {
+    "alpha_max": 0.8,
+    "alpha_min": 0.6,
+    "defined": true,
+    "feasible_alphas": [
+     0.8,
+     0.75,
+     0.7,
+     0.65,
+     0.6
+    ],
+    "largest_increase": "1/13",
+    "sources_spanned": 3,
+    "world_seed": 317511650,
+    "wrong_class_atoms_spanned": 0
+   },
+   {
+    "alpha_max": 0.9,
+    "alpha_min": 0.5,
+    "defined": true,
+    "feasible_alphas": [
+     0.9,
+     0.85,
+     0.8,
+     0.75,
+     0.7,
+     0.65,
+     0.6,
+     0.55,
+     0.5
+    ],
+    "largest_increase": "8/37",
+    "sources_spanned": 5,
+    "world_seed": 150524625,
+    "wrong_class_atoms_spanned": 1
+   },
+   {
+    "alpha_max": 0.75,
+    "alpha_min": 0.7,
+    "defined": true,
+    "feasible_alphas": [
+     0.75,
+     0.7
+    ],
+    "largest_increase": "12/133",
+    "sources_spanned": 1,
+    "world_seed": 632991533,
+    "wrong_class_atoms_spanned": 0
+   },
+   {
+    "alpha_max": 0.8,
+    "alpha_min": 0.5,
+    "defined": true,
+    "feasible_alphas": [
+     0.8,
+     0.75,
+     0.7,
+     0.65,
+     0.6,
+     0.55,
+     0.5
+    ],
+    "largest_increase": "0/1",
+    "sources_spanned": 4,
+    "world_seed": 57270309,
+    "wrong_class_atoms_spanned": 0
+   },
+   {
+    "alpha_max": 0.7,
+    "alpha_min": 0.65,
+    "defined": true,
+    "feasible_alphas": [
+     0.7,
+     0.65
+    ],
+    "largest_increase": "-4/399",
+    "sources_spanned": 2,
+    "world_seed": 293357837,
+    "wrong_class_atoms_spanned": 0
+   },
+   {
+    "alpha_max": 0.75,
+    "alpha_min": 0.7,
+    "defined": true,
+    "feasible_alphas": [
+     0.75,
+     0.7
+    ],
+    "largest_increase": "-5/306",
+    "sources_spanned": 1,
+    "world_seed": 393801651,
+    "wrong_class_atoms_spanned": 1
+   },
+   {
+    "alpha_max": 0.75,
+    "alpha_min": 0.5,
+    "defined": true,
+    "feasible_alphas": [
+     0.75,
+     0.7,
+     0.65,
+     0.6,
+     0.55,
+     0.5
+    ],
+    "largest_increase": "-1/36",
+    "sources_spanned": 4,
+    "world_seed": 250968640,
+    "wrong_class_atoms_spanned": 0
+   }
+  ],
+  "undefined_as_fails": {
+   "T-1": {
+    "n": 50,
+    "n_holds": 21,
+    "wilson_lower": 0.31220657143264496
+   }
+  }
+ },
+ "environment": {
+  "numpy": "2.4.1",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "python": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]"
+ },
+ "g8_descriptive": {
+  "failing_only_through_single_atom_changes": 6,
+  "hyp_count": {
+   "max": 78,
+   "median": "21.5",
+   "min": 10,
+   "n": 50,
+   "text": "Hypotheses at (\u03b1\u2080, k = 10) over the defined worlds: minimum 10, median 21.5 (the mean of the two middle values), maximum 78."
+  },
+  "n_defined": 50,
+  "n_fails": 18,
+  "n_holds": 32,
+  "n_undefined": 0,
+  "text": "G8 (descriptive, no verdict): 32 of 50 defined worlds hold (Wilson lower bound 0.524); 0 undefined.",
+  "wilson_lower": 0.5238233824969871
+ },
+ "n_rejected_draws": 2,
+ "n_test_worlds": 50,
+ "table": {
+  "limitation": "These results come from synthetic worlds generated by code written by the same model family that designed and coded the system. The decoder was given the true rules. They say nothing about natural-language input.",
+  "rows": [
+   {
+    "all_true": null,
+    "all_true_text": null,
+    "detector_qualifier": null,
+    "draw_sensitivity": null,
+    "draw_sensitivity_text": null,
+    "expected_paragraph": null,
+    "first_failing_world": null,
+    "id": "G1",
+    "limitation": "These results come from synthetic worlds generated by code written by the same model family that designed and coded the system. The decoder was given the true rules. They say nothing about natural-language input.",
+    "n_defined": 50,
+    "n_fails": 0,
+    "n_holds": 50,
+    "n_undefined": 0,
+    "structure": null,
+    "structure_text": null,
+    "test": "G1",
+    "text": "G1 holds: Membership degrees are not turned into probabilities, in all 50 defined test worlds (0 undefined). (A check of the implementation or of the criterion, not a discovery.)",
+    "verdict": "HOLDS",
+    "wilson_lower": null
+   },
+   {
+    "all_true": null,
+    "all_true_text": null,
+    "detector_qualifier": null,
+    "draw_sensitivity": null,
+    "draw_sensitivity_text": null,
+    "expected_paragraph": null,
+    "first_failing_world": null,
+    "id": "G2",
+    "limitation": "These results come from synthetic worlds generated by code written by the same model family that designed and coded the system. The decoder was given the true rules. They say nothing about natural-language input.",
+    "n_defined": 50,
+    "n_fails": 0,
+    "n_holds": 50,
+    "n_undefined": 0,
+    "structure": null,
+    "structure_text": null,
+    "test": "G2",
+    "text": "G2 holds: Encoding is reproducible in the same context (same machine, same NumPy build), in all 50 defined test worlds (0 undefined). (A check of the implementation or of the criterion, not a discovery.)",
+    "verdict": "HOLDS",
+    "wilson_lower": null
+   },
+   {
+    "all_true": null,
+    "all_true_text": null,
+    "detector_qualifier": null,
+    "draw_sensitivity": null,
+    "draw_sensitivity_text": null,
+    "expected_paragraph": null,
+    "first_failing_world": null,
+    "id": "G3",
+    "limitation": "These results come from synthetic worlds generated by code written by the same model family that designed and coded the system. The decoder was given the true rules. They say nothing about natural-language input.",
+    "n_defined": 50,
+    "n_fails": 0,
+    "n_holds": 50,
+    "n_undefined": 0,
+    "structure": null,
+    "structure_text": null,
+    "test": "G3",
+    "text": "G3 holds: A meaning unit needs its data (necessity), in all 50 defined test worlds (0 undefined). (A check of the implementation or of the criterion, not a discovery.)",
+    "verdict": "HOLDS",
+    "wilson_lower": null
+   },
+   {
+    "all_true": null,
+    "all_true_text": null,
+    "detector_qualifier": null,
+    "draw_sensitivity": null,
+    "draw_sensitivity_text": null,
+    "expected_paragraph": null,
+    "first_failing_world": null,
+    "id": "G4",
+    "limitation": "These results come from synthetic worlds generated by code written by the same model family that designed and coded the system. The decoder was given the true rules. They say nothing about natural-language input.",
+    "n_defined": 50,
+    "n_fails": 0,
+    "n_holds": 50,
+    "n_undefined": 0,
+    "structure": null,
+    "structure_text": null,
+    "test": "G4",
+    "text": "G4 holds: The decoder gives the same output for the same input (same machine, same NumPy build), in all 50 defined test worlds (0 undefined). (A check of the implementation or of the criterion, not a discovery.)",
+    "verdict": "HOLDS",
+    "wilson_lower": null
+   },
+   {
+    "all_true": null,
+    "all_true_text": null,
+    "detector_qualifier": null,
+    "draw_sensitivity": null,
+    "draw_sensitivity_text": null,
+    "expected_paragraph": null,
+    "first_failing_world": null,
+    "id": "G5",
+    "limitation": "These results come from synthetic worlds generated by code written by the same model family that designed and coded the system. The decoder was given the true rules. They say nothing about natural-language input.",
+    "n_defined": 50,
+    "n_fails": 0,
+    "n_holds": 50,
+    "n_undefined": 0,
+    "structure": null,
+    "structure_text": null,
+    "test": "G5",
+    "text": "G5 holds: Validation data do not leak into pattern computation, in all 50 defined test worlds (0 undefined). (A check of the implementation or of the criterion, not a discovery.)",
+    "verdict": "HOLDS",
+    "wilson_lower": null
+   },
+   {
+    "all_true": null,
+    "all_true_text": null,
+    "detector_qualifier": null,
+    "draw_sensitivity": null,
+    "draw_sensitivity_text": null,
+    "expected_paragraph": null,
+    "first_failing_world": null,
+    "id": "G6",
+    "limitation": "These results come from synthetic worlds generated by code written by the same model family that designed and coded the system. The decoder was given the true rules. They say nothing about natural-language input.",
+    "n_defined": 50,
+    "n_fails": 0,
+    "n_holds": 50,
+    "n_undefined": 0,
+    "structure": null,
+    "structure_text": null,
+    "test": "G6",
+    "text": "G6 holds: Expansion makes no unevidenced claims, in all 50 defined test worlds (0 undefined). (A check of the implementation or of the criterion, not a discovery.)",
+    "verdict": "HOLDS",
+    "wilson_lower": null
+   },
+   {
+    "all_true": {
+     "n_worlds": 50,
+     "n_worlds_feasible": 31,
+     "n_worlds_scoring": 31,
+     "scoring_by_alpha": {
+      "0.85": 3,
+      "0.9": 8,
+      "0.95": 31
+     }
+    },
+    "all_true_text": "all_true, not judged, was feasible and scored > 0 on 31 of 50 test worlds (at \u03b1 0.95, 0.90, 0.85); echo, all_unknown and all_both score 0 by the definition of new_true, so among the four judged baselines only all_false can be excluded by the constraints.",
+    "detector_qualifier": "the detector did not separate on 3 worlds",
+    "draw_sensitivity": null,
+    "draw_sensitivity_text": null,
+    "expected_paragraph": null,
+    "first_failing_world": null,
+    "id": "G7a",
+    "limitation": "These results come from synthetic worlds generated by code written by the same model family that designed and coded the system. The decoder was given the true rules. They say nothing about natural-language input.",
+    "n_defined": 50,
+    "n_fails": 0,
+    "n_holds": 50,
+    "n_undefined": 0,
+    "structure": null,
+    "structure_text": null,
+    "test": "G7",
+    "text": "G7a holds: None of four degenerate baselines of SPEC \u00a710 (echo, all_false, all_unknown, all_both) gets a positive score under the wisdom criterion, in all 50 defined test worlds (0 undefined). (A check of the implementation or of the criterion, not a discovery.) all_true, not judged, was feasible and scored > 0 on 31 of 50 test worlds (at \u03b1 0.95, 0.90, 0.85); echo, all_unknown and all_both score 0 by the definition of new_true, so among the four judged baselines only all_false can be excluded by the constraints. (the detector did not separate on 3 worlds)",
+    "verdict": "HOLDS",
+    "wilson_lower": null
+   },
+   {
+    "all_true": null,
+    "all_true_text": null,
+    "detector_qualifier": null,
+    "draw_sensitivity": {
+     "defined": [
+      42,
+      39,
+      38,
+      39,
+      40,
+      38,
+      39,
+      31,
+      38,
+      41,
+      42,
+      40,
+      40,
+      42,
+      33,
+      38,
+      39,
+      41,
+      38,
+      45
+     ],
+     "defined_max": 45,
+     "defined_min": 31,
+     "fails": 20,
+     "holds": 0,
+     "insufficient": 0,
+     "n_draws": 20,
+     "n_no_tau": 0,
+     "verdicts": [
+      "FAILS",
+      "FAILS",
+      "FAILS",
+      "FAILS",
+      "FAILS",
+      "FAILS",
+      "FAILS",
+      "FAILS",
+      "FAILS",
+      "FAILS",
+      "FAILS",
+      "FAILS",
+      "FAILS",
+      "FAILS",
+      "FAILS",
+      "FAILS",
+      "FAILS",
+      "FAILS",
+      "FAILS",
+      "FAILS"
+     ]
+    },
+    "draw_sensitivity_text": "Under 20 further calibration draws, T-1's verdict was HOLDS 0 times, FAILS 20 times and 'insufficient worlds' 0 times (descriptive).",
+    "expected_paragraph": "Expected verdict: none. No pilot was run on v0.3 worlds before the freeze (PREREG v0.3 \u00a72). Known factors point both ways (PREREG v0.3 \u00a72). v0.2's T-1, on worlds with three discrete sources, failed. v0.3 changes the worlds, the \u03c4 rule, the configuration of calibration and feasibility, and T-1's tolerance together, so an outcome that differs from v0.2's cannot be attributed to the new worlds alone; the I-8 arm applies v0.2's full rule to the v0.3 worlds.",
+    "first_failing_world": 127381466,
+    "id": "T-1",
+    "limitation": "These results come from synthetic worlds generated by code written by the same model family that designed and coded the system. The decoder was given the true rules. They say nothing about natural-language input.",
+    "n_defined": 35,
+    "n_fails": 14,
+    "n_holds": 21,
+    "n_undefined": 15,
+    "structure": {
+     "even": false,
+     "max": 5,
+     "median": "3",
+     "min": 0,
+     "n": 35,
+     "n_with_wrong_class_atom": 8,
+     "sources_spanned": [
+      1,
+      4,
+      3,
+      2,
+      3,
+      1,
+      3,
+      0,
+      3,
+      1,
+      3,
+      4,
+      4,
+      4,
+      2,
+      1,
+      1,
+      1,
+      5,
+      4,
+      4,
+      2,
+      2,
+      2,
+      3,
+      4,
+      2,
+      1,
+      3,
+      5,
+      1,
+      4,
+      2,
+      1,
+      4
+     ]
+    },
+    "structure_text": "In these worlds T-1 compares graded steps of evidence admission at k = 0: over the 35 defined worlds, the feasible \u03b1 range spanned a median of 3 of the 8 source reliabilities (minimum 0, maximum 5), and on 8 of them it admitted at least one world-false class atom.",
+    "test": "T-1",
+    "text": "T-1 is not demonstrated: 21 of 35 defined worlds hold (Wilson lower bound 0.461, threshold 0.80); this does not show that the per-world rate is below 0.80; 15 undefined; the first failing world is 127381466. In these worlds T-1 compares graded steps of evidence admission at k = 0: over the 35 defined worlds, the feasible \u03b1 range spanned a median of 3 of the 8 source reliabilities (minimum 0, maximum 5), and on 8 of them it admitted at least one world-false class atom. Under 20 further calibration draws, T-1's verdict was HOLDS 0 times, FAILS 20 times and 'insufficient worlds' 0 times (descriptive).",
+    "verdict": "FAILS",
+    "wilson_lower": 0.4613993833048046
+   }
+  ]
+ },
+ "world_hashes": {
+  "127381466": {
+   "aux_seed": 213755146,
+   "draw": 3,
+   "enc_seed": 416922131,
+   "encoding_hash": "215b753765c590ca643ff78bdb8118af44faa3d74413726b0fbd0b72a70a7c46",
+   "h_size": 45,
+   "world_hash": "5b5e224f8d3b99c865654e868fbfcc1f9fd2804fca59090a486c13873095a6cd",
+   "world_seed": 127381466
+  },
+  "150524625": {
+   "aux_seed": 216377801,
+   "draw": 46,
+   "enc_seed": 400386857,
+   "encoding_hash": "313faa47cd03627e11e422bcb9af7892ef8b72628d3b632e723d1d829c25ef31",
+   "h_size": 43,
+   "world_hash": "f1500687607e7d895f49b84899bc79ad9883dde48732f8edae0409035da0d433",
+   "world_seed": 150524625
+  },
+  "171300882": {
+   "aux_seed": 82030937,
+   "draw": 38,
+   "enc_seed": 750805403,
+   "encoding_hash": "2bc368e4239657dc059d2d8a6b64785f4e1bcaa497e13fd9fbb6388df36aedf8",
+   "h_size": 49,
+   "world_hash": "cfb12e68d9b8493859460a2e8a1cb06b214992ecddf078142ec0986bc356bc98",
+   "world_seed": 171300882
+  },
+  "193452299": {
+   "aux_seed": 864283649,
+   "draw": 39,
+   "enc_seed": 305235398,
+   "encoding_hash": "cc333ac0cee4491366c73bb1f654588e64df471a0cd11c94b337213712bc7020",
+   "h_size": 48,
+   "world_hash": "b52ee2e213b4440ac5282fe60da91385c5d6aa6667cf5221ec27950faebab3fa",
+   "world_seed": 193452299
+  },
+  "211918494": {
+   "aux_seed": 146648378,
+   "draw": 24,
+   "enc_seed": 650514732,
+   "encoding_hash": "bb0caa2f43430e3f1af1795c550f59725be8d8b3a1bce5064df0f22a46b6f4a1",
+   "h_size": 25,
+   "world_hash": "7707aafd602b25b728baebed02c1c8b993a6a3cd61827c9e5ffd556b9672f029",
+   "world_seed": 211918494
+  },
+  "250968640": {
+   "aux_seed": 494158648,
+   "draw": 51,
+   "enc_seed": 625913103,
+   "encoding_hash": "2786892fcd779181d30ed0fdd29bcc535fa3ec8b67018d668ff0ef4a27321445",
+   "h_size": 12,
+   "world_hash": "e7b7c6fe673d7673412575d25be99d5d7292492751d4b2594eded7bfba7eb2ba",
+   "world_seed": 250968640
+  },
+  "253077148": {
+   "aux_seed": 611274431,
+   "draw": 28,
+   "enc_seed": 668548497,
+   "encoding_hash": "f3448a1a6798cb2b4a52e60b347462b22947fe1f301fbe2b257352b05f443e58",
+   "h_size": 28,
+   "world_hash": "77c26b37d14ac9aaf7fe48d747311ee610efa93a6f8fa47cd78367cf3ba23467",
+   "world_seed": 253077148
+  },
+  "25865271": {
+   "aux_seed": 371928998,
+   "draw": 21,
+   "enc_seed": 606975707,
+   "encoding_hash": "4175f4e10c6b9e50f08290a902ce2ac2589c3f3e1290e821239d87769a614e87",
+   "h_size": 21,
+   "world_hash": "c460ebf2c6c6c6749ac7abccdb37880ebd58eae9a7bdf18df9b6e315224e9d2d",
+   "world_seed": 25865271
+  },
+  "259285267": {
+   "aux_seed": 827976888,
+   "draw": 11,
+   "enc_seed": 294145053,
+   "encoding_hash": "ad01f6a1c5ec062df8242abb2a34ba63023fd840b122b6da9c3072b43dfab79f",
+   "h_size": 20,
+   "world_hash": "cbe9c800bf61f510507c831f29de79844d0c9d94e530d7f41f5fb1add22fb696",
+   "world_seed": 259285267
+  },
+  "275390111": {
+   "aux_seed": 789914944,
+   "draw": 2,
+   "enc_seed": 816626480,
+   "encoding_hash": "05ddb94a86e22abd47b6b28d3f9e0c2bc9c2b2cf8e397bf0452cac8b2911d8ae",
+   "h_size": 56,
+   "world_hash": "5b78ac3ce247b08cb1f47cf33c9190a4b548c5e7bcb3dd993e4d0b83d27381aa",
+   "world_seed": 275390111
+  },
+  "278779483": {
+   "aux_seed": 497143233,
+   "draw": 6,
+   "enc_seed": 67179617,
+   "encoding_hash": "127480b38c522653ccc0154d92668cee88e9c48860acbe22a7748f739a16542e",
+   "h_size": 21,
+   "world_hash": "a2602a330a96ec9c9ca2d37a37cab68d14da8e2cc63aa4e162ad7e2a743fbcff",
+   "world_seed": 278779483
+  },
+  "293357837": {
+   "aux_seed": 239580827,
+   "draw": 49,
+   "enc_seed": 77913423,
+   "encoding_hash": "5aaca885e8c808f5e98cd35babffb062db048134007ab83c5f8a6faa2e21826d",
+   "h_size": 24,
+   "world_hash": "61c0252568f8402ad8d7fd786ff068ed5c49657b141c9008e606c7cc941109c6",
+   "world_seed": 293357837
+  },
+  "317511650": {
+   "aux_seed": 78702890,
+   "draw": 45,
+   "enc_seed": 610726218,
+   "encoding_hash": "b7e1c4fb0b3605cd851b17cf5d940f447d0c00fb589ffb3294335a38c9857342",
+   "h_size": 19,
+   "world_hash": "71b34740e18d69e4727f8108e857f3a8e8629e94429e2e6a227dd660ff058a8e",
+   "world_seed": 317511650
+  },
+  "337712865": {
+   "aux_seed": 334486579,
+   "draw": 41,
+   "enc_seed": 411117870,
+   "encoding_hash": "274c278ebecfe22210c0b1b84ad3f1b595a1d56ebdd320da0bf647b733064325",
+   "h_size": 21,
+   "world_hash": "c3952d4ab8a727aee872b4d2bdfda98b16ba230471aa9ac79167a26ccc61b39e",
+   "world_seed": 337712865
+  },
+  "337976282": {
+   "aux_seed": 906583495,
+   "draw": 35,
+   "enc_seed": 338113331,
+   "encoding_hash": "14f12abc03fc69325498a57af800c50fcf11d0428f6266ea47050339ea12ee1e",
+   "h_size": 21,
+   "world_hash": "62832a3ce6e92e33a282868167ab75030754c599abaa4a04ea069fb8a38326cb",
+   "world_seed": 337976282
+  },
+  "343068960": {
+   "aux_seed": 47632626,
+   "draw": 5,
+   "enc_seed": 505511683,
+   "encoding_hash": "1c3a5e0400060a6cf63d629489f66c9eb2f31b2afb5ac4037a758c33975421c7",
+   "h_size": 31,
+   "world_hash": "f5edd9b2d18a7ced8a7a7123d9468cf318254a0540ea0abe4cdf5e41fe99d0a9",
+   "world_seed": 343068960
+  },
+  "36655350": {
+   "aux_seed": 883288265,
+   "draw": 12,
+   "enc_seed": 783990582,
+   "encoding_hash": "c2cfaab06bd1515369dd908053e03810e117536943ae3fdc8c9681cbdba40d1b",
+   "h_size": 29,
+   "world_hash": "41c2880e76413f92cfa9b365da21b5391f02c8dfe4269919dc383042678a61b1",
+   "world_seed": 36655350
+  },
+  "392347110": {
+   "aux_seed": 674746694,
+   "draw": 20,
+   "enc_seed": 403989468,
+   "encoding_hash": "f4800f8ba7059da8c388cc9951eaca0f89a559476ce3a32cbd2a2735837e8ddf",
+   "h_size": 10,
+   "world_hash": "cfa3e7ae00dc4139d401543cd6a7e96bf27a464178105189c52c1bb5ae6e92ae",
+   "world_seed": 392347110
+  },
+  "393801651": {
+   "aux_seed": 662310747,
+   "draw": 50,
+   "enc_seed": 347614739,
+   "encoding_hash": "6d7c507ea7c8b3b6cc217d208a3a53fa0c173d2b0662b1b265929291b6bd061c",
+   "h_size": 17,
+   "world_hash": "7b46c9405085478eb6e967980aa1cdccb4b280f1a1ca981d2f0a4ee088bae1c5",
+   "world_seed": 393801651
+  },
+  "438357742": {
+   "aux_seed": 114011001,
+   "draw": 33,
+   "enc_seed": 671888346,
+   "encoding_hash": "e7baf0d32b9e3004811931edaa2639348820f49fa490e271684919ec216d9b22",
+   "h_size": 39,
+   "world_hash": "359acf212c79aa87f6d133cb7fabf4b8ecc675a43805e14f7c720e133f1b5539",
+   "world_seed": 438357742
+  },
+  "453393852": {
+   "aux_seed": 551105753,
+   "draw": 26,
+   "enc_seed": 963979111,
+   "encoding_hash": "9e0a5efeb6da0d4579cc5c2c6587638ff11d5e49d5f98cb6cc188e2c9d6836c7",
+   "h_size": 14,
+   "world_hash": "cf9b006eb289676330ea38ccfdf5d8ba871bfbaa3071e176d388ba47185b4f1a",
+   "world_seed": 453393852
+  },
+  "473885028": {
+   "aux_seed": 2113873,
+   "draw": 14,
+   "enc_seed": 95499456,
+   "encoding_hash": "46aa255a68d0a49f0a3895d02bb5f4b5a8191b17e7b05602f49df16f8b913b80",
+   "h_size": 24,
+   "world_hash": "1b904711fc45676bde76240bd5d495479039ce261ec276adf416cae790fbad27",
+   "world_seed": 473885028
+  },
+  "479649863": {
+   "aux_seed": 147774195,
+   "draw": 4,
+   "enc_seed": 241844228,
+   "encoding_hash": "9b5a287456fdb3d2a29461bbf34fd4716895a0e99f719ac29e0f2ba122f3c0d2",
+   "h_size": 68,
+   "world_hash": "3328a15b8dd0d596ab2921abf93c8351d237611e5abe1b34f0041ebab595d334",
+   "world_seed": 479649863
+  },
+  "481541604": {
+   "aux_seed": 855236230,
+   "draw": 43,
+   "enc_seed": 271133640,
+   "encoding_hash": "c601774142e62132e757fcac8faee72a7cc9b6165263d1b25e22b95d5d5be59d",
+   "h_size": 13,
+   "world_hash": "3909aeab3a40e3e8de18ac724ce98584d89cd6983128a6435b198fd676dd79af",
+   "world_seed": 481541604
+  },
+  "493984890": {
+   "aux_seed": 669911256,
+   "draw": 17,
+   "enc_seed": 405349535,
+   "encoding_hash": "7f25cb4f2ac7d99f514e6382505eccca2cd603f53f749051ead2a0de14ac2cb2",
+   "h_size": 15,
+   "world_hash": "9f3ad58d545848a261298a21329bcddcf00f88996ab5dcfb644791da548995c8",
+   "world_seed": 493984890
+  },
+  "521341742": {
+   "aux_seed": 895478306,
+   "draw": 27,
+   "enc_seed": 639043324,
+   "encoding_hash": "0a44f3050c60efc9b2ebf53c8989935d87a89303ad7ef26492fc312dc0815acd",
+   "h_size": 42,
+   "world_hash": "0a0266e5dda73f3da06e9c96a4234f95c4173e90fb3431375c7653e5d6e53fdd",
+   "world_seed": 521341742
+  },
+  "542242031": {
+   "aux_seed": 469013679,
+   "draw": 10,
+   "enc_seed": 494851981,
+   "encoding_hash": "1cb2af518b0fb470f777a04f1dead22ba4a0b862e0faae02ca602b2977d131ad",
+   "h_size": 22,
+   "world_hash": "bc0fcb8fde58349068857d1fccb0282ae2207f7eb9af01406848b19612958b45",
+   "world_seed": 542242031
+  },
+  "57270309": {
+   "aux_seed": 809712031,
+   "draw": 48,
+   "enc_seed": 566305898,
+   "encoding_hash": "92e4576ed1416ec862bdb2adb027101e82e0316ac958c89be357e46ff0fc3297",
+   "h_size": 13,
+   "world_hash": "c2a59b365b729c135cb7ae3845e572d39f97e1432a7211463d9f410a6c838843",
+   "world_seed": 57270309
+  },
+  "573065031": {
+   "aux_seed": 806121294,
+   "draw": 36,
+   "enc_seed": 275839971,
+   "encoding_hash": "5cae80dd0fb51a42614bd7f8dab84b460ce63dea784899e4de08c8d2323410a0",
+   "h_size": 42,
+   "world_hash": "72c5c365b8b4f9612ff22f5713d18b2f5d581e91b9d06a7e15b8f17bc4cb7d68",
+   "world_seed": 573065031
+  },
+  "595102708": {
+   "aux_seed": 988273821,
+   "draw": 30,
+   "enc_seed": 476498929,
+   "encoding_hash": "6dcacb1392f079ffac6581ee7e17e67cfc77a634f39fa6a4e4625e474ac78b14",
+   "h_size": 26,
+   "world_hash": "086c593d19e2a0da714e65a8534fe692b24163787e30032659727af4c0621a96",
+   "world_seed": 595102708
+  },
+  "632991533": {
+   "aux_seed": 847118454,
+   "draw": 47,
+   "enc_seed": 237885744,
+   "encoding_hash": "241b6f8e9e8c8353aca35d2413a9e8fa088d3630e3d7e0067fbb83f239132987",
+   "h_size": 29,
+   "world_hash": "4dc7f631116d8db6572abbfe55ccef21bb8f6b7e105ee7177f73aa236e3c3538",
+   "world_seed": 632991533
+  },
+  "653148153": {
+   "aux_seed": 476272222,
+   "draw": 19,
+   "enc_seed": 486084839,
+   "encoding_hash": "b6b9c7a7fa3b2aefdca7973c86760366b0766f9675ca307709c2d7f5a3fbe853",
+   "h_size": 33,
+   "world_hash": "32d46175dac403906c9343c97ec898c24d0e78d2f0b0de40657f5d713393d0c4",
+   "world_seed": 653148153
+  },
+  "664168305": {
+   "aux_seed": 663930677,
+   "draw": 40,
+   "enc_seed": 580414286,
+   "encoding_hash": "0b232bf6c330abdcb14b7273ae708628d956cac2a3504a9289207951c1be861d",
+   "h_size": 37,
+   "world_hash": "4f9bb0dc8189fd10d160353bcfb517e40a79954f9752fb3bcb059adabd3c8512",
+   "world_seed": 664168305
+  },
+  "665146477": {
+   "aux_seed": 253413611,
+   "draw": 44,
+   "enc_seed": 398064343,
+   "encoding_hash": "feb4bdbc174a73247af4a4b88cc9c2080e5d3b38a4805f0257ff562cfa30b481",
+   "h_size": 37,
+   "world_hash": "85c11aad3635b0e46466fd009549597facdfb17920896941fae608966680fbc4",
+   "world_seed": 665146477
+  },
+  "752318559": {
+   "aux_seed": 584302125,
+   "draw": 7,
+   "enc_seed": 15754920,
+   "encoding_hash": "708a9cc0062ff0c581f5f47c3f74c68b9bd7f13f0c212e44157ed4b544bd343d",
+   "h_size": 41,
+   "world_hash": "6c30e8949bd4f0bbd03c77657df588977d8b253821d8282f126c007b96158af7",
+   "world_seed": 752318559
+  },
+  "76023758": {
+   "aux_seed": 409809630,
+   "draw": 25,
+   "enc_seed": 155259401,
+   "encoding_hash": "4b93d6e856cc798b4fdf8e8c2f26f24316985c5608964d318fc800340a87c613",
+   "h_size": 17,
+   "world_hash": "69aa09cefc2c81be0b0dafee96713f15fed2a787a4c78fb7486c8c71030f7742",
+   "world_seed": 76023758
+  },
+  "780101032": {
+   "aux_seed": 950052037,
+   "draw": 42,
+   "enc_seed": 511408689,
+   "encoding_hash": "50a5e75e5d846eccca8cdb1b9949a6173492444957f03c690658ad1826a89525",
+   "h_size": 35,
+   "world_hash": "7b892b46d90588c9eaae727b80fbdc8c0be6d37a7910376433632f80aa81d21f",
+   "world_seed": 780101032
+  },
+  "808895628": {
+   "aux_seed": 104515842,
+   "draw": 8,
+   "enc_seed": 101285189,
+   "encoding_hash": "8581abad8b65e265033f5bdeb5a40feab86cf401021874e7920396a34b5023ec",
+   "h_size": 20,
+   "world_hash": "90bc66b2a173de80d90cbdc51bcc2934f2341007763dfbe100e9e6b4ea67bf38",
+   "world_seed": 808895628
+  },
+  "816022633": {
+   "aux_seed": 547860347,
+   "draw": 34,
+   "enc_seed": 263597644,
+   "encoding_hash": "e994c47955e7171f89f0e53def518d3bbdfde65d36b9516a84d6837647e6a114",
+   "h_size": 23,
+   "world_hash": "9047171e3a71bb59b01fe41f83085d7e1664fc5b501c6f14a11b90b343ae7382",
+   "world_seed": 816022633
+  },
+  "846264557": {
+   "aux_seed": 536411049,
+   "draw": 13,
+   "enc_seed": 994610286,
+   "encoding_hash": "2bbbd01db6462dda6d8ae18f4eccecd809c516860b8a46b8b1fd9a911ac6c811",
+   "h_size": 36,
+   "world_hash": "1fd50bb5348c4138e58f1489c6433bdd47d033a852fcac7af05c288eb3c8bfc8",
+   "world_seed": 846264557
+  },
+  "859820095": {
+   "aux_seed": 878211219,
+   "draw": 32,
+   "enc_seed": 233670559,
+   "encoding_hash": "7cd0d2af128dba5e9bba79133f754ae56fafd1785708c284e6825dafc03a2111",
+   "h_size": 21,
+   "world_hash": "85d56583578cdd4442a92f53837beeb2d74620443a9d8614aa0e6f71e5b48f70",
+   "world_seed": 859820095
+  },
+  "859957369": {
+   "aux_seed": 728813681,
+   "draw": 37,
+   "enc_seed": 736166737,
+   "encoding_hash": "6be69f8e950cf05364092ee8e41bdaf4a9411878f8f9a84542e08ec50086dd9d",
+   "h_size": 18,
+   "world_hash": "568b74c1cae14a16a44270581a798711380f2805111a2c4842609fb4babb9779",
+   "world_seed": 859957369
+  },
+  "875115563": {
+   "aux_seed": 255798433,
+   "draw": 15,
+   "enc_seed": 598556326,
+   "encoding_hash": "a33b399977d482c89125bd7f5a8dea2b60700ba21f6cb98dceafb4e36a9d99c4",
+   "h_size": 12,
+   "world_hash": "8c2b3b92040e0ce5a8c7de45101b3baa27b43d3976b2b3d69db0490aa263b1a3",
+   "world_seed": 875115563
+  },
+  "89132085": {
+   "aux_seed": 882207739,
+   "draw": 23,
+   "enc_seed": 133953468,
+   "encoding_hash": "9980d2db4f7551c3ab2971bfb44b49e64a80d1c284512a6a5621dc7244a63bac",
+   "h_size": 93,
+   "world_hash": "a7190a3989ebbb1675cd13f74bddf537e72d32eaf72944c1849dd69c20ade49c",
+   "world_seed": 89132085
+  },
+  "923026488": {
+   "aux_seed": 572667107,
+   "draw": 16,
+   "enc_seed": 270542629,
+   "encoding_hash": "1395099948dc61abccbcab6ba47df0cb4debfc90532197401f0750ba57e09c92",
+   "h_size": 27,
+   "world_hash": "4e86d62a8fecddb5b9b3640faca8387b1bd1a6959eae1dae1e8b3d9b26bdb82c",
+   "world_seed": 923026488
+  },
+  "929432979": {
+   "aux_seed": 969278792,
+   "draw": 18,
+   "enc_seed": 101677478,
+   "encoding_hash": "c4f0d3dd1b7f7d28711547b84d8c002fd367e392633fbc7303dabc5ee9eceed5",
+   "h_size": 48,
+   "world_hash": "749a18632de1001ad2b724a279a9c85e700d0649d0eaf840aeac94917be151d0",
+   "world_seed": 929432979
+  },
+  "947506285": {
+   "aux_seed": 271910158,
+   "draw": 22,
+   "enc_seed": 153059062,
+   "encoding_hash": "af16ebf11e92293a54f42d2fd9c56d467c409cb93dd1c521a2ffa5cbff9b0281",
+   "h_size": 26,
+   "world_hash": "a904205cfa55acb5b1faa85e38492cf6b5f7c13240d11aef292686b68d7b6510",
+   "world_seed": 947506285
+  },
+  "948874812": {
+   "aux_seed": 644145926,
+   "draw": 1,
+   "enc_seed": 72089571,
+   "encoding_hash": "ec7938968bad92957a3a3fe1910268f19f271753a4138e7a147f6ddc48df4c8f",
+   "h_size": 21,
+   "world_hash": "adc56482b1256948daf629cd6389c2907f21b0de783312352ab5d0ad096477a0",
+   "world_seed": 948874812
+  },
+  "952385107": {
+   "aux_seed": 487173957,
+   "draw": 29,
+   "enc_seed": 975083018,
+   "encoding_hash": "0e522a40ccab94dc782cd7401ab8b2dc0735a1d2a50541124cafeaf6c1ca20bc",
+   "h_size": 33,
+   "world_hash": "0341a3c28767249f6df367aaca65b149ddcde281a99cd158c3708c919c0e2b70",
+   "world_seed": 952385107
+  },
+  "98061968": {
+   "aux_seed": 429840746,
+   "draw": 9,
+   "enc_seed": 74565280,
+   "encoding_hash": "00aa72a4a2000acce5d95b486886a938947b97fa2a0552770af01f81781d89d9",
+   "h_size": 31,
+   "world_hash": "bab52c72aee7579d767a282c49c3525322e3f2d450686afca0a63653e109dedb",
+   "world_seed": 98061968
+  }
+ }
+}

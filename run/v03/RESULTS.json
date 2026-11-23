@@ -1,0 +1,6564 @@
+{
+ "core_sha256": "2bfd7ec16225e721e2e4e01d21877da22e77b2528730f03fb2da2b29ab2d67a8",
+ "taus": {
+  "alt": [
+   {
+    "floats": {
+     "tau_b": 0.712,
+     "tau_d": 0.017857142857142856,
+     "tau_s": 0.7818181818181819,
+     "tau_t": 0.9758064516129032
+    },
+    "tau_b": "89/125",
+    "tau_d": "1/56",
+    "tau_s": "43/55",
+    "tau_t": "121/124"
+   },
+   {
+    "floats": {
+     "tau_b": 0.7172413793103448,
+     "tau_d": 0.0,
+     "tau_s": 0.7333333333333333,
+     "tau_t": 0.9754601226993865
+    },
+    "tau_b": "104/145",
+    "tau_d": "0/1",
+    "tau_s": "11/15",
+    "tau_t": "159/163"
+   },
+   {
+    "floats": {
+     "tau_b": 0.69375,
+     "tau_d": 0.017857142857142856,
+     "tau_s": 0.8,
+     "tau_t": 0.9805194805194806
+    },
+    "tau_b": "111/160",
+    "tau_d": "1/56",
+    "tau_s": "4/5",
+    "tau_t": "151/154"
+   },
+   {
+    "floats": {
+     "tau_b": 0.6644295302013423,
+     "tau_d": 0.014925373134328358,
+     "tau_s": 0.7619047619047619,
+     "tau_t": 0.9701492537313433
+    },
+    "tau_b": "99/149",
+    "tau_d": "1/67",
+    "tau_s": "16/21",
+    "tau_t": "65/67"
+   },
+   {
+    "floats": {
+     "tau_b": 0.6624203821656051,
+     "tau_d": 0.015625,
+     "tau_s": 0.7352941176470589,
+     "tau_t": 0.9727891156462585
+    },
+    "tau_b": "104/157",
+    "tau_d": "1/64",
+    "tau_s": "25/34",
+    "tau_t": "143/147"
+   },
+   {
+    "floats": {
+     "tau_b": 0.711764705882353,
+     "tau_d": 0.0,
+     "tau_s": 0.765625,
+     "tau_t": 0.98
+    },
+    "tau_b": "121/170",
+    "tau_d": "0/1",
+    "tau_s": "49/64",
+    "tau_t": "49/50"
+   },
+   {
+    "floats": {
+     "tau_b": 0.7109375,
+     "tau_d": 0.0,
+     "tau_s": 0.7592592592592593,
+     "tau_t": 0.9769230769230769
+    },
+    "tau_b": "91/128",
+    "tau_d": "0/1",
+    "tau_s": "41/54",
+    "tau_t": "127/130"
+   },
+   {
+    "floats": {
+     "tau_b": 0.6423357664233577,
+     "tau_d": 0.02,
+     "tau_s": 0.7916666666666666,
+     "tau_t": 0.9801324503311258
+    },
+    "tau_b": "88/137",
+    "tau_d": "1/50",
+    "tau_s": "19/24",
+    "tau_t": "148/151"
+   },
+   {
+    "floats": {
+     "tau_b": 0.6607142857142857,
+     "tau_d": 0.01694915254237288,
+     "tau_s": 0.7857142857142857,
+     "tau_t": 0.9765625
+    },
+    "tau_b": "37/56",
+    "tau_d": "1/59",
+    "tau_s": "11/14",
+    "tau_t": "125/128"
+   },
+   {
+    "floats": {
+     "tau_b": 0.6923076923076923,
+     "tau_d": 0.01639344262295082,
+     "tau_s": 0.75,
+     "tau_t": 0.9720670391061452
+    },
+    "tau_b": "9/13",
+    "tau_d": "1/61",
+    "tau_s": "3/4",
+    "tau_t": "174/179"
+   },
+   {
+    "floats": {
+     "tau_b": 0.6935483870967742,
+     "tau_d": 0.017241379310344827,
+     "tau_s": 0.7534246575342466,
+     "tau_t": 0.971830985915493
+    },
+    "tau_b": "43/62",
+    "tau_d": "1/58",
+    "tau_s": "55/73",
+    "tau_t": "69/71"
+   },
+   {
+    "floats": {
+     "tau_b": 0.6821192052980133,
+     "tau_d": 0.017241379310344827,
+     "tau_s": 0.7843137254901961,
+     "tau_t": 0.9763779527559056
+    },
+    "tau_b": "103/151",
+    "tau_d": "1/58",
+    "tau_s": "40/51",
+    "tau_t": "124/127"
+   },
+   {
+    "floats": {
+     "tau_b": 0.7226890756302521,
+     "tau_d": 0.015151515151515152,
+     "tau_s": 0.7647058823529411,
+     "tau_t": 0.9788732394366197
+    },
+    "tau_b": "86/119",
+    "tau_d": "1/66",
+    "tau_s": "13/17",
+    "tau_t": "139/142"
+   },
+   {
+    "floats": {
+     "tau_b": 0.7333333333333333,
+     "tau_d": 0.01694915254237288,
+     "tau_s": 0.7413793103448276,
+     "tau_t": 0.9776119402985075
+    },
+    "tau_b": "11/15",
+    "tau_d": "1/59",
+    "tau_s": "43/58",
+    "tau_t": "131/134"
+   },
+   {
+    "floats": {
+     "tau_b": 0.6475409836065574,
+     "tau_d": 0.014285714285714285,
+     "tau_s": 0.7638888888888888,
+     "tau_t": 0.9784172661870504
+    },
+    "tau_b": "79/122",
+    "tau_d": "1/70",
+    "tau_s": "55/72",
+    "tau_t": "136/139"
+   },
+   {
+    "floats": {
+     "tau_b": 0.7122302158273381,
+     "tau_d": 0.0,
+     "tau_s": 0.78125,
+     "tau_t": 0.9814814814814815
+    },
+    "tau_b": "99/139",
+    "tau_d": "0/1",
+    "tau_s": "25/32",
+    "tau_t": "53/54"
+   },
+   {
+    "floats": {
+     "tau_b": 0.6642857142857143,
+     "tau_d": 0.0196078431372549,
+     "tau_s": 0.7931034482758621,
+     "tau_t": 0.9757575757575757
+    },
+    "tau_b": "93/140",
+    "tau_d": "1/51",
+    "tau_s": "23/29",
+    "tau_t": "161/165"
+   },
+   {
+    "floats": {
+     "tau_b": 0.6833333333333333,
+     "tau_d": 0.016666666666666666,
+     "tau_s": 0.7692307692307693,
+     "tau_t": 0.9696969696969697
+    },
+    "tau_b": "41/60",
+    "tau_d": "1/60",
+    "tau_s": "10/13",
+    "tau_t": "32/33"
+   },
+   {
+    "floats": {
+     "tau_b": 0.708029197080292,
+     "tau_d": 0.0,
+     "tau_s": 0.7547169811320755,
+     "tau_t": 0.9764705882352941
+    },
+    "tau_b": "97/137",
+    "tau_d": "0/1",
+    "tau_s": "40/53",
+    "tau_t": "83/85"
+   },
+   {
+    "floats": {
+     "tau_b": 0.7692307692307693,
+     "tau_d": 0.02,
+     "tau_s": 0.7567567567567568,
+     "tau_t": 0.9776119402985075
+    },
+    "tau_b": "10/13",
+    "tau_d": "1/50",
+    "tau_s": "28/37",
+    "tau_t": "131/134"
+   }
+  ],
+  "i6": {
+   "floats": {
+    "tau_b": 0.6875,
+    "tau_d": 0.023809523809523808,
+    "tau_s": 0.7959183673469388,
+    "tau_t": 0.9769230769230769
+   },
+   "tau_b": "11/16",
+   "tau_d": "1/42",
+   "tau_s": "39/49",
+   "tau_t": "127/130"
+  },
+  "i7": {
+   "floats": {
+    "tau_b": 0.7867647058823529,
+    "tau_d": 0.02564102564102564,
+    "tau_s": 0.7796610169491526,
+    "tau_t": 0.9772727272727273
+   },
+   "tau_b": "107/136",
+   "tau_d": "1/39",
+   "tau_s": "46/59",
+   "tau_t": "43/44"
+  },
+  "i8": {
+   "floats": {
+    "tau_b": 0.7867647058823529,
+    "tau_d": 0.02564102564102564,
+    "tau_s": 0.7796610169491526,
+    "tau_t": 0.9659863945578231
+   },
+   "tau_b": "107/136",
+   "tau_d": "1/39",
+   "tau_s": "46/59",
+   "tau_t": "142/147"
+  },
+  "main": {
+   "floats": {
+    "tau_b": 0.6875,
+    "tau_d": 0.0,
+    "tau_s": 0.7959183673469388,
+    "tau_t": 0.9772727272727273
+   },
+   "tau_b": "11/16",
+   "tau_d": "0/1",
+   "tau_s": "39/49",
+   "tau_t": "43/44"
+  }
+ },
+ "worlds": [
+  {
+   "descriptive": {
+    "all_true": {
+     "feasible_alphas": [
+      0.95,
+      0.9,
+      0.85
+     ],
+     "scores": true,
+     "scoring_alphas": [
+      0.95,
+      0.9,
+      0.85
+     ]
+    },
+    "cross_seed": {
+     "agree_all": 72,
+     "agree_class": 49,
+     "aux_seed": 644145926,
+     "n_all": 74,
+     "n_class": 51,
+     "share_all": 0.972972972972973,
+     "share_class": 0.9607843137254902
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.4336734693877551,
+     "positive": true
+    },
+    "g8_hyp_count": 20,
+    "g8_single_atom_only": null,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 21
+    },
+    "t1_all_points": "FAILS",
+    "t1_draw_sensitivity": [
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "FAILS"
+    ],
+    "t1_i6": "HOLDS",
+    "t1_i7": "FAILS",
+    "t1_i8": "FAILS",
+    "t1_i9": "HOLDS",
+    "t1_structure": {
+     "alpha_max": 0.7,
+     "alpha_min": 0.65,
+     "defined": true,
+     "feasible_alphas": [
+      0.7,
+      0.65
+     ],
+     "largest_increase": "1/84",
+     "sources_spanned": 1,
+     "wrong_class_atoms_spanned": 0
+    }
+   },
+   "draw": 1,
+   "h_size": 21,
+   "outcomes": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "HOLDS",
+    "T-1": "HOLDS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 948874812
+  },
+  {
+   "descriptive": {
+    "all_true": {
+     "feasible_alphas": [
+      0.95
+     ],
+     "scores": true,
+     "scoring_alphas": [
+      0.95
+     ]
+    },
+    "cross_seed": {
+     "agree_all": 83,
+     "agree_class": 51,
+     "aux_seed": 789914944,
+     "n_all": 90,
+     "n_class": 56,
+     "share_all": 0.9222222222222223,
+     "share_class": 0.9107142857142857
+    },
+    "default_feasible": false,
+    "g7b": {
+     "hypervolume": 0.0,
+     "positive": false
+    },
+    "g8_hyp_count": 41,
+    "g8_single_atom_only": null,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 15
+    },
+    "t1_all_points": "HOLDS",
+    "t1_draw_sensitivity": [
+     "HOLDS",
+     "HOLDS",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "HOLDS",
+     "HOLDS",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "HOLDS",
+     "HOLDS",
+     "UNDEFINED",
+     "HOLDS",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "HOLDS"
+    ],
+    "t1_i6": "UNDEFINED",
+    "t1_i7": "HOLDS",
+    "t1_i8": "HOLDS",
+    "t1_i9": "UNDEFINED",
+    "t1_structure": {
+     "alpha_max": null,
+     "alpha_min": null,
+     "defined": false,
+     "feasible_alphas": [],
+     "largest_increase": null,
+     "sources_spanned": null,
+     "wrong_class_atoms_spanned": null
+    }
+   },
+   "draw": 2,
+   "h_size": 56,
+   "outcomes": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "HOLDS",
+    "T-1": "UNDEFINED"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "NT": {
+     "outcome": "UNDEFINED",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 275390111
+  },
+  {
+   "descriptive": {
+    "all_true": {
+     "feasible_alphas": [
+      0.95
+     ],
+     "scores": true,
+     "scoring_alphas": [
+      0.95
+     ]
+    },
+    "cross_seed": {
+     "agree_all": 85,
+     "agree_class": 53,
+     "aux_seed": 213755146,
+     "n_all": 87,
+     "n_class": 54,
+     "share_all": 0.9770114942528736,
+     "share_class": 0.9814814814814815
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.6289212289212289,
+     "positive": true
+    },
+    "g8_hyp_count": 31,
+    "g8_single_atom_only": null,
+    "g8_whole_grid": {
+     "all_points_ok": true,
+     "n_points": 30,
+     "n_points_ok": 30
+    },
+    "t1_all_points": "FAILS",
+    "t1_draw_sensitivity": [
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS"
+    ],
+    "t1_i6": "FAILS",
+    "t1_i7": "FAILS",
+    "t1_i8": "FAILS",
+    "t1_i9": "FAILS",
+    "t1_structure": {
+     "alpha_max": 0.85,
+     "alpha_min": 0.5,
+     "defined": true,
+     "feasible_alphas": [
+      0.85,
+      0.8,
+      0.75,
+      0.7,
+      0.65,
+      0.6,
+      0.55,
+      0.5
+     ],
+     "largest_increase": "3/20",
+     "sources_spanned": 4,
+     "wrong_class_atoms_spanned": 1
+    }
+   },
+   "draw": 3,
+   "h_size": 45,
+   "outcomes": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "HOLDS",
+    "T-1": "FAILS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 127381466
+  },
+  {
+   "descriptive": {
+    "all_true": {
+     "feasible_alphas": [
+      0.95
+     ],
+     "scores": true,
+     "scoring_alphas": [
+      0.95
+     ]
+    },
+    "cross_seed": {
+     "agree_all": 61,
+     "agree_class": 51,
+     "aux_seed": 147774195,
+     "n_all": 66,
+     "n_class": 53,
+     "share_all": 0.9242424242424242,
+     "share_class": 0.9622641509433962
+    },
+    "default_feasible": false,
+    "g7b": {
+     "hypervolume": 0.0,
+     "positive": false
+    },
+    "g8_hyp_count": 11,
+    "g8_single_atom_only": null,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 18
+    },
+    "t1_all_points": "FAILS",
+    "t1_draw_sensitivity": [
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED"
+    ],
+    "t1_i6": "UNDEFINED",
+    "t1_i7": "UNDEFINED",
+    "t1_i8": "UNDEFINED",
+    "t1_i9": "UNDEFINED",
+    "t1_structure": {
+     "alpha_max": null,
+     "alpha_min": null,
+     "defined": false,
+     "feasible_alphas": [],
+     "largest_increase": null,
+     "sources_spanned": null,
+     "wrong_class_atoms_spanned": null
+    }
+   },
+   "draw": 4,
+   "h_size": 68,
+   "outcomes": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "HOLDS",
+    "T-1": "UNDEFINED"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "HOLDS",
+     "test": "G7"
+    },
+    "NT": {
+     "outcome": "UNDEFINED",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 479649863
+  },
+  {
+   "descriptive": {
+    "all_true": {
+     "feasible_alphas": [
+      0.95
+     ],
+     "scores": true,
+     "scoring_alphas": [
+      0.95
+     ]
+    },
+    "cross_seed": {
+     "agree_all": 74,
+     "agree_class": 53,
+     "aux_seed": 47632626,
+     "n_all": 79,
+     "n_class": 58,
+     "share_all": 0.9367088607594937,
+     "share_class": 0.9137931034482759
+    },
+    "default_feasible": false,
+    "g7b": {
+     "hypervolume": 0.1382488479262673,
+     "positive": true
+    },
+    "g8_hyp_count": 78,
+    "g8_single_atom_only": false,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 12
+    },
+    "t1_all_points": "FAILS",
+    "t1_draw_sensitivity": [
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "UNDEFINED",
+     "UNDEFINED",
+     "FAILS",
+     "FAILS",
+     "HOLDS",
+     "UNDEFINED",
+     "FAILS",
+     "FAILS",
+     "UNDEFINED",
+     "FAILS",
+     "FAILS",
+     "UNDEFINED",
+     "FAILS",
+     "HOLDS",
+     "UNDEFINED",
+     "FAILS",
+     "FAILS"
+    ],
+    "t1_i6": "HOLDS",
+    "t1_i7": "FAILS",
+    "t1_i8": "FAILS",
+    "t1_i9": "UNDEFINED",
+    "t1_structure": {
+     "alpha_max": null,
+     "alpha_min": null,
+     "defined": false,
+     "feasible_alphas": [
+      0.75
+     ],
+     "largest_increase": null,
+     "sources_spanned": null,
+     "wrong_class_atoms_spanned": null
+    }
+   },
+   "draw": 5,
+   "h_size": 31,
+   "outcomes": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "FAILS",
+    "T-1": "UNDEFINED"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "NT": {
+     "outcome": "UNDEFINED",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 343068960
+  },
+  {
+   "descriptive": {
+    "all_true": {
+     "feasible_alphas": [
+      0.95
+     ],
+     "scores": true,
+     "scoring_alphas": [
+      0.95
+     ]
+    },
+    "cross_seed": {
+     "agree_all": 90,
+     "agree_class": 55,
+     "aux_seed": 497143233,
+     "n_all": 98,
+     "n_class": 59,
+     "share_all": 0.9183673469387755,
+     "share_class": 0.9322033898305084
+    },
+    "default_feasible": false,
+    "g7b": {
+     "hypervolume": 0.0,
+     "positive": false
+    },
+    "g8_hyp_count": 14,
+    "g8_single_atom_only": null,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 12
+    },
+    "t1_all_points": "FAILS",
+    "t1_draw_sensitivity": [
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "FAILS",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED"
+    ],
+    "t1_i6": "UNDEFINED",
+    "t1_i7": "UNDEFINED",
+    "t1_i8": "UNDEFINED",
+    "t1_i9": "UNDEFINED",
+    "t1_structure": {
+     "alpha_max": null,
+     "alpha_min": null,
+     "defined": false,
+     "feasible_alphas": [],
+     "largest_increase": null,
+     "sources_spanned": null,
+     "wrong_class_atoms_spanned": null
+    }
+   },
+   "draw": 6,
+   "h_size": 21,
+   "outcomes": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "HOLDS",
+    "T-1": "UNDEFINED"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "NT": {
+     "outcome": "UNDEFINED",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 278779483
+  },
+  {
+   "descriptive": {
+    "all_true": {
+     "feasible_alphas": [
+      0.95
+     ],
+     "scores": true,
+     "scoring_alphas": [
+      0.95
+     ]
+    },
+    "cross_seed": {
+     "agree_all": 79,
+     "agree_class": 53,
+     "aux_seed": 584302125,
+     "n_all": 85,
+     "n_class": 57,
+     "share_all": 0.9294117647058824,
+     "share_class": 0.9298245614035088
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.5116869918699187,
+     "positive": true
+    },
+    "g8_hyp_count": 74,
+    "g8_single_atom_only": false,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 20
+    },
+    "t1_all_points": "FAILS",
+    "t1_draw_sensitivity": [
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS"
+    ],
+    "t1_i6": "HOLDS",
+    "t1_i7": "HOLDS",
+    "t1_i8": "HOLDS",
+    "t1_i9": "HOLDS",
+    "t1_structure": {
+     "alpha_max": 0.8,
+     "alpha_min": 0.5,
+     "defined": true,
+     "feasible_alphas": [
+      0.8,
+      0.75,
+      0.7,
+      0.65,
+      0.6,
+      0.55,
+      0.5
+     ],
+     "largest_increase": "23/600",
+     "sources_spanned": 3,
+     "wrong_class_atoms_spanned": 1
+    }
+   },
+   "draw": 7,
+   "h_size": 41,
+   "outcomes": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "FAILS",
+    "T-1": "HOLDS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 752318559
+  },
+  {
+   "descriptive": {
+    "all_true": {
+     "feasible_alphas": [
+      0.95
+     ],
+     "scores": true,
+     "scoring_alphas": [
+      0.95
+     ]
+    },
+    "cross_seed": {
+     "agree_all": 78,
+     "agree_class": 54,
+     "aux_seed": 104515842,
+     "n_all": 83,
+     "n_class": 58,
+     "share_all": 0.9397590361445783,
+     "share_class": 0.9310344827586207
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.375,
+     "positive": true
+    },
+    "g8_hyp_count": 19,
+    "g8_single_atom_only": null,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 21
+    },
+    "t1_all_points": "FAILS",
+    "t1_draw_sensitivity": [
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "UNDEFINED",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS"
+    ],
+    "t1_i6": "HOLDS",
+    "t1_i7": "HOLDS",
+    "t1_i8": "HOLDS",
+    "t1_i9": "HOLDS",
+    "t1_structure": {
+     "alpha_max": 0.85,
+     "alpha_min": 0.65,
+     "defined": true,
+     "feasible_alphas": [
+      0.85,
+      0.8,
+      0.75,
+      0.7,
+      0.65
+     ],
+     "largest_increase": "0/1",
+     "sources_spanned": 2,
+     "wrong_class_atoms_spanned": 0
+    }
+   },
+   "draw": 8,
+   "h_size": 20,
+   "outcomes": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "HOLDS",
+    "T-1": "HOLDS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 808895628
+  },
+  {
+   "descriptive": {
+    "all_true": {
+     "feasible_alphas": [
+      0.95
+     ],
+     "scores": true,
+     "scoring_alphas": [
+      0.95
+     ]
+    },
+    "cross_seed": {
+     "agree_all": 64,
+     "agree_class": 51,
+     "aux_seed": 429840746,
+     "n_all": 64,
+     "n_class": 51,
+     "share_all": 1.0,
+     "share_class": 1.0
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.7878289473684211,
+     "positive": true
+    },
+    "g8_hyp_count": 18,
+    "g8_single_atom_only": null,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 26
+    },
+    "t1_all_points": "FAILS",
+    "t1_draw_sensitivity": [
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS"
+    ],
+    "t1_i6": "HOLDS",
+    "t1_i7": "HOLDS",
+    "t1_i8": "HOLDS",
+    "t1_i9": "HOLDS",
+    "t1_structure": {
+     "alpha_max": 0.7,
+     "alpha_min": 0.5,
+     "defined": true,
+     "feasible_alphas": [
+      0.7,
+      0.65,
+      0.6,
+      0.55,
+      0.5
+     ],
+     "largest_increase": "43/1248",
+     "sources_spanned": 3,
+     "wrong_class_atoms_spanned": 0
+    }
+   },
+   "draw": 9,
+   "h_size": 31,
+   "outcomes": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "HOLDS",
+    "T-1": "HOLDS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 98061968
+  },
+  {
+   "descriptive": {
+    "all_true": {
+     "feasible_alphas": [
+      0.95
+     ],
+     "scores": true,
+     "scoring_alphas": [
+      0.95
+     ]
+    },
+    "cross_seed": {
+     "agree_all": 69,
+     "agree_class": 48,
+     "aux_seed": 469013679,
+     "n_all": 74,
+     "n_class": 52,
+     "share_all": 0.9324324324324325,
+     "share_class": 0.9230769230769231
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.16363636363636364,
+     "positive": true
+    },
+    "g8_hyp_count": 10,
+    "g8_single_atom_only": null,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 15
+    },
+    "t1_all_points": "FAILS",
+    "t1_draw_sensitivity": [
+     "HOLDS",
+     "HOLDS",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "HOLDS",
+     "HOLDS",
+     "UNDEFINED",
+     "UNDEFINED",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "UNDEFINED",
+     "HOLDS",
+     "UNDEFINED",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS"
+    ],
+    "t1_i6": "UNDEFINED",
+    "t1_i7": "HOLDS",
+    "t1_i8": "HOLDS",
+    "t1_i9": "UNDEFINED",
+    "t1_structure": {
+     "alpha_max": null,
+     "alpha_min": null,
+     "defined": false,
+     "feasible_alphas": [
+      0.7
+     ],
+     "largest_increase": null,
+     "sources_spanned": null,
+     "wrong_class_atoms_spanned": null
+    }
+   },
+   "draw": 10,
+   "h_size": 22,
+   "outcomes": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "HOLDS",
+    "T-1": "UNDEFINED"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "NT": {
+     "outcome": "UNDEFINED",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 542242031
+  },
+  {
+   "descriptive": {
+    "all_true": {
+     "feasible_alphas": [
+      0.95
+     ],
+     "scores": true,
+     "scoring_alphas": [
+      0.95
+     ]
+    },
+    "cross_seed": {
+     "agree_all": 63,
+     "agree_class": 50,
+     "aux_seed": 827976888,
+     "n_all": 64,
+     "n_class": 51,
+     "share_all": 0.984375,
+     "share_class": 0.9803921568627451
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.5,
+     "positive": true
+    },
+    "g8_hyp_count": 11,
+    "g8_single_atom_only": false,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 18
+    },
+    "t1_all_points": "FAILS",
+    "t1_draw_sensitivity": [
+     "HOLDS",
+     "FAILS",
+     "HOLDS",
+     "HOLDS",
+     "FAILS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "FAILS",
+     "FAILS",
+     "HOLDS",
+     "HOLDS",
+     "FAILS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "FAILS",
+     "FAILS"
+    ],
+    "t1_i6": "HOLDS",
+    "t1_i7": "HOLDS",
+    "t1_i8": "HOLDS",
+    "t1_i9": "HOLDS",
+    "t1_structure": {
+     "alpha_max": 0.7,
+     "alpha_min": 0.6,
+     "defined": true,
+     "feasible_alphas": [
+      0.7,
+      0.65,
+      0.6
+     ],
+     "largest_increase": "0/1",
+     "sources_spanned": 1,
+     "wrong_class_atoms_spanned": 1
+    }
+   },
+   "draw": 11,
+   "h_size": 20,
+   "outcomes": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "FAILS",
+    "T-1": "HOLDS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 259285267
+  },
+  {
+   "descriptive": {
+    "all_true": {
+     "feasible_alphas": [],
+     "scores": false,
+     "scoring_alphas": []
+    },
+    "cross_seed": {
+     "agree_all": 84,
+     "agree_class": 47,
+     "aux_seed": 883288265,
+     "n_all": 90,
+     "n_class": 51,
+     "share_all": 0.9333333333333333,
+     "share_class": 0.9215686274509803
+    },
+    "default_feasible": false,
+    "g7b": {
+     "hypervolume": 0.15915119363395225,
+     "positive": true
+    },
+    "g8_hyp_count": 38,
+    "g8_single_atom_only": null,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 9
+    },
+    "t1_all_points": "FAILS",
+    "t1_draw_sensitivity": [
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED"
+    ],
+    "t1_i6": "UNDEFINED",
+    "t1_i7": "UNDEFINED",
+    "t1_i8": "HOLDS",
+    "t1_i9": "UNDEFINED",
+    "t1_structure": {
+     "alpha_max": null,
+     "alpha_min": null,
+     "defined": false,
+     "feasible_alphas": [
+      0.85
+     ],
+     "largest_increase": null,
+     "sources_spanned": null,
+     "wrong_class_atoms_spanned": null
+    }
+   },
+   "draw": 12,
+   "h_size": 29,
+   "outcomes": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "HOLDS",
+    "T-1": "UNDEFINED"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "NT": {
+     "outcome": "UNDEFINED",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 36655350
+  },
+  {
+   "descriptive": {
+    "all_true": {
+     "feasible_alphas": [
+      0.95
+     ],
+     "scores": true,
+     "scoring_alphas": [
+      0.95
+     ]
+    },
+    "cross_seed": {
+     "agree_all": 69,
+     "agree_class": 42,
+     "aux_seed": 536411049,
+     "n_all": 80,
+     "n_class": 49,
+     "share_all": 0.8625,
+     "share_class": 0.8571428571428571
+    },
+    "default_feasible": false,
+    "g7b": {
+     "hypervolume": 0.0,
+     "positive": false
+    },
+    "g8_hyp_count": 30,
+    "g8_single_atom_only": true,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 21
+    },
+    "t1_all_points": "FAILS",
+    "t1_draw_sensitivity": [
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "HOLDS",
+     "HOLDS",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "HOLDS",
+     "HOLDS",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "HOLDS",
+     "UNDEFINED",
+     "HOLDS"
+    ],
+    "t1_i6": "UNDEFINED",
+    "t1_i7": "HOLDS",
+    "t1_i8": "FAILS",
+    "t1_i9": "UNDEFINED",
+    "t1_structure": {
+     "alpha_max": null,
+     "alpha_min": null,
+     "defined": false,
+     "feasible_alphas": [],
+     "largest_increase": null,
+     "sources_spanned": null,
+     "wrong_class_atoms_spanned": null
+    }
+   },
+   "draw": 13,
+   "h_size": 36,
+   "outcomes": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "FAILS",
+    "T-1": "UNDEFINED"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "NT": {
+     "outcome": "UNDEFINED",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 846264557
+  },
+  {
+   "descriptive": {
+    "all_true": {
+     "feasible_alphas": [],
+     "scores": false,
+     "scoring_alphas": []
+    },
+    "cross_seed": {
+     "agree_all": 72,
+     "agree_class": 51,
+     "aux_seed": 2113873,
+     "n_all": 74,
+     "n_class": 53,
+     "share_all": 0.972972972972973,
+     "share_class": 0.9622641509433962
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.8333333333333334,
+     "positive": true
+    },
+    "g8_hyp_count": 21,
+    "g8_single_atom_only": null,
+    "g8_whole_grid": {
+     "all_points_ok": true,
+     "n_points": 30,
+     "n_points_ok": 30
+    },
+    "t1_all_points": "HOLDS",
+    "t1_draw_sensitivity": [
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS"
+    ],
+    "t1_i6": "HOLDS",
+    "t1_i7": "HOLDS",
+    "t1_i8": "HOLDS",
+    "t1_i9": "HOLDS",
+    "t1_structure": {
+     "alpha_max": 0.75,
+     "alpha_min": 0.5,
+     "defined": true,
+     "feasible_alphas": [
+      0.75,
+      0.7,
+      0.65,
+      0.6,
+      0.55,
+      0.5
+     ],
+     "largest_increase": "0/1",
+     "sources_spanned": 3,
+     "wrong_class_atoms_spanned": 0
+    }
+   },
+   "draw": 14,
+   "h_size": 24,
+   "outcomes": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "HOLDS",
+    "T-1": "HOLDS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 473885028
+  },
+  {
+   "descriptive": {
+    "all_true": {
+     "feasible_alphas": [
+      0.95,
+      0.9
+     ],
+     "scores": true,
+     "scoring_alphas": [
+      0.95,
+      0.9
+     ]
+    },
+    "cross_seed": {
+     "agree_all": 67,
+     "agree_class": 49,
+     "aux_seed": 255798433,
+     "n_all": 74,
+     "n_class": 55,
+     "share_all": 0.9054054054054054,
+     "share_class": 0.8909090909090909
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.45,
+     "positive": true
+    },
+    "g8_hyp_count": 14,
+    "g8_single_atom_only": true,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 10
+    },
+    "t1_all_points": "FAILS",
+    "t1_draw_sensitivity": [
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "UNDEFINED",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS"
+    ],
+    "t1_i6": "UNDEFINED",
+    "t1_i7": "HOLDS",
+    "t1_i8": "FAILS",
+    "t1_i9": "HOLDS",
+    "t1_structure": {
+     "alpha_max": 0.75,
+     "alpha_min": 0.7,
+     "defined": true,
+     "feasible_alphas": [
+      0.75,
+      0.7
+     ],
+     "largest_increase": "0/1",
+     "sources_spanned": 0,
+     "wrong_class_atoms_spanned": 0
+    }
+   },
+   "draw": 15,
+   "h_size": 12,
+   "outcomes": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "FAILS",
+    "T-1": "HOLDS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 875115563
+  },
+  {
+   "descriptive": {
+    "all_true": {
+     "feasible_alphas": [
+      0.95,
+      0.9,
+      0.85
+     ],
+     "scores": true,
+     "scoring_alphas": [
+      0.95,
+      0.9,
+      0.85
+     ]
+    },
+    "cross_seed": {
+     "agree_all": 74,
+     "agree_class": 54,
+     "aux_seed": 572667107,
+     "n_all": 84,
+     "n_class": 59,
+     "share_all": 0.8809523809523809,
+     "share_class": 0.9152542372881356
+    },
+    "default_feasible": false,
+    "g7b": {
+     "hypervolume": 0.0,
+     "positive": false
+    },
+    "g8_hyp_count": 20,
+    "g8_single_atom_only": false,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 12
+    },
+    "t1_all_points": "FAILS",
+    "t1_draw_sensitivity": [
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED"
+    ],
+    "t1_i6": "UNDEFINED",
+    "t1_i7": "UNDEFINED",
+    "t1_i8": "UNDEFINED",
+    "t1_i9": "UNDEFINED",
+    "t1_structure": {
+     "alpha_max": null,
+     "alpha_min": null,
+     "defined": false,
+     "feasible_alphas": [],
+     "largest_increase": null,
+     "sources_spanned": null,
+     "wrong_class_atoms_spanned": null
+    }
+   },
+   "draw": 16,
+   "h_size": 27,
+   "outcomes": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "FAILS",
+    "T-1": "UNDEFINED"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "NT": {
+     "outcome": "UNDEFINED",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 923026488
+  },
+  {
+   "descriptive": {
+    "all_true": {
+     "feasible_alphas": [],
+     "scores": false,
+     "scoring_alphas": []
+    },
+    "cross_seed": {
+     "agree_all": 80,
+     "agree_class": 52,
+     "aux_seed": 669911256,
+     "n_all": 85,
+     "n_class": 53,
+     "share_all": 0.9411764705882353,
+     "share_class": 0.9811320754716981
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.7478927203065133,
+     "positive": true
+    },
+    "g8_hyp_count": 20,
+    "g8_single_atom_only": false,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 13
+    },
+    "t1_all_points": "FAILS",
+    "t1_draw_sensitivity": [
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS"
+    ],
+    "t1_i6": "FAILS",
+    "t1_i7": "FAILS",
+    "t1_i8": "FAILS",
+    "t1_i9": "FAILS",
+    "t1_structure": {
+     "alpha_max": 0.8,
+     "alpha_min": 0.6,
+     "defined": true,
+     "feasible_alphas": [
+      0.8,
+      0.75,
+      0.7,
+      0.65,
+      0.6
+     ],
+     "largest_increase": "11/96",
+     "sources_spanned": 3,
+     "wrong_class_atoms_spanned": 0
+    }
+   },
+   "draw": 17,
+   "h_size": 15,
+   "outcomes": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "FAILS",
+    "T-1": "FAILS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 493984890
+  },
+  {
+   "descriptive": {
+    "all_true": {
+     "feasible_alphas": [
+      0.95,
+      0.9
+     ],
+     "scores": true,
+     "scoring_alphas": [
+      0.95,
+      0.9
+     ]
+    },
+    "cross_seed": {
+     "agree_all": 70,
+     "agree_class": 50,
+     "aux_seed": 969278792,
+     "n_all": 76,
+     "n_class": 53,
+     "share_all": 0.9210526315789473,
+     "share_class": 0.9433962264150944
+    },
+    "default_feasible": false,
+    "g7b": {
+     "hypervolume": 0.49721217600964435,
+     "positive": true
+    },
+    "g8_hyp_count": 27,
+    "g8_single_atom_only": null,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 20
+    },
+    "t1_all_points": "FAILS",
+    "t1_draw_sensitivity": [
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS"
+    ],
+    "t1_i6": "FAILS",
+    "t1_i7": "FAILS",
+    "t1_i8": "FAILS",
+    "t1_i9": "FAILS",
+    "t1_structure": {
+     "alpha_max": 0.65,
+     "alpha_min": 0.6,
+     "defined": true,
+     "feasible_alphas": [
+      0.65,
+      0.6
+     ],
+     "largest_increase": "73/553",
+     "sources_spanned": 1,
+     "wrong_class_atoms_spanned": 0
+    }
+   },
+   "draw": 18,
+   "h_size": 48,
+   "outcomes": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "HOLDS",
+    "T-1": "FAILS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 929432979
+  },
+  {
+   "descriptive": {
+    "all_true": {
+     "feasible_alphas": [
+      0.95
+     ],
+     "scores": true,
+     "scoring_alphas": [
+      0.95
+     ]
+    },
+    "cross_seed": {
+     "agree_all": 99,
+     "agree_class": 54,
+     "aux_seed": 476272222,
+     "n_all": 105,
+     "n_class": 56,
+     "share_all": 0.9428571428571428,
+     "share_class": 0.9642857142857143
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.48013468013468014,
+     "positive": true
+    },
+    "g8_hyp_count": 33,
+    "g8_single_atom_only": false,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 22
+    },
+    "t1_all_points": "FAILS",
+    "t1_draw_sensitivity": [
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS"
+    ],
+    "t1_i6": "HOLDS",
+    "t1_i7": "FAILS",
+    "t1_i8": "FAILS",
+    "t1_i9": "FAILS",
+    "t1_structure": {
+     "alpha_max": 0.85,
+     "alpha_min": 0.6,
+     "defined": true,
+     "feasible_alphas": [
+      0.85,
+      0.8,
+      0.75,
+      0.7,
+      0.65,
+      0.6
+     ],
+     "largest_increase": "124/2205",
+     "sources_spanned": 3,
+     "wrong_class_atoms_spanned": 0
+    }
+   },
+   "draw": 19,
+   "h_size": 33,
+   "outcomes": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "FAILS",
+    "T-1": "FAILS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 653148153
+  },
+  {
+   "descriptive": {
+    "all_true": {
+     "feasible_alphas": [],
+     "scores": false,
+     "scoring_alphas": []
+    },
+    "cross_seed": {
+     "agree_all": 86,
+     "agree_class": 45,
+     "aux_seed": 674746694,
+     "n_all": 96,
+     "n_class": 50,
+     "share_all": 0.8958333333333334,
+     "share_class": 0.9
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.7000000000000001,
+     "positive": true
+    },
+    "g8_hyp_count": 25,
+    "g8_single_atom_only": null,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 28
+    },
+    "t1_all_points": "FAILS",
+    "t1_draw_sensitivity": [
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS"
+    ],
+    "t1_i6": "FAILS",
+    "t1_i7": "FAILS",
+    "t1_i8": "FAILS",
+    "t1_i9": "FAILS",
+    "t1_structure": {
+     "alpha_max": 0.85,
+     "alpha_min": 0.6,
+     "defined": true,
+     "feasible_alphas": [
+      0.85,
+      0.8,
+      0.75,
+      0.7,
+      0.65,
+      0.6
+     ],
+     "largest_increase": "25/132",
+     "sources_spanned": 4,
+     "wrong_class_atoms_spanned": 0
+    }
+   },
+   "draw": 20,
+   "h_size": 10,
+   "outcomes": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "HOLDS",
+    "T-1": "FAILS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "HOLDS",
+     "test": "G7"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 392347110
+  },
+  {
+   "descriptive": {
+    "all_true": {
+     "feasible_alphas": [],
+     "scores": false,
+     "scoring_alphas": []
+    },
+    "cross_seed": {
+     "agree_all": 86,
+     "agree_class": 50,
+     "aux_seed": 371928998,
+     "n_all": 95,
+     "n_class": 56,
+     "share_all": 0.9052631578947369,
+     "share_class": 0.8928571428571429
+    },
+    "default_feasible": false,
+    "g7b": {
+     "hypervolume": 0.6521739130434782,
+     "positive": true
+    },
+    "g8_hyp_count": 19,
+    "g8_single_atom_only": null,
+    "g8_whole_grid": {
+     "all_points_ok": true,
+     "n_points": 30,
+     "n_points_ok": 30
+    },
+    "t1_all_points": "HOLDS",
+    "t1_draw_sensitivity": [
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "UNDEFINED",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS"
+    ],
+    "t1_i6": "HOLDS",
+    "t1_i7": "HOLDS",
+    "t1_i8": "HOLDS",
+    "t1_i9": "HOLDS",
+    "t1_structure": {
+     "alpha_max": 0.85,
+     "alpha_min": 0.75,
+     "defined": true,
+     "feasible_alphas": [
+      0.85,
+      0.8,
+      0.75
+     ],
+     "largest_increase": "1/22",
+     "sources_spanned": 4,
+     "wrong_class_atoms_spanned": 0
+    }
+   },
+   "draw": 21,
+   "h_size": 21,
+   "outcomes": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "HOLDS",
+    "T-1": "HOLDS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 25865271
+  },
+  {
+   "descriptive": {
+    "all_true": {
+     "feasible_alphas": [],
+     "scores": false,
+     "scoring_alphas": []
+    },
+    "cross_seed": {
+     "agree_all": 70,
+     "agree_class": 46,
+     "aux_seed": 271910158,
+     "n_all": 74,
+     "n_class": 50,
+     "share_all": 0.9459459459459459,
+     "share_class": 0.92
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.7307692307692307,
+     "positive": true
+    },
+    "g8_hyp_count": 11,
+    "g8_single_atom_only": null,
+    "g8_whole_grid": {
+     "all_points_ok": true,
+     "n_points": 30,
+     "n_points_ok": 30
+    },
+    "t1_all_points": "HOLDS",
+    "t1_draw_sensitivity": [
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS"
+    ],
+    "t1_i6": "HOLDS",
+    "t1_i7": "HOLDS",
+    "t1_i8": "HOLDS",
+    "t1_i9": "HOLDS",
+    "t1_structure": {
+     "alpha_max": 0.8,
+     "alpha_min": 0.5,
+     "defined": true,
+     "feasible_alphas": [
+      0.8,
+      0.75,
+      0.7,
+      0.65,
+      0.6,
+      0.55,
+      0.5
+     ],
+     "largest_increase": "0/1",
+     "sources_spanned": 4,
+     "wrong_class_atoms_spanned": 1
+    }
+   },
+   "draw": 22,
+   "h_size": 26,
+   "outcomes": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "HOLDS",
+    "T-1": "HOLDS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 947506285
+  },
+  {
+   "descriptive": {
+    "all_true": {
+     "feasible_alphas": [],
+     "scores": false,
+     "scoring_alphas": []
+    },
+    "cross_seed": {
+     "agree_all": 72,
+     "agree_class": 49,
+     "aux_seed": 882207739,
+     "n_all": 81,
+     "n_class": 54,
+     "share_all": 0.8888888888888888,
+     "share_class": 0.9074074074074074
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.4139784946236559,
+     "positive": true
+    },
+    "g8_hyp_count": 33,
+    "g8_single_atom_only": null,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 17
+    },
+    "t1_all_points": "HOLDS",
+    "t1_draw_sensitivity": [
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS"
+    ],
+    "t1_i6": "HOLDS",
+    "t1_i7": "HOLDS",
+    "t1_i8": "HOLDS",
+    "t1_i9": "HOLDS",
+    "t1_structure": {
+     "alpha_max": 0.7,
+     "alpha_min": 0.5,
+     "defined": true,
+     "feasible_alphas": [
+      0.7,
+      0.65,
+      0.6,
+      0.55,
+      0.5
+     ],
+     "largest_increase": "1/28",
+     "sources_spanned": 2,
+     "wrong_class_atoms_spanned": 0
+    }
+   },
+   "draw": 23,
+   "h_size": 93,
+   "outcomes": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "HOLDS",
+    "T-1": "HOLDS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 89132085
+  },
+  {
+   "descriptive": {
+    "all_true": {
+     "feasible_alphas": [
+      0.95,
+      0.9
+     ],
+     "scores": true,
+     "scoring_alphas": [
+      0.95,
+      0.9
+     ]
+    },
+    "cross_seed": {
+     "agree_all": 76,
+     "agree_class": 53,
+     "aux_seed": 146648378,
+     "n_all": 85,
+     "n_class": 57,
+     "share_all": 0.8941176470588236,
+     "share_class": 0.9298245614035088
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.49523809523809526,
+     "positive": true
+    },
+    "g8_hyp_count": 18,
+    "g8_single_atom_only": true,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 20
+    },
+    "t1_all_points": "FAILS",
+    "t1_draw_sensitivity": [
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "UNDEFINED",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "UNDEFINED",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS"
+    ],
+    "t1_i6": "HOLDS",
+    "t1_i7": "HOLDS",
+    "t1_i8": "HOLDS",
+    "t1_i9": "HOLDS",
+    "t1_structure": {
+     "alpha_max": 0.75,
+     "alpha_min": 0.65,
+     "defined": true,
+     "feasible_alphas": [
+      0.75,
+      0.7,
+      0.65
+     ],
+     "largest_increase": "-4/357",
+     "sources_spanned": 1,
+     "wrong_class_atoms_spanned": 0
+    }
+   },
+   "draw": 24,
+   "h_size": 25,
+   "outcomes": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "FAILS",
+    "T-1": "HOLDS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 211918494
+  },
+  {
+   "descriptive": {
+    "all_true": {
+     "feasible_alphas": [
+      0.95
+     ],
+     "scores": true,
+     "scoring_alphas": [
+      0.95
+     ]
+    },
+    "cross_seed": {
+     "agree_all": 85,
+     "agree_class": 50,
+     "aux_seed": 409809630,
+     "n_all": 98,
+     "n_class": 54,
+     "share_all": 0.8673469387755102,
+     "share_class": 0.9259259259259259
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.1925133689839572,
+     "positive": true
+    },
+    "g8_hyp_count": 12,
+    "g8_single_atom_only": true,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 11
+    },
+    "t1_all_points": "FAILS",
+    "t1_draw_sensitivity": [
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS"
+    ],
+    "t1_i6": "UNDEFINED",
+    "t1_i7": "HOLDS",
+    "t1_i8": "HOLDS",
+    "t1_i9": "HOLDS",
+    "t1_structure": {
+     "alpha_max": 0.85,
+     "alpha_min": 0.65,
+     "defined": true,
+     "feasible_alphas": [
+      0.85,
+      0.8,
+      0.75,
+      0.7,
+      0.65
+     ],
+     "largest_increase": "-1/36",
+     "sources_spanned": 1,
+     "wrong_class_atoms_spanned": 0
+    }
+   },
+   "draw": 25,
+   "h_size": 17,
+   "outcomes": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "FAILS",
+    "T-1": "HOLDS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 76023758
+  },
+  {
+   "descriptive": {
+    "all_true": {
+     "feasible_alphas": [
+      0.95
+     ],
+     "scores": true,
+     "scoring_alphas": [
+      0.95
+     ]
+    },
+    "cross_seed": {
+     "agree_all": 65,
+     "agree_class": 55,
+     "aux_seed": 551105753,
+     "n_all": 67,
+     "n_class": 56,
+     "share_all": 0.9701492537313433,
+     "share_class": 0.9821428571428571
+    },
+    "default_feasible": false,
+    "g7b": {
+     "hypervolume": 0.0,
+     "positive": false
+    },
+    "g8_hyp_count": 19,
+    "g8_single_atom_only": null,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 12
+    },
+    "t1_all_points": "FAILS",
+    "t1_draw_sensitivity": [
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED"
+    ],
+    "t1_i6": "UNDEFINED",
+    "t1_i7": "UNDEFINED",
+    "t1_i8": "FAILS",
+    "t1_i9": "UNDEFINED",
+    "t1_structure": {
+     "alpha_max": null,
+     "alpha_min": null,
+     "defined": false,
+     "feasible_alphas": [],
+     "largest_increase": null,
+     "sources_spanned": null,
+     "wrong_class_atoms_spanned": null
+    }
+   },
+   "draw": 26,
+   "h_size": 14,
+   "outcomes": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "HOLDS",
+    "T-1": "UNDEFINED"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "NT": {
+     "outcome": "UNDEFINED",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 453393852
+  },
+  {
+   "descriptive": {
+    "all_true": {
+     "feasible_alphas": [
+      0.95
+     ],
+     "scores": true,
+     "scoring_alphas": [
+      0.95
+     ]
+    },
+    "cross_seed": {
+     "agree_all": 71,
+     "agree_class": 51,
+     "aux_seed": 895478306,
+     "n_all": 75,
+     "n_class": 53,
+     "share_all": 0.9466666666666667,
+     "share_class": 0.9622641509433962
+    },
+    "default_feasible": false,
+    "g7b": {
+     "hypervolume": 0.0,
+     "positive": false
+    },
+    "g8_hyp_count": 17,
+    "g8_single_atom_only": false,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 18
+    },
+    "t1_all_points": "FAILS",
+    "t1_draw_sensitivity": [
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "HOLDS"
+    ],
+    "t1_i6": "UNDEFINED",
+    "t1_i7": "HOLDS",
+    "t1_i8": "HOLDS",
+    "t1_i9": "UNDEFINED",
+    "t1_structure": {
+     "alpha_max": null,
+     "alpha_min": null,
+     "defined": false,
+     "feasible_alphas": [],
+     "largest_increase": null,
+     "sources_spanned": null,
+     "wrong_class_atoms_spanned": null
+    }
+   },
+   "draw": 27,
+   "h_size": 42,
+   "outcomes": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "FAILS",
+    "T-1": "UNDEFINED"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "NT": {
+     "outcome": "UNDEFINED",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 521341742
+  },
+  {
+   "descriptive": {
+    "all_true": {
+     "feasible_alphas": [
+      0.95
+     ],
+     "scores": true,
+     "scoring_alphas": [
+      0.95
+     ]
+    },
+    "cross_seed": {
+     "agree_all": 64,
+     "agree_class": 48,
+     "aux_seed": 611274431,
+     "n_all": 68,
+     "n_class": 50,
+     "share_all": 0.9411764705882353,
+     "share_class": 0.96
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.45714285714285713,
+     "positive": true
+    },
+    "g8_hyp_count": 34,
+    "g8_single_atom_only": null,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 18
+    },
+    "t1_all_points": "FAILS",
+    "t1_draw_sensitivity": [
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "FAILS",
+     "FAILS",
+     "HOLDS",
+     "HOLDS",
+     "UNDEFINED",
+     "HOLDS",
+     "FAILS",
+     "FAILS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "UNDEFINED",
+     "HOLDS",
+     "HOLDS",
+     "FAILS",
+     "HOLDS",
+     "HOLDS"
+    ],
+    "t1_i6": "HOLDS",
+    "t1_i7": "HOLDS",
+    "t1_i8": "FAILS",
+    "t1_i9": "HOLDS",
+    "t1_structure": {
+     "alpha_max": 0.75,
+     "alpha_min": 0.7,
+     "defined": true,
+     "feasible_alphas": [
+      0.75,
+      0.7
+     ],
+     "largest_increase": "-9/80",
+     "sources_spanned": 1,
+     "wrong_class_atoms_spanned": 0
+    }
+   },
+   "draw": 28,
+   "h_size": 28,
+   "outcomes": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "HOLDS",
+    "T-1": "HOLDS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 253077148
+  },
+  {
+   "descriptive": {
+    "all_true": {
+     "feasible_alphas": [],
+     "scores": false,
+     "scoring_alphas": []
+    },
+    "cross_seed": {
+     "agree_all": 81,
+     "agree_class": 52,
+     "aux_seed": 487173957,
+     "n_all": 89,
+     "n_class": 57,
+     "share_all": 0.9101123595505618,
+     "share_class": 0.9122807017543859
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.5497835497835498,
+     "positive": true
+    },
+    "g8_hyp_count": 19,
+    "g8_single_atom_only": null,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 26
+    },
+    "t1_all_points": "FAILS",
+    "t1_draw_sensitivity": [
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS"
+    ],
+    "t1_i6": "FAILS",
+    "t1_i7": "FAILS",
+    "t1_i8": "FAILS",
+    "t1_i9": "FAILS",
+    "t1_structure": {
+     "alpha_max": 0.85,
+     "alpha_min": 0.5,
+     "defined": true,
+     "feasible_alphas": [
+      0.85,
+      0.8,
+      0.75,
+      0.7,
+      0.65,
+      0.6,
+      0.55,
+      0.5
+     ],
+     "largest_increase": "3/29",
+     "sources_spanned": 5,
+     "wrong_class_atoms_spanned": 0
+    }
+   },
+   "draw": 29,
+   "h_size": 33,
+   "outcomes": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "HOLDS",
+    "T-1": "FAILS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 952385107
+  },
+  {
+   "descriptive": {
+    "all_true": {
+     "feasible_alphas": [],
+     "scores": false,
+     "scoring_alphas": []
+    },
+    "cross_seed": {
+     "agree_all": 69,
+     "agree_class": 48,
+     "aux_seed": 988273821,
+     "n_all": 76,
+     "n_class": 53,
+     "share_all": 0.9078947368421053,
+     "share_class": 0.9056603773584906
+    },
+    "default_feasible": false,
+    "g7b": {
+     "hypervolume": 0.358974358974359,
+     "positive": true
+    },
+    "g8_hyp_count": 25,
+    "g8_single_atom_only": false,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 15
+    },
+    "t1_all_points": "FAILS",
+    "t1_draw_sensitivity": [
+     "FAILS",
+     "UNDEFINED",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "UNDEFINED",
+     "UNDEFINED",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "UNDEFINED",
+     "FAILS",
+     "FAILS",
+     "UNDEFINED",
+     "FAILS"
+    ],
+    "t1_i6": "UNDEFINED",
+    "t1_i7": "FAILS",
+    "t1_i8": "FAILS",
+    "t1_i9": "UNDEFINED",
+    "t1_structure": {
+     "alpha_max": null,
+     "alpha_min": null,
+     "defined": false,
+     "feasible_alphas": [
+      0.75
+     ],
+     "largest_increase": null,
+     "sources_spanned": null,
+     "wrong_class_atoms_spanned": null
+    }
+   },
+   "draw": 30,
+   "h_size": 26,
+   "outcomes": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "FAILS",
+    "T-1": "UNDEFINED"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "NT": {
+     "outcome": "UNDEFINED",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 595102708
+  },
+  {
+   "descriptive": {
+    "all_true": {
+     "feasible_alphas": [
+      0.95
+     ],
+     "scores": true,
+     "scoring_alphas": [
+      0.95
+     ]
+    },
+    "cross_seed": {
+     "agree_all": 80,
+     "agree_class": 50,
+     "aux_seed": 878211219,
+     "n_all": 88,
+     "n_class": 56,
+     "share_all": 0.9090909090909091,
+     "share_class": 0.8928571428571429
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.8247088309007813,
+     "positive": true
+    },
+    "g8_hyp_count": 18,
+    "g8_single_atom_only": null,
+    "g8_whole_grid": {
+     "all_points_ok": true,
+     "n_points": 30,
+     "n_points_ok": 30
+    },
+    "t1_all_points": "FAILS",
+    "t1_draw_sensitivity": [
+     "FAILS",
+     "FAILS",
+     "HOLDS",
+     "FAILS",
+     "FAILS",
+     "HOLDS",
+     "FAILS",
+     "HOLDS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "HOLDS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS"
+    ],
+    "t1_i6": "FAILS",
+    "t1_i7": "FAILS",
+    "t1_i8": "FAILS",
+    "t1_i9": "FAILS",
+    "t1_structure": {
+     "alpha_max": 0.85,
+     "alpha_min": 0.5,
+     "defined": true,
+     "feasible_alphas": [
+      0.85,
+      0.8,
+      0.75,
+      0.7,
+      0.65,
+      0.6,
+      0.55,
+      0.5
+     ],
+     "largest_increase": "99/1258",
+     "sources_spanned": 4,
+     "wrong_class_atoms_spanned": 1
+    }
+   },
+   "draw": 32,
+   "h_size": 21,
+   "outcomes": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "HOLDS",
+    "T-1": "FAILS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 859820095
+  },
+  {
+   "descriptive": {
+    "all_true": {
+     "feasible_alphas": [
+      0.95,
+      0.9
+     ],
+     "scores": true,
+     "scoring_alphas": [
+      0.95,
+      0.9
+     ]
+    },
+    "cross_seed": {
+     "agree_all": 60,
+     "agree_class": 50,
+     "aux_seed": 114011001,
+     "n_all": 66,
+     "n_class": 55,
+     "share_all": 0.9090909090909091,
+     "share_class": 0.9090909090909091
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.5582480197864813,
+     "positive": true
+    },
+    "g8_hyp_count": 24,
+    "g8_single_atom_only": null,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 22
+    },
+    "t1_all_points": "FAILS",
+    "t1_draw_sensitivity": [
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS"
+    ],
+    "t1_i6": "FAILS",
+    "t1_i7": "FAILS",
+    "t1_i8": "FAILS",
+    "t1_i9": "FAILS",
+    "t1_structure": {
+     "alpha_max": 0.7,
+     "alpha_min": 0.5,
+     "defined": true,
+     "feasible_alphas": [
+      0.7,
+      0.65,
+      0.6,
+      0.55,
+      0.5
+     ],
+     "largest_increase": "110/637",
+     "sources_spanned": 4,
+     "wrong_class_atoms_spanned": 1
+    }
+   },
+   "draw": 33,
+   "h_size": 39,
+   "outcomes": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "HOLDS",
+    "T-1": "FAILS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 438357742
+  },
+  {
+   "descriptive": {
+    "all_true": {
+     "feasible_alphas": [],
+     "scores": false,
+     "scoring_alphas": []
+    },
+    "cross_seed": {
+     "agree_all": 80,
+     "agree_class": 51,
+     "aux_seed": 547860347,
+     "n_all": 91,
+     "n_class": 55,
+     "share_all": 0.8791208791208791,
+     "share_class": 0.9272727272727272
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.4975845410628019,
+     "positive": true
+    },
+    "g8_hyp_count": 17,
+    "g8_single_atom_only": null,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 21
+    },
+    "t1_all_points": "FAILS",
+    "t1_draw_sensitivity": [
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "HOLDS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "HOLDS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS"
+    ],
+    "t1_i6": "FAILS",
+    "t1_i7": "FAILS",
+    "t1_i8": "FAILS",
+    "t1_i9": "FAILS",
+    "t1_structure": {
+     "alpha_max": 0.8,
+     "alpha_min": 0.65,
+     "defined": true,
+     "feasible_alphas": [
+      0.8,
+      0.75,
+      0.7,
+      0.65
+     ],
+     "largest_increase": "1/9",
+     "sources_spanned": 2,
+     "wrong_class_atoms_spanned": 0
+    }
+   },
+   "draw": 34,
+   "h_size": 23,
+   "outcomes": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "HOLDS",
+    "T-1": "FAILS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 816022633
+  },
+  {
+   "descriptive": {
+    "all_true": {
+     "feasible_alphas": [],
+     "scores": false,
+     "scoring_alphas": []
+    },
+    "cross_seed": {
+     "agree_all": 74,
+     "agree_class": 55,
+     "aux_seed": 906583495,
+     "n_all": 80,
+     "n_class": 59,
+     "share_all": 0.925,
+     "share_class": 0.9322033898305084
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.3757002801120448,
+     "positive": true
+    },
+    "g8_hyp_count": 21,
+    "g8_single_atom_only": null,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 18
+    },
+    "t1_all_points": "FAILS",
+    "t1_draw_sensitivity": [
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS"
+    ],
+    "t1_i6": "FAILS",
+    "t1_i7": "FAILS",
+    "t1_i8": "FAILS",
+    "t1_i9": "FAILS",
+    "t1_structure": {
+     "alpha_max": 0.75,
+     "alpha_min": 0.7,
+     "defined": true,
+     "feasible_alphas": [
+      0.75,
+      0.7
+     ],
+     "largest_increase": "39/136",
+     "sources_spanned": 2,
+     "wrong_class_atoms_spanned": 0
+    }
+   },
+   "draw": 35,
+   "h_size": 21,
+   "outcomes": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "HOLDS",
+    "T-1": "FAILS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 337976282
+  },
+  {
+   "descriptive": {
+    "all_true": {
+     "feasible_alphas": [
+      0.95,
+      0.9,
+      0.85
+     ],
+     "scores": true,
+     "scoring_alphas": [
+      0.95,
+      0.9,
+      0.85
+     ]
+    },
+    "cross_seed": {
+     "agree_all": 76,
+     "agree_class": 52,
+     "aux_seed": 806121294,
+     "n_all": 82,
+     "n_class": 53,
+     "share_all": 0.926829268292683,
+     "share_class": 0.9811320754716981
+    },
+    "default_feasible": false,
+    "g7b": {
+     "hypervolume": 0.31999999999999995,
+     "positive": true
+    },
+    "g8_hyp_count": 23,
+    "g8_single_atom_only": true,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 15
+    },
+    "t1_all_points": "FAILS",
+    "t1_draw_sensitivity": [
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "HOLDS"
+    ],
+    "t1_i6": "UNDEFINED",
+    "t1_i7": "HOLDS",
+    "t1_i8": "HOLDS",
+    "t1_i9": "UNDEFINED",
+    "t1_structure": {
+     "alpha_max": null,
+     "alpha_min": null,
+     "defined": false,
+     "feasible_alphas": [
+      0.65
+     ],
+     "largest_increase": null,
+     "sources_spanned": null,
+     "wrong_class_atoms_spanned": null
+    }
+   },
+   "draw": 36,
+   "h_size": 42,
+   "outcomes": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "FAILS",
+    "T-1": "UNDEFINED"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "NT": {
+     "outcome": "UNDEFINED",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 573065031
+  },
+  {
+   "descriptive": {
+    "all_true": {
+     "feasible_alphas": [],
+     "scores": false,
+     "scoring_alphas": []
+    },
+    "cross_seed": {
+     "agree_all": 75,
+     "agree_class": 48,
+     "aux_seed": 728813681,
+     "n_all": 82,
+     "n_class": 53,
+     "share_all": 0.9146341463414634,
+     "share_class": 0.9056603773584906
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.6666666666666666,
+     "positive": true
+    },
+    "g8_hyp_count": 11,
+    "g8_single_atom_only": null,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 18
+    },
+    "t1_all_points": "FAILS",
+    "t1_draw_sensitivity": [
+     "HOLDS",
+     "HOLDS",
+     "UNDEFINED",
+     "HOLDS",
+     "HOLDS",
+     "UNDEFINED",
+     "HOLDS",
+     "UNDEFINED",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "UNDEFINED",
+     "HOLDS",
+     "UNDEFINED",
+     "UNDEFINED",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS"
+    ],
+    "t1_i6": "HOLDS",
+    "t1_i7": "HOLDS",
+    "t1_i8": "HOLDS",
+    "t1_i9": "HOLDS",
+    "t1_structure": {
+     "alpha_max": 0.75,
+     "alpha_min": 0.65,
+     "defined": true,
+     "feasible_alphas": [
+      0.75,
+      0.7,
+      0.65
+     ],
+     "largest_increase": "0/1",
+     "sources_spanned": 2,
+     "wrong_class_atoms_spanned": 0
+    }
+   },
+   "draw": 37,
+   "h_size": 18,
+   "outcomes": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "HOLDS",
+    "T-1": "HOLDS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 859957369
+  },
+  {
+   "descriptive": {
+    "all_true": {
+     "feasible_alphas": [
+      0.95
+     ],
+     "scores": true,
+     "scoring_alphas": [
+      0.95
+     ]
+    },
+    "cross_seed": {
+     "agree_all": 83,
+     "agree_class": 51,
+     "aux_seed": 82030937,
+     "n_all": 88,
+     "n_class": 55,
+     "share_all": 0.9431818181818182,
+     "share_class": 0.9272727272727272
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.5231292517006803,
+     "positive": true
+    },
+    "g8_hyp_count": 68,
+    "g8_single_atom_only": false,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 14
+    },
+    "t1_all_points": "FAILS",
+    "t1_draw_sensitivity": [
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS"
+    ],
+    "t1_i6": "HOLDS",
+    "t1_i7": "FAILS",
+    "t1_i8": "FAILS",
+    "t1_i9": "FAILS",
+    "t1_structure": {
+     "alpha_max": 0.85,
+     "alpha_min": 0.6,
+     "defined": true,
+     "feasible_alphas": [
+      0.85,
+      0.8,
+      0.75,
+      0.7,
+      0.65,
+      0.6
+     ],
+     "largest_increase": "9/130",
+     "sources_spanned": 3,
+     "wrong_class_atoms_spanned": 0
+    }
+   },
+   "draw": 38,
+   "h_size": 49,
+   "outcomes": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "FAILS",
+    "T-1": "FAILS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 171300882
+  },
+  {
+   "descriptive": {
+    "all_true": {
+     "feasible_alphas": [],
+     "scores": false,
+     "scoring_alphas": []
+    },
+    "cross_seed": {
+     "agree_all": 84,
+     "agree_class": 54,
+     "aux_seed": 864283649,
+     "n_all": 98,
+     "n_class": 59,
+     "share_all": 0.8571428571428571,
+     "share_class": 0.9152542372881356
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.23697916666666666,
+     "positive": true
+    },
+    "g8_hyp_count": 22,
+    "g8_single_atom_only": null,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 24
+    },
+    "t1_all_points": "FAILS",
+    "t1_draw_sensitivity": [
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "UNDEFINED",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "UNDEFINED",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS"
+    ],
+    "t1_i6": "FAILS",
+    "t1_i7": "FAILS",
+    "t1_i8": "FAILS",
+    "t1_i9": "UNDEFINED",
+    "t1_structure": {
+     "alpha_max": null,
+     "alpha_min": null,
+     "defined": false,
+     "feasible_alphas": [
+      0.75,
+      0.7,
+      0.65
+     ],
+     "largest_increase": null,
+     "sources_spanned": null,
+     "wrong_class_atoms_spanned": null
+    }
+   },
+   "draw": 39,
+   "h_size": 48,
+   "outcomes": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "HOLDS",
+    "T-1": "UNDEFINED"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "NT": {
+     "outcome": "UNDEFINED",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 193452299
+  },
+  {
+   "descriptive": {
+    "all_true": {
+     "feasible_alphas": [],
+     "scores": false,
+     "scoring_alphas": []
+    },
+    "cross_seed": {
+     "agree_all": 64,
+     "agree_class": 46,
+     "aux_seed": 663930677,
+     "n_all": 68,
+     "n_class": 47,
+     "share_all": 0.9411764705882353,
+     "share_class": 0.9787234042553191
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.7940646528881824,
+     "positive": true
+    },
+    "g8_hyp_count": 24,
+    "g8_single_atom_only": true,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 16
+    },
+    "t1_all_points": "FAILS",
+    "t1_draw_sensitivity": [
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS"
+    ],
+    "t1_i6": "HOLDS",
+    "t1_i7": "HOLDS",
+    "t1_i8": "HOLDS",
+    "t1_i9": "HOLDS",
+    "t1_structure": {
+     "alpha_max": 0.8,
+     "alpha_min": 0.5,
+     "defined": true,
+     "feasible_alphas": [
+      0.8,
+      0.75,
+      0.7,
+      0.65,
+      0.6,
+      0.55,
+      0.5
+     ],
+     "largest_increase": "23/510",
+     "sources_spanned": 4,
+     "wrong_class_atoms_spanned": 0
+    }
+   },
+   "draw": 40,
+   "h_size": 37,
+   "outcomes": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "FAILS",
+    "T-1": "HOLDS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 664168305
+  },
+  {
+   "descriptive": {
+    "all_true": {
+     "feasible_alphas": [],
+     "scores": false,
+     "scoring_alphas": []
+    },
+    "cross_seed": {
+     "agree_all": 77,
+     "agree_class": 49,
+     "aux_seed": 334486579,
+     "n_all": 88,
+     "n_class": 56,
+     "share_all": 0.875,
+     "share_class": 0.875
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.47619047619047616,
+     "positive": true
+    },
+    "g8_hyp_count": 10,
+    "g8_single_atom_only": null,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 24
+    },
+    "t1_all_points": "FAILS",
+    "t1_draw_sensitivity": [
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS"
+    ],
+    "t1_i6": "HOLDS",
+    "t1_i7": "HOLDS",
+    "t1_i8": "HOLDS",
+    "t1_i9": "HOLDS",
+    "t1_structure": {
+     "alpha_max": 0.8,
+     "alpha_min": 0.6,
+     "defined": true,
+     "feasible_alphas": [
+      0.8,
+      0.75,
+      0.7,
+      0.65,
+      0.6
+     ],
+     "largest_increase": "0/1",
+     "sources_spanned": 2,
+     "wrong_class_atoms_spanned": 0
+    }
+   },
+   "draw": 41,
+   "h_size": 21,
+   "outcomes": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "HOLDS",
+    "T-1": "HOLDS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 337712865
+  },
+  {
+   "descriptive": {
+    "all_true": {
+     "feasible_alphas": [],
+     "scores": false,
+     "scoring_alphas": []
+    },
+    "cross_seed": {
+     "agree_all": 87,
+     "agree_class": 53,
+     "aux_seed": 950052037,
+     "n_all": 91,
+     "n_class": 55,
+     "share_all": 0.9560439560439561,
+     "share_class": 0.9636363636363636
+    },
+    "default_feasible": false,
+    "g7b": {
+     "hypervolume": 0.15714285714285714,
+     "positive": true
+    },
+    "g8_hyp_count": 43,
+    "g8_single_atom_only": false,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 12
+    },
+    "t1_all_points": "FAILS",
+    "t1_draw_sensitivity": [
+     "FAILS",
+     "UNDEFINED",
+     "FAILS",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "FAILS",
+     "FAILS",
+     "UNDEFINED",
+     "FAILS",
+     "UNDEFINED",
+     "UNDEFINED",
+     "UNDEFINED",
+     "FAILS",
+     "UNDEFINED",
+     "FAILS"
+    ],
+    "t1_i6": "UNDEFINED",
+    "t1_i7": "FAILS",
+    "t1_i8": "FAILS",
+    "t1_i9": "UNDEFINED",
+    "t1_structure": {
+     "alpha_max": null,
+     "alpha_min": null,
+     "defined": false,
+     "feasible_alphas": [
+      0.8
+     ],
+     "largest_increase": null,
+     "sources_spanned": null,
+     "wrong_class_atoms_spanned": null
+    }
+   },
+   "draw": 42,
+   "h_size": 35,
+   "outcomes": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "FAILS",
+    "T-1": "UNDEFINED"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "NT": {
+     "outcome": "UNDEFINED",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 780101032
+  },
+  {
+   "descriptive": {
+    "all_true": {
+     "feasible_alphas": [],
+     "scores": false,
+     "scoring_alphas": []
+    },
+    "cross_seed": {
+     "agree_all": 85,
+     "agree_class": 54,
+     "aux_seed": 855236230,
+     "n_all": 88,
+     "n_class": 56,
+     "share_all": 0.9659090909090909,
+     "share_class": 0.9642857142857143
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.6923076923076923,
+     "positive": true
+    },
+    "g8_hyp_count": 26,
+    "g8_single_atom_only": false,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 12
+    },
+    "t1_all_points": "FAILS",
+    "t1_draw_sensitivity": [
+     "FAILS",
+     "HOLDS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "HOLDS",
+     "HOLDS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "HOLDS",
+     "HOLDS",
+     "FAILS",
+     "FAILS",
+     "HOLDS",
+     "FAILS"
+    ],
+    "t1_i6": "HOLDS",
+    "t1_i7": "FAILS",
+    "t1_i8": "FAILS",
+    "t1_i9": "HOLDS",
+    "t1_structure": {
+     "alpha_max": 0.9,
+     "alpha_min": 0.7,
+     "defined": true,
+     "feasible_alphas": [
+      0.9,
+      0.85,
+      0.8,
+      0.75,
+      0.7
+     ],
+     "largest_increase": "0/1",
+     "sources_spanned": 1,
+     "wrong_class_atoms_spanned": 0
+    }
+   },
+   "draw": 43,
+   "h_size": 13,
+   "outcomes": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "FAILS",
+    "T-1": "HOLDS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 481541604
+  },
+  {
+   "descriptive": {
+    "all_true": {
+     "feasible_alphas": [
+      0.95,
+      0.9
+     ],
+     "scores": true,
+     "scoring_alphas": [
+      0.95,
+      0.9
+     ]
+    },
+    "cross_seed": {
+     "agree_all": 67,
+     "agree_class": 46,
+     "aux_seed": 253413611,
+     "n_all": 74,
+     "n_class": 51,
+     "share_all": 0.9054054054054054,
+     "share_class": 0.9019607843137255
+    },
+    "default_feasible": false,
+    "g7b": {
+     "hypervolume": 0.32432432432432434,
+     "positive": true
+    },
+    "g8_hyp_count": 18,
+    "g8_single_atom_only": null,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 15
+    },
+    "t1_all_points": "FAILS",
+    "t1_draw_sensitivity": [
+     "FAILS",
+     "UNDEFINED",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "UNDEFINED",
+     "UNDEFINED",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "UNDEFINED",
+     "UNDEFINED",
+     "FAILS",
+     "FAILS",
+     "UNDEFINED",
+     "FAILS"
+    ],
+    "t1_i6": "FAILS",
+    "t1_i7": "FAILS",
+    "t1_i8": "FAILS",
+    "t1_i9": "UNDEFINED",
+    "t1_structure": {
+     "alpha_max": null,
+     "alpha_min": null,
+     "defined": false,
+     "feasible_alphas": [
+      0.75
+     ],
+     "largest_increase": null,
+     "sources_spanned": null,
+     "wrong_class_atoms_spanned": null
+    }
+   },
+   "draw": 44,
+   "h_size": 37,
+   "outcomes": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "HOLDS",
+    "T-1": "UNDEFINED"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "NT": {
+     "outcome": "UNDEFINED",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 665146477
+  },
+  {
+   "descriptive": {
+    "all_true": {
+     "feasible_alphas": [
+      0.95
+     ],
+     "scores": true,
+     "scoring_alphas": [
+      0.95
+     ]
+    },
+    "cross_seed": {
+     "agree_all": 85,
+     "agree_class": 53,
+     "aux_seed": 78702890,
+     "n_all": 90,
+     "n_class": 57,
+     "share_all": 0.9444444444444444,
+     "share_class": 0.9298245614035088
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.8947368421052632,
+     "positive": true
+    },
+    "g8_hyp_count": 24,
+    "g8_single_atom_only": null,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 24
+    },
+    "t1_all_points": "FAILS",
+    "t1_draw_sensitivity": [
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS"
+    ],
+    "t1_i6": "FAILS",
+    "t1_i7": "FAILS",
+    "t1_i8": "FAILS",
+    "t1_i9": "FAILS",
+    "t1_structure": {
+     "alpha_max": 0.8,
+     "alpha_min": 0.6,
+     "defined": true,
+     "feasible_alphas": [
+      0.8,
+      0.75,
+      0.7,
+      0.65,
+      0.6
+     ],
+     "largest_increase": "1/13",
+     "sources_spanned": 3,
+     "wrong_class_atoms_spanned": 0
+    }
+   },
+   "draw": 45,
+   "h_size": 19,
+   "outcomes": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "HOLDS",
+    "T-1": "FAILS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 317511650
+  },
+  {
+   "descriptive": {
+    "all_true": {
+     "feasible_alphas": [],
+     "scores": false,
+     "scoring_alphas": []
+    },
+    "cross_seed": {
+     "agree_all": 77,
+     "agree_class": 50,
+     "aux_seed": 216377801,
+     "n_all": 82,
+     "n_class": 53,
+     "share_all": 0.9390243902439024,
+     "share_class": 0.9433962264150944
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.7680698351399116,
+     "positive": true
+    },
+    "g8_hyp_count": 33,
+    "g8_single_atom_only": null,
+    "g8_whole_grid": {
+     "all_points_ok": true,
+     "n_points": 30,
+     "n_points_ok": 30
+    },
+    "t1_all_points": "FAILS",
+    "t1_draw_sensitivity": [
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS"
+    ],
+    "t1_i6": "FAILS",
+    "t1_i7": "FAILS",
+    "t1_i8": "FAILS",
+    "t1_i9": "FAILS",
+    "t1_structure": {
+     "alpha_max": 0.9,
+     "alpha_min": 0.5,
+     "defined": true,
+     "feasible_alphas": [
+      0.9,
+      0.85,
+      0.8,
+      0.75,
+      0.7,
+      0.65,
+      0.6,
+      0.55,
+      0.5
+     ],
+     "largest_increase": "8/37",
+     "sources_spanned": 5,
+     "wrong_class_atoms_spanned": 1
+    }
+   },
+   "draw": 46,
+   "h_size": 43,
+   "outcomes": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "HOLDS",
+    "T-1": "FAILS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 150524625
+  },
+  {
+   "descriptive": {
+    "all_true": {
+     "feasible_alphas": [],
+     "scores": false,
+     "scoring_alphas": []
+    },
+    "cross_seed": {
+     "agree_all": 64,
+     "agree_class": 48,
+     "aux_seed": 847118454,
+     "n_all": 71,
+     "n_class": 53,
+     "share_all": 0.9014084507042254,
+     "share_class": 0.9056603773584906
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.22867513611615248,
+     "positive": true
+    },
+    "g8_hyp_count": 27,
+    "g8_single_atom_only": null,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 18
+    },
+    "t1_all_points": "FAILS",
+    "t1_draw_sensitivity": [
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "UNDEFINED",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS"
+    ],
+    "t1_i6": "FAILS",
+    "t1_i7": "FAILS",
+    "t1_i8": "FAILS",
+    "t1_i9": "FAILS",
+    "t1_structure": {
+     "alpha_max": 0.75,
+     "alpha_min": 0.7,
+     "defined": true,
+     "feasible_alphas": [
+      0.75,
+      0.7
+     ],
+     "largest_increase": "12/133",
+     "sources_spanned": 1,
+     "wrong_class_atoms_spanned": 0
+    }
+   },
+   "draw": 47,
+   "h_size": 29,
+   "outcomes": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "HOLDS",
+    "T-1": "FAILS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "HOLDS",
+     "test": "G7"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 632991533
+  },
+  {
+   "descriptive": {
+    "all_true": {
+     "feasible_alphas": [
+      0.95
+     ],
+     "scores": true,
+     "scoring_alphas": [
+      0.95
+     ]
+    },
+    "cross_seed": {
+     "agree_all": 76,
+     "agree_class": 53,
+     "aux_seed": 809712031,
+     "n_all": 79,
+     "n_class": 54,
+     "share_all": 0.9620253164556962,
+     "share_class": 0.9814814814814815
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.31952662721893493,
+     "positive": true
+    },
+    "g8_hyp_count": 26,
+    "g8_single_atom_only": null,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 24
+    },
+    "t1_all_points": "FAILS",
+    "t1_draw_sensitivity": [
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS"
+    ],
+    "t1_i6": "HOLDS",
+    "t1_i7": "HOLDS",
+    "t1_i8": "HOLDS",
+    "t1_i9": "HOLDS",
+    "t1_structure": {
+     "alpha_max": 0.8,
+     "alpha_min": 0.5,
+     "defined": true,
+     "feasible_alphas": [
+      0.8,
+      0.75,
+      0.7,
+      0.65,
+      0.6,
+      0.55,
+      0.5
+     ],
+     "largest_increase": "0/1",
+     "sources_spanned": 4,
+     "wrong_class_atoms_spanned": 0
+    }
+   },
+   "draw": 48,
+   "h_size": 13,
+   "outcomes": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "HOLDS",
+    "T-1": "HOLDS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 57270309
+  },
+  {
+   "descriptive": {
+    "all_true": {
+     "feasible_alphas": [
+      0.95
+     ],
+     "scores": true,
+     "scoring_alphas": [
+      0.95
+     ]
+    },
+    "cross_seed": {
+     "agree_all": 59,
+     "agree_class": 46,
+     "aux_seed": 239580827,
+     "n_all": 66,
+     "n_class": 52,
+     "share_all": 0.8939393939393939,
+     "share_class": 0.8846153846153846
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.5277777777777778,
+     "positive": true
+    },
+    "g8_hyp_count": 30,
+    "g8_single_atom_only": null,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 21
+    },
+    "t1_all_points": "FAILS",
+    "t1_draw_sensitivity": [
+     "FAILS",
+     "FAILS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "FAILS",
+     "FAILS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "FAILS",
+     "FAILS",
+     "HOLDS",
+     "FAILS",
+     "HOLDS",
+     "HOLDS",
+     "FAILS",
+     "FAILS"
+    ],
+    "t1_i6": "HOLDS",
+    "t1_i7": "FAILS",
+    "t1_i8": "FAILS",
+    "t1_i9": "HOLDS",
+    "t1_structure": {
+     "alpha_max": 0.7,
+     "alpha_min": 0.65,
+     "defined": true,
+     "feasible_alphas": [
+      0.7,
+      0.65
+     ],
+     "largest_increase": "-4/399",
+     "sources_spanned": 2,
+     "wrong_class_atoms_spanned": 0
+    }
+   },
+   "draw": 49,
+   "h_size": 24,
+   "outcomes": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "HOLDS",
+    "T-1": "HOLDS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 293357837
+  },
+  {
+   "descriptive": {
+    "all_true": {
+     "feasible_alphas": [
+      0.95
+     ],
+     "scores": true,
+     "scoring_alphas": [
+      0.95
+     ]
+    },
+    "cross_seed": {
+     "agree_all": 75,
+     "agree_class": 52,
+     "aux_seed": 662310747,
+     "n_all": 78,
+     "n_class": 55,
+     "share_all": 0.9615384615384616,
+     "share_class": 0.9454545454545454
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.12745098039215688,
+     "positive": true
+    },
+    "g8_hyp_count": 10,
+    "g8_single_atom_only": null,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 18
+    },
+    "t1_all_points": "FAILS",
+    "t1_draw_sensitivity": [
+     "HOLDS",
+     "FAILS",
+     "UNDEFINED",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "HOLDS",
+     "HOLDS",
+     "FAILS",
+     "FAILS",
+     "HOLDS",
+     "FAILS",
+     "FAILS",
+     "FAILS",
+     "HOLDS",
+     "HOLDS",
+     "FAILS",
+     "FAILS",
+     "FAILS"
+    ],
+    "t1_i6": "HOLDS",
+    "t1_i7": "FAILS",
+    "t1_i8": "FAILS",
+    "t1_i9": "HOLDS",
+    "t1_structure": {
+     "alpha_max": 0.75,
+     "alpha_min": 0.7,
+     "defined": true,
+     "feasible_alphas": [
+      0.75,
+      0.7
+     ],
+     "largest_increase": "-5/306",
+     "sources_spanned": 1,
+     "wrong_class_atoms_spanned": 1
+    }
+   },
+   "draw": 50,
+   "h_size": 17,
+   "outcomes": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "HOLDS",
+    "T-1": "HOLDS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 393801651
+  },
+  {
+   "descriptive": {
+    "all_true": {
+     "feasible_alphas": [
+      0.95
+     ],
+     "scores": true,
+     "scoring_alphas": [
+      0.95
+     ]
+    },
+    "cross_seed": {
+     "agree_all": 75,
+     "agree_class": 50,
+     "aux_seed": 494158648,
+     "n_all": 79,
+     "n_class": 53,
+     "share_all": 0.9493670886075949,
+     "share_class": 0.9433962264150944
+    },
+    "default_feasible": true,
+    "g7b": {
+     "hypervolume": 0.27777777777777785,
+     "positive": true
+    },
+    "g8_hyp_count": 23,
+    "g8_single_atom_only": false,
+    "g8_whole_grid": {
+     "all_points_ok": false,
+     "n_points": 30,
+     "n_points_ok": 22
+    },
+    "t1_all_points": "FAILS",
+    "t1_draw_sensitivity": [
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS",
+     "HOLDS"
+    ],
+    "t1_i6": "HOLDS",
+    "t1_i7": "HOLDS",
+    "t1_i8": "HOLDS",
+    "t1_i9": "HOLDS",
+    "t1_structure": {
+     "alpha_max": 0.75,
+     "alpha_min": 0.5,
+     "defined": true,
+     "feasible_alphas": [
+      0.75,
+      0.7,
+      0.65,
+      0.6,
+      0.55,
+      0.5
+     ],
+     "largest_increase": "-1/36",
+     "sources_spanned": 4,
+     "wrong_class_atoms_spanned": 0
+    }
+   },
+   "draw": 51,
+   "h_size": 12,
+   "outcomes": {
+    "G1": "HOLDS",
+    "G2": "HOLDS",
+    "G3": "HOLDS",
+    "G4": "HOLDS",
+    "G5": "HOLDS",
+    "G6": "HOLDS",
+    "G7": "HOLDS",
+    "G8": "FAILS",
+    "T-1": "HOLDS"
+   },
+   "twins": {
+    "N1a": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N1b": {
+     "outcome": "FAILS",
+     "test": "G1"
+    },
+    "N2": {
+     "outcome": "FAILS",
+     "test": "G2"
+    },
+    "N3": {
+     "outcome": "FAILS",
+     "test": "G3"
+    },
+    "N4": {
+     "outcome": "FAILS",
+     "test": "G4"
+    },
+    "N5": {
+     "outcome": "FAILS",
+     "test": "G5"
+    },
+    "N6": {
+     "outcome": "FAILS",
+     "test": "G6"
+    },
+    "N7": {
+     "outcome": "FAILS",
+     "test": "G7"
+    },
+    "NT": {
+     "outcome": "FAILS",
+     "test": "T-1"
+    }
+   },
+   "world_seed": 250968640
+  }
+ ]
+}
