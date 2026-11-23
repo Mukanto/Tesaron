@@ -1,0 +1,16 @@
+{
+ "world_seed": 881470151,
+ "metrics": {
+  "0.7|0": {
+   "fidelity": "1/1",
+   "deviation": "0/1",
+   "consistency": "1/1",
+   "uncertainty": "120/163",
+   "new_true": "7/62",
+   "new_false": "0/1",
+   "validation_agreement": "3/4",
+   "boundary_share": "28/101",
+   "n_q": 13
+  }
+ }
+}

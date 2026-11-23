@@ -1,0 +1,92 @@
+{
+ "rows": [
+  {
+   "test": "G1",
+   "verdict": "HOLDS",
+   "n_holds": 50,
+   "n_fails": 0,
+   "n_undefined": 0,
+   "n_defined": 50,
+   "wilson_lower": null,
+   "first_failing_world": null
+  },
+  {
+   "test": "G2",
+   "verdict": "HOLDS",
+   "n_holds": 50,
+   "n_fails": 0,
+   "n_undefined": 0,
+   "n_defined": 50,
+   "wilson_lower": null,
+   "first_failing_world": null
+  },
+  {
+   "test": "G3",
+   "verdict": "HOLDS",
+   "n_holds": 50,
+   "n_fails": 0,
+   "n_undefined": 0,
+   "n_defined": 50,
+   "wilson_lower": null,
+   "first_failing_world": null
+  },
+  {
+   "test": "G4",
+   "verdict": "HOLDS",
+   "n_holds": 50,
+   "n_fails": 0,
+   "n_undefined": 0,
+   "n_defined": 50,
+   "wilson_lower": null,
+   "first_failing_world": null
+  },
+  {
+   "test": "G5",
+   "verdict": "HOLDS",
+   "n_holds": 50,
+   "n_fails": 0,
+   "n_undefined": 0,
+   "n_defined": 50,
+   "wilson_lower": null,
+   "first_failing_world": null
+  },
+  {
+   "test": "G6",
+   "verdict": "HOLDS",
+   "n_holds": 50,
+   "n_fails": 0,
+   "n_undefined": 0,
+   "n_defined": 50,
+   "wilson_lower": null,
+   "first_failing_world": null
+  },
+  {
+   "test": "G7",
+   "verdict": "HOLDS",
+   "n_holds": 50,
+   "n_fails": 0,
+   "n_undefined": 0,
+   "n_defined": 50,
+   "wilson_lower": null,
+   "first_failing_world": null
+  },
+  {
+   "test": "T-1",
+   "verdict": "FAILS",
+   "n_holds": 21,
+   "n_fails": 14,
+   "n_undefined": 15,
+   "n_defined": 35,
+   "wilson_lower": "0.461",
+   "first_failing_world": 127381466
+  }
+ ],
+ "t1_structure_counts": {
+  "n": 35,
+  "median": "3",
+  "even": false,
+  "min": 0,
+  "max": 5,
+  "n_with_wrong_class_atom": 8
+ }
+}

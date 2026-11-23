@@ -1,0 +1,22 @@
+{
+ "affected_tests": [],
+ "all_equal": true,
+ "disagreements": [],
+ "n_affecting_verdict": 0,
+ "n_calibration_worlds_agent": 40,
+ "n_calibration_worlds_run": 40,
+ "n_disagreements": 0,
+ "n_disagreements_by_affected_test": {
+  "G1": 0,
+  "G2": 0,
+  "G3": 0,
+  "G4": 0,
+  "G5": 0,
+  "G6": 0,
+  "G7a": 0,
+  "T-1": 0
+ },
+ "n_worlds_agent": 50,
+ "n_worlds_run": 50,
+ "what": "F3: the run's numbers against the F3 agent's results (audit/v03/f3_compare.py, frozen before the run)"
+}

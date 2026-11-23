@@ -1,0 +1,368 @@
+{
+ "world_seed": 493984890,
+ "metrics": {
+  "0.55|0": {
+   "fidelity": "62/77",
+   "deviation": "1/38",
+   "consistency": "45/46",
+   "uncertainty": "13/46",
+   "new_true": "14/15",
+   "new_false": "18/41",
+   "validation_agreement": "17/18",
+   "boundary_share": "7/123",
+   "n_q": 41
+  },
+  "0.55|10": {
+   "fidelity": "61/77",
+   "deviation": "1/19",
+   "consistency": "133/138",
+   "uncertainty": "13/46",
+   "new_true": "14/15",
+   "new_false": "18/41",
+   "validation_agreement": "17/18",
+   "boundary_share": "7/123",
+   "n_q": 41
+  },
+  "0.55|5": {
+   "fidelity": "61/77",
+   "deviation": "3/76",
+   "consistency": "67/69",
+   "uncertainty": "13/46",
+   "new_true": "14/15",
+   "new_false": "18/41",
+   "validation_agreement": "17/18",
+   "boundary_share": "7/123",
+   "n_q": 41
+  },
+  "0.5|0": {
+   "fidelity": "62/77",
+   "deviation": "1/38",
+   "consistency": "45/46",
+   "uncertainty": "13/46",
+   "new_true": "14/15",
+   "new_false": "18/41",
+   "validation_agreement": "17/18",
+   "boundary_share": "1/123",
+   "n_q": 41
+  },
+  "0.5|10": {
+   "fidelity": "61/77",
+   "deviation": "1/19",
+   "consistency": "133/138",
+   "uncertainty": "13/46",
+   "new_true": "14/15",
+   "new_false": "18/41",
+   "validation_agreement": "17/18",
+   "boundary_share": "1/123",
+   "n_q": 41
+  },
+  "0.5|5": {
+   "fidelity": "61/77",
+   "deviation": "3/76",
+   "consistency": "67/69",
+   "uncertainty": "13/46",
+   "new_true": "14/15",
+   "new_false": "18/41",
+   "validation_agreement": "17/18",
+   "boundary_share": "1/123",
+   "n_q": 41
+  },
+  "0.65|0": {
+   "fidelity": "9/10",
+   "deviation": "0/1",
+   "consistency": "1/1",
+   "uncertainty": "28/69",
+   "new_true": "14/15",
+   "new_false": "7/29",
+   "validation_agreement": "1/1",
+   "boundary_share": "23/123",
+   "n_q": 29
+  },
+  "0.65|10": {
+   "fidelity": "53/60",
+   "deviation": "1/30",
+   "consistency": "68/69",
+   "uncertainty": "28/69",
+   "new_true": "14/15",
+   "new_false": "7/29",
+   "validation_agreement": "1/1",
+   "boundary_share": "23/123",
+   "n_q": 29
+  },
+  "0.65|5": {
+   "fidelity": "53/60",
+   "deviation": "1/60",
+   "consistency": "137/138",
+   "uncertainty": "28/69",
+   "new_true": "14/15",
+   "new_false": "7/29",
+   "validation_agreement": "1/1",
+   "boundary_share": "23/123",
+   "n_q": 29
+  },
+  "0.6|0": {
+   "fidelity": "62/71",
+   "deviation": "0/1",
+   "consistency": "1/1",
+   "uncertainty": "15/46",
+   "new_true": "14/15",
+   "new_false": "9/32",
+   "validation_agreement": "13/14",
+   "boundary_share": "6/41",
+   "n_q": 32
+  },
+  "0.6|10": {
+   "fidelity": "61/71",
+   "deviation": "2/71",
+   "consistency": "68/69",
+   "uncertainty": "15/46",
+   "new_true": "14/15",
+   "new_false": "9/32",
+   "validation_agreement": "13/14",
+   "boundary_share": "6/41",
+   "n_q": 32
+  },
+  "0.6|5": {
+   "fidelity": "61/71",
+   "deviation": "1/71",
+   "consistency": "137/138",
+   "uncertainty": "15/46",
+   "new_true": "14/15",
+   "new_false": "9/32",
+   "validation_agreement": "13/14",
+   "boundary_share": "6/41",
+   "n_q": 32
+  },
+  "0.75|0": {
+   "fidelity": "44/47",
+   "deviation": "0/1",
+   "consistency": "1/1",
+   "uncertainty": "13/23",
+   "new_true": "8/15",
+   "new_false": "3/16",
+   "validation_agreement": "1/1",
+   "boundary_share": "4/123",
+   "n_q": 16
+  },
+  "0.75|10": {
+   "fidelity": "43/47",
+   "deviation": "1/47",
+   "consistency": "137/138",
+   "uncertainty": "13/23",
+   "new_true": "8/15",
+   "new_false": "3/16",
+   "validation_agreement": "1/1",
+   "boundary_share": "4/123",
+   "n_q": 16
+  },
+  "0.75|5": {
+   "fidelity": "43/47",
+   "deviation": "1/47",
+   "consistency": "137/138",
+   "uncertainty": "13/23",
+   "new_true": "8/15",
+   "new_false": "3/16",
+   "validation_agreement": "1/1",
+   "boundary_share": "4/123",
+   "n_q": 16
+  },
+  "0.7|0": {
+   "fidelity": "15/16",
+   "deviation": "0/1",
+   "consistency": "1/1",
+   "uncertainty": "25/46",
+   "new_true": "8/15",
+   "new_false": "1/6",
+   "validation_agreement": "1/1",
+   "boundary_share": "13/123",
+   "n_q": 18
+  },
+  "0.7|10": {
+   "fidelity": "11/12",
+   "deviation": "1/48",
+   "consistency": "137/138",
+   "uncertainty": "25/46",
+   "new_true": "8/15",
+   "new_false": "1/6",
+   "validation_agreement": "1/1",
+   "boundary_share": "13/123",
+   "n_q": 18
+  },
+  "0.7|5": {
+   "fidelity": "11/12",
+   "deviation": "1/48",
+   "consistency": "137/138",
+   "uncertainty": "25/46",
+   "new_true": "8/15",
+   "new_false": "1/6",
+   "validation_agreement": "1/1",
+   "boundary_share": "13/123",
+   "n_q": 18
+  },
+  "0.85|0": {
+   "fidelity": "15/16",
+   "deviation": "0/1",
+   "consistency": "1/1",
+   "uncertainty": "97/138",
+   "new_true": "2/5",
+   "new_false": "0/1",
+   "validation_agreement": "1/1",
+   "boundary_share": "22/123",
+   "n_q": 9
+  },
+  "0.85|10": {
+   "fidelity": "15/16",
+   "deviation": "0/1",
+   "consistency": "1/1",
+   "uncertainty": "97/138",
+   "new_true": "2/5",
+   "new_false": "0/1",
+   "validation_agreement": "1/1",
+   "boundary_share": "22/123",
+   "n_q": 9
+  },
+  "0.85|5": {
+   "fidelity": "15/16",
+   "deviation": "0/1",
+   "consistency": "1/1",
+   "uncertainty": "97/138",
+   "new_true": "2/5",
+   "new_false": "0/1",
+   "validation_agreement": "1/1",
+   "boundary_share": "22/123",
+   "n_q": 9
+  },
+  "0.8|0": {
+   "fidelity": "41/44",
+   "deviation": "0/1",
+   "consistency": "1/1",
+   "uncertainty": "14/23",
+   "new_true": "7/15",
+   "new_false": "3/13",
+   "validation_agreement": "1/1",
+   "boundary_share": "5/41",
+   "n_q": 13
+  },
+  "0.8|10": {
+   "fidelity": "41/44",
+   "deviation": "0/1",
+   "consistency": "1/1",
+   "uncertainty": "14/23",
+   "new_true": "7/15",
+   "new_false": "3/13",
+   "validation_agreement": "1/1",
+   "boundary_share": "5/41",
+   "n_q": 13
+  },
+  "0.8|5": {
+   "fidelity": "41/44",
+   "deviation": "0/1",
+   "consistency": "1/1",
+   "uncertainty": "14/23",
+   "new_true": "7/15",
+   "new_false": "3/13",
+   "validation_agreement": "1/1",
+   "boundary_share": "5/41",
+   "n_q": 13
+  },
+  "0.95|0": {
+   "fidelity": "3/4",
+   "deviation": "0/1",
+   "consistency": "1/1",
+   "uncertainty": "133/138",
+   "new_true": "0/1",
+   "new_false": "0/1",
+   "validation_agreement": null,
+   "boundary_share": "22/123",
+   "n_q": 1
+  },
+  "0.95|10": {
+   "fidelity": "3/4",
+   "deviation": "0/1",
+   "consistency": "1/1",
+   "uncertainty": "133/138",
+   "new_true": "0/1",
+   "new_false": "0/1",
+   "validation_agreement": null,
+   "boundary_share": "22/123",
+   "n_q": 1
+  },
+  "0.95|5": {
+   "fidelity": "3/4",
+   "deviation": "0/1",
+   "consistency": "1/1",
+   "uncertainty": "133/138",
+   "new_true": "0/1",
+   "new_false": "0/1",
+   "validation_agreement": null,
+   "boundary_share": "22/123",
+   "n_q": 1
+  },
+  "0.9|0": {
+   "fidelity": "21/22",
+   "deviation": "0/1",
+   "consistency": "1/1",
+   "uncertainty": "37/46",
+   "new_true": "1/5",
+   "new_false": "0/1",
+   "validation_agreement": null,
+   "boundary_share": "28/123",
+   "n_q": 5
+  },
+  "0.9|10": {
+   "fidelity": "21/22",
+   "deviation": "0/1",
+   "consistency": "1/1",
+   "uncertainty": "37/46",
+   "new_true": "1/5",
+   "new_false": "0/1",
+   "validation_agreement": null,
+   "boundary_share": "28/123",
+   "n_q": 5
+  },
+  "0.9|5": {
+   "fidelity": "21/22",
+   "deviation": "0/1",
+   "consistency": "1/1",
+   "uncertainty": "37/46",
+   "new_true": "1/5",
+   "new_false": "0/1",
+   "validation_agreement": null,
+   "boundary_share": "28/123",
+   "n_q": 5
+  }
+ },
+ "feasible": [
+  "0.65|0",
+  "0.6|0",
+  "0.75|0",
+  "0.7|0",
+  "0.8|0",
+  "0.8|10",
+  "0.8|5"
+ ],
+ "pareto_front": [
+  "0.7|0",
+  "0.65|0"
+ ],
+ "hypervolume": "976/1305",
+ "outcomes": {
+  "G7a": "HOLDS",
+  "T-1": "FAILS"
+ },
+ "t1_structure": {
+  "feasible_alphas": [
+   "0.8",
+   "0.75",
+   "0.7",
+   "0.65",
+   "0.6"
+  ],
+  "defined": true,
+  "alpha_min": "0.6",
+  "alpha_max": "0.8",
+  "sources_spanned": 3,
+  "wrong_class_atoms_spanned": 0,
+  "largest_increase": "11/96"
+ }
+}
