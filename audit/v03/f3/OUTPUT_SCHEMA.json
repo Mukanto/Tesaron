@@ -1,0 +1,146 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "F3 agent output (PREREG v0.3 section 6.1; read by audit/v03/f3_compare.py)",
+  "description": "The F3 agent writes, into its output folder: <world_seed>.json for every test world (per_world_file), cal_<world_seed>.json for every calibration world (calibration_world_file), tau.json (tau_file) and verdict_table.json (verdict_table_file). Every fraction is a string \"p/q\" in lowest terms with q >= 1 (an integer n is written \"n/1\", zero \"0/1\", a negative value has a leading minus); an undefined metric is null. No floats anywhere. The one plain integer among the metrics is n_q. Alpha levels are strings spelled as in the input's configuration keys (\"0.95\", \"0.9\", ..., \"0.5\"). Configuration keys are written exactly as in the input's \"configs\" (alpha as printed there, a vertical bar, k), for example \"0.95|0\" and \"0.7|5\".",
+  "definitions": {
+    "fraction": {"type": "string", "pattern": "^[0-9]+/[1-9][0-9]*$"},
+    "signedFraction": {"type": "string", "pattern": "^-?[0-9]+/[1-9][0-9]*$"},
+    "fractionOrNull": {"oneOf": [{"$ref": "#/definitions/fraction"}, {"type": "null"}]},
+    "alphaLevel": {"type": "string", "pattern": "^[0-9.]+$"},
+    "configKey": {"type": "string", "pattern": "^[0-9.]+[|](0|5|10)$"},
+    "outcome": {"enum": ["HOLDS", "FAILS", "UNDEFINED"]},
+    "metrics": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["fidelity", "deviation", "consistency", "uncertainty", "new_true", "new_false", "validation_agreement", "boundary_share", "n_q"],
+      "properties": {
+        "fidelity": {"$ref": "#/definitions/fractionOrNull"},
+        "deviation": {"$ref": "#/definitions/fractionOrNull"},
+        "consistency": {"$ref": "#/definitions/fractionOrNull"},
+        "uncertainty": {"$ref": "#/definitions/fractionOrNull"},
+        "new_true": {"$ref": "#/definitions/fractionOrNull"},
+        "new_false": {"$ref": "#/definitions/fractionOrNull"},
+        "validation_agreement": {"$ref": "#/definitions/fractionOrNull"},
+        "boundary_share": {"$ref": "#/definitions/fractionOrNull"},
+        "n_q": {"description": "The denominator of new_false: the number of vocabulary atoms outside I that are T or F in the verdict view, as a plain integer (R1-1).", "type": "integer", "minimum": 0}
+      }
+    }
+  },
+  "per_world_file": {
+    "description": "<world_seed>.json of a test world.",
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["world_seed", "metrics", "feasible", "pareto_front", "hypervolume", "outcomes", "t1_structure"],
+    "properties": {
+      "world_seed": {"type": "integer"},
+      "metrics": {
+        "description": "Every metric of SPEC section 8 at every one of the 30 grid points: {\"<alpha>|<k>\": {metric: fraction or null}}.",
+        "type": "object",
+        "patternProperties": {"^[0-9.]+[|](0|5|10)$": {"$ref": "#/definitions/metrics"}}
+      },
+      "feasible": {
+        "description": "Configuration keys of the feasible points under the tau of tau.json (fidelity >= tau_s, deviation <= tau_d, consistency >= tau_t, uncertainty <= tau_b; all four defined, and new_true defined), over all 30 configurations, in any order.",
+        "type": "array", "items": {"$ref": "#/definitions/configKey"}
+      },
+      "pareto_front": {
+        "description": "Configuration keys of the non-dominated feasible points (x = 1 - new_false, y = new_true), ordered x descending, then y descending, then alpha ascending, then k ascending.",
+        "type": "array", "items": {"$ref": "#/definitions/configKey"}
+      },
+      "hypervolume": {
+        "description": "Area of the union of the rectangles [0, x] x [0, y] over the feasible points, exactly.",
+        "$ref": "#/definitions/fraction"
+      },
+      "outcomes": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["G7a", "T-1"],
+        "properties": {
+          "G7a": {"$ref": "#/definitions/outcome"},
+          "T-1": {"$ref": "#/definitions/outcome"}
+        }
+      },
+      "t1_structure": {
+        "description": "T-1's structure in this world (PREREG v0.3 section 3.2, I-5; INSTRUCTIONS_F3.md step 8). feasible_alphas is written for every world, largest level first; defined is true iff the T-1 outcome is not UNDEFINED; on an undefined world the other five fields are null.",
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["feasible_alphas", "defined", "alpha_min", "alpha_max", "sources_spanned", "wrong_class_atoms_spanned", "largest_increase"],
+        "properties": {
+          "feasible_alphas": {"type": "array", "items": {"$ref": "#/definitions/alphaLevel"}},
+          "defined": {"type": "boolean"},
+          "alpha_min": {"oneOf": [{"$ref": "#/definitions/alphaLevel"}, {"type": "null"}]},
+          "alpha_max": {"oneOf": [{"$ref": "#/definitions/alphaLevel"}, {"type": "null"}]},
+          "sources_spanned": {"type": ["integer", "null"]},
+          "wrong_class_atoms_spanned": {"type": ["integer", "null"]},
+          "largest_increase": {"oneOf": [{"$ref": "#/definitions/signedFraction"}, {"type": "null"}]}
+        }
+      }
+    }
+  },
+  "calibration_world_file": {
+    "description": "cal_<world_seed>.json of a calibration world: its eight metrics and n_q at the single configuration \"0.7|0\".",
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["world_seed", "metrics"],
+    "properties": {
+      "world_seed": {"type": "integer"},
+      "metrics": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["0.7|0"],
+        "properties": {"0.7|0": {"$ref": "#/definitions/metrics"}}
+      }
+    }
+  },
+  "tau_file": {
+    "description": "tau.json: tau by the Q-40 rule of PREREG v0.3 section 7 from the 40 calibration worlds' metrics at (alpha0, 0): tau_s the 4th smallest fidelity, tau_t the 4th smallest consistency, tau_d the 4th largest deviation, tau_b the 4th largest uncertainty.",
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["tau_s", "tau_d", "tau_t", "tau_b"],
+    "properties": {
+      "tau_s": {"$ref": "#/definitions/fraction"},
+      "tau_d": {"$ref": "#/definitions/fraction"},
+      "tau_t": {"$ref": "#/definitions/fraction"},
+      "tau_b": {"$ref": "#/definitions/fraction"}
+    }
+  },
+  "verdict_table_file": {
+    "description": "verdict_table.json: one row per test (G1..G6 from the given per-world outcomes, G7 = G7a, T-1), by the rules of PREREG v0.3 sections 3.3 and 4, and t1_structure_counts. There is no G8 row. The Wilson lower bound is a string with three decimals for T-1 (as printed in the verdict text) and null for the deterministic tests.",
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["rows", "t1_structure_counts"],
+    "properties": {
+      "rows": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["test", "verdict", "n_holds", "n_fails", "n_undefined", "n_defined", "wilson_lower", "first_failing_world"],
+          "properties": {
+            "test": {"enum": ["G1", "G2", "G3", "G4", "G5", "G6", "G7", "T-1"]},
+            "verdict": {"enum": ["HOLDS", "FAILS", "INSUFFICIENT"]},
+            "n_holds": {"type": "integer"},
+            "n_fails": {"type": "integer"},
+            "n_undefined": {"type": "integer"},
+            "n_defined": {"type": "integer"},
+            "wilson_lower": {"oneOf": [{"type": "string", "pattern": "^[0-9][.][0-9]{3}$"}, {"type": "null"}]},
+            "first_failing_world": {"description": "The world_seed of the FAILS world with the smallest draw_index, or null if no world FAILS.", "type": ["integer", "null"]}
+          }
+        }
+      },
+      "t1_structure_counts": {
+        "description": "The counts of T-1's structure over the worlds whose T-1 outcome is defined (INSTRUCTIONS_F3.md, the verdict table). For n = 0, median, even, min and max are null.",
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["n", "median", "even", "min", "max", "n_with_wrong_class_atom"],
+        "properties": {
+          "n": {"type": "integer"},
+          "median": {"description": "The median of sources_spanned as text: a whole number (\"3\") or one decimal (\"2.5\").", "type": ["string", "null"], "pattern": "^[0-9]+([.]5)?$"},
+          "even": {"type": ["boolean", "null"]},
+          "min": {"type": ["integer", "null"]},
+          "max": {"type": ["integer", "null"]},
+          "n_with_wrong_class_atom": {"type": "integer"}
+        }
+      }
+    }
+  }
+}

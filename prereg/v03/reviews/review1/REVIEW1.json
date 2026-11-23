@@ -1,0 +1,139 @@
+{
+ "counts": {
+  "blocking": 0,
+  "major": 8,
+  "minor": 8,
+  "total": 16
+ },
+ "findings": [
+  {
+   "id": "R1-1",
+   "severity": "major",
+   "where": "PREREG §7 (δ row); §2 factors; §3.2 T-1",
+   "quote": "| δ for T-1 (D2) | 0.05 | one new false conclusion in 20 decided ones |",
+   "reason": "The new_false denominator (decided atoms outside I, k = 0), counted on the power study's 50 development worlds: median 19 at α0, below 20 on 29 of 50 worlds; below 20 at 44% of the 8684 feasible k = 0 points of the 40 Q-40 draws; on 985 of 1684 defined world-draws (58%) the lower point of some T-1 pair has fewer than 20, so one wrong conclusion there exceeds δ. δ is below one-atom resolution on most worlds (protocol rule 9; v0.2's G8 failure mode). The denominator never falls along a pair (0 of 18 796).",
+   "fix": "Correct the δ rationale in §7; add granularity as a factor toward FAILS in §2; add a descriptive single-atom arm for T-1 (FAILS worlds in which every violating pair has at most one more wrong decided atom outside I at q than at p), printed next to the T-1 verdict."
+  },
+  {
+   "id": "R1-2",
+   "severity": "major",
+   "where": "PREREG §4 T-1 HOLDS/FAILS sentences; §3.3; §7 power; audit/v03/aggregate.py",
+   "quote": "\"T-1 holds: <claim>. …\" / \"T-1 does not hold: …\"",
+   "reason": "HOLDS asserts the claim without a quantifier, although up to 20% of worlds may violate it. FAILS reads as a refutation, although P(FAILS) is 0.50 at a per-world rate of 0.90 and 0.83 at 0.85 (§7). Protocol rule 16: an underpowered FAILS reads 'not demonstrated'.",
+   "fix": "HOLDS: 'T-1 holds on at least 80% of worlds (one-sided 95% Wilson bound): …'. FAILS: 'T-1 is not demonstrated: …; this does not show that the per-world rate is below 0.80'. Update the code and the wording tests."
+  },
+  {
+   "id": "R1-3",
+   "severity": "major",
+   "where": "PREREG §4 (deterministic HOLDS sentence for G7a); §2 tautology bullet; audit/v03/aggregate.py:21",
+   "quote": "all_false because it contradicts every T-encoded atom, which the calibrated τ_d and τ_s exclude",
+   "reason": "The G7a HOLDS sentence omits that all_true scores (reproduced: the same 22 of 30 development worlds in every one of S2's 40 Q-40 draws, at α 0.95/0.90/0.85). echo, all_unknown and all_both score 0 by the definition of new_true (U or B on every H atom), so G7a tests only whether all_false is infeasible, which depends on the data (it needs a T atom in I and a small τ_d). The gate's minus world (N7) held on 7 of 100 development worlds, so a detector qualifier is likely; §6.2 does not anticipate it.",
+   "fix": "Add a fixed sentence printed with every G7a verdict giving the all_true count and levels, and stating that three of the four judged baselines score 0 by definition; correct the §2 'by construction' claim for all_false."
+  },
+  {
+   "id": "R1-4",
+   "severity": "major",
+   "where": "PREREG §6.3 line endings; §8 step 7; §9; audit/clone_verify.py:26",
+   "quote": "`py -m audit.clone_verify` verifies that commit in a fresh clone. Only if it verifies is the freeze pushed",
+   "reason": "audit/clone_verify.py verifies prereg/FREEZE_v0.2.json and has no option for another manifest. Followed as written, the v0.3 freeze is pushed without its own clone check. The v0.3 tools are audit/v03/clone_verify.py and audit/v03/freeze.py.",
+   "fix": "Name py -m audit.v03.clone_verify and py -m audit.v03.freeze write / verify --coverage in §6.3, §8 step 7 and §9."
+  },
+  {
+   "id": "R1-5",
+   "severity": "major",
+   "where": "PREREG §6.3 (required certificates, pre-freeze list); audit/v03/prefreeze_check.py:63-81; audit/v03/gate/certify.py:151-152",
+   "quote": "Required certificates: every certificate must be FALSIFIABLE.",
+   "reason": "The pre-freeze check compares only GATE_TOOL's file table. GATE_TOOL.json is written even when verify exit codes are non-zero or a verdict is not FALSIFIABLE, and the check still passes. The requirement is left to the operator (protocol rule 17).",
+   "fix": "check_gate_tool also requires all eight ids present, verify_exit == 0, verdict == FALSIFIABLE (or an approved waiver), tag v0.5.1, and body_sha256 equal to the committed certificates; add tests."
+  },
+  {
+   "id": "R1-6",
+   "severity": "major",
+   "where": "SPEC_v0.3.md:3; PREREG §8 step 6; audit/v03/prefreeze_check.py check_status_line",
+   "quote": "**Status: DRAFT 1, not frozen** (2026-11-23).",
+   "reason": "SPEC_v0.3.md is in the manifest, but no step replaces its header and the status check reads only PREREG_v0.3.md. This repeats post-run audit A10.",
+   "fix": "Add a frozen status line for SPEC_v0.3.md to §8 step 6, and extend the status check to every frozen Markdown file."
+  },
+  {
+   "id": "R1-7",
+   "severity": "major",
+   "where": "PREREG §2 (all_true row); audit/v03/prefreeze_check.py:52-57 (STUDIES)",
+   "quote": "The baseline all_true scores in v0.3 worlds (G7a data from the code step, checked by the designer) … 22 of the 30 …",
+   "reason": "These printed numbers carry the G7a narrowing but come from no committed script or JSON, so the A2 reproduction check cannot cover them. I recomputed them and they are correct (22 in every draw, the same set; 6 and 20).",
+   "fix": "Commit a small design study (for example audit/design/v03_all_true_study.py writing prereg/v03/ALL_TRUE_STUDY.json) and add it to STUDIES, or cite only numbers that an existing study holds."
+  },
+  {
+   "id": "R1-8",
+   "severity": "major",
+   "where": "PREREG §10; §5 I-6; §3.2 I-6/I-7; §2 expected-verdict paragraph",
+   "quote": "This is the opposite reading of A1, and close to v0.2's.",
+   "reason": "v0.3 changes the worlds, the τ rule and the configuration (k = 0) together (protocol rule 8). I-7 and I-6 each change one rule, but neither is v0.2's rule (τ by D1-10 at (α0, k0), feasible at some k, in effect the k = 0 set). So I-6 is not 'close to v0.2's', and nothing separates the world change. The expected paragraph invites attribution to the worlds.",
+   "fix": "Add a descriptive arm 'T-1 under v0.2's full rule' (τ by D1 on the first 10 calibration worlds at (α0, k0), feasible at some k; τ committed with the others); fix the I-6 wording; state that a verdict different from v0.2's cannot be attributed to the new worlds alone."
+  },
+  {
+   "id": "R1-9",
+   "severity": "minor",
+   "where": "PREREG §2 factors",
+   "quote": "A single step therefore changes less than v0.2's jump at 0.60.",
+   "reason": "Two mechanisms toward HOLDS are missing: (a) colliding wrong conclusions become B and leave new_false; (b) the consistency and deviation bounds (τ_d = 0 in 16 of 40 power draws) remove clash-heavy points. T-1 compares every pair, not single steps. The R6 sentence holds only when R6's (i, j) is (partner class, base class).",
+   "fix": "Add (a) and (b); reword the two sentences."
+  },
+  {
+   "id": "R1-10",
+   "severity": "minor",
+   "where": "PREREG §3.3",
+   "quote": "the per-world rate is at least 0.80, at one-sided 95% confidence",
+   "reason": "From POWER_STUDY's need table, P(HOLDS | r = 0.80) exceeds 0.05 for n = 35, 36, 42, 43, 48 and 49: 0.058 at n = 42 (the median), up to 0.062.",
+   "fix": "Write 'approximately (Wilson score bound; exact size at r = 0.80 between 0.02 and 0.06 for n = 34-50)'."
+  },
+  {
+   "id": "R1-11",
+   "severity": "minor",
+   "where": "PREREG §7 τ rule row",
+   "quote": "τ_d the 4th largest deviation",
+   "reason": "τ_d = 0/1 in 16 of 40 power-study draws, 11 of 40 S2 draws and the development τ. Feasibility then tolerates no deviation, so a single atom decides it. This follows from the chosen rule but is not disclosed.",
+   "fix": "One sentence in §7."
+  },
+  {
+   "id": "R1-12",
+   "severity": "minor",
+   "where": "PREREG §2 (no-pilot row, S2 row, first row)",
+   "quote": "Before the freeze, nobody computes new_false, a T-1 outcome or a G8 outcome on any v0.3 world",
+   "reason": "compute_metrics_exact computes new_true and new_false in memory in S2, the power study, the T-1 gate plus world and the development runner. They are discarded or redacted, and the redaction is complete. The development seeds also include 931000-934999 and the offsets up to 97xxxx.",
+   "fix": "Write 'nobody reads, prints, stores or reports'; list the development ranges as audit/v03/seeds.py does."
+  },
+  {
+   "id": "R1-13",
+   "severity": "minor",
+   "where": "PREREG §6.1 not-covered list; audit/v03/f3_compare.py:252",
+   "quote": "Not covered by an independent implementation (post-run audit A6):",
+   "reason": "The list omits: the G6 judge (its outcome is given to F3 too); the default-feasibility and UNDEFINED-as-FAILS arms; the G1 failed-parts text; the wording of the fixed sentences, including the detector qualifier; the I-6, I-7 and alt τ. A missing verdict_table.json maps to all eight tests, while §6.1 says a missing file → G7a and T-1.",
+   "fix": "Complete the list; state the verdict-table case in §6.1, or map it like other missing files."
+  },
+  {
+   "id": "R1-14",
+   "severity": "minor",
+   "where": "PREREG §6.1 F1 row, §8 step 10; audit/v03/run_v03.py:286-288, 205-210",
+   "quote": "on every test world and every calibration world",
+   "reason": "F1, F2 and F4 run on the 40 main calibration worlds only, not on the 800 draw-sensitivity worlds. A WorldSetError in a descriptive draw-sensitivity set stops the whole run, so the primary test gets no verdict (the probability is negligible).",
+   "fix": "Say 'the 40 main calibration worlds'; state the stop condition in §7, or record a failed alternative set as insufficient."
+  },
+  {
+   "id": "R1-15",
+   "severity": "minor",
+   "where": "audit/v03/gate/certify.py:121-125, 132-135; tests/test_v03_freeze.py:420",
+   "quote": "self.assertEqual(CE.main([\"g9\"]), 4)",
+   "reason": "main() runs check_checkout() (git) before it rejects an unknown id, so this test starts git although TESARON_SKIP_GIT_TESTS=1. It passes either way. I deselected it.",
+   "fix": "Validate the ids before check_checkout()."
+  },
+  {
+   "id": "R1-16",
+   "severity": "minor",
+   "where": "PREREG §6.3 T-1 plus; audit/v03/gate/common.py:143; audit/twins/n7.py:11; audit/v03/aggregate.py:64; §3.2 G8; §7 power",
+   "quote": "with new_false replaced by a constant",
+   "reason": "The code also replaces new_true by 1/2. N7's docstring still says all_true scores. The n = 0 structure sentence is not in §4. The G8 hyp_count summary covers defined worlds only. 'An approximation scaled from S2 (0.92 / 0.53 / 0.19 / 0.04)' is documented nowhere (S2's Q-40 values for 30 worlds are 0.67 / 0.30 / 0.11 / 0.03).",
+   "fix": "Align the text with the code, or the code with the text, in each case; source or drop the scaled numbers."
+  }
+ ],
+ "readiness": "Not ready as it stands. Once R1-1 to R1-8 are fixed, the pre-registration is ready to freeze. R1-1, R1-7 and R1-8 add code (a descriptive arm, a small study, an extra τ), so the D4 smoke test, certify all --verify and the pre-freeze check should be run again after them. No defect was found that biases the T-1 verdict as computed. The major findings concern what a verdict will mean (R1-1, R1-2, R1-3, R1-8) and safeguards the text claims but the tools do not enforce (R1-4 to R1-7). No forbidden value was seen."
+}
