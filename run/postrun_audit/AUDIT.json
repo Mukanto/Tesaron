@@ -1,0 +1,150 @@
+{
+  "part1": [
+    {
+      "id": "A1",
+      "severity": "medium",
+      "location": "PREREG §3.1 (R1-5), §3.2 T-1, §7 D1; audit/checks.py:432-436; audit/exact.py:61-67",
+      "claim": "Abduction only adds facts, so it can only lower fidelity and consistency and raise deviation; feasible(α, k>0) implies feasible(α, 0). T-1's feasible α set is therefore exactly the k = 0 feasible set, although τ is calibrated at k0 = 5. The pre-registration neither states this nor has a sensitivity arm for the reading 'feasible at k0'.",
+      "failure_scenario": "On 30 development test worlds under the gate's D1 τ (41/50, 1/47, 65/66, 98/165) there was no monotonicity violation, and the k = 0 set was larger than the k = 5 set on 6 worlds (e.g. draw 10: {0.80…0.50} vs {0.80}). T-1 differs on 5 of 30 worlds between the all-k and k0-only readings (draw 10 FAILS vs UNDEFINED; draws 9, 13, 24, 26 HOLDS vs UNDEFINED).",
+      "verdict_impact": "None under the pre-registered definition. Under the k0 reading, T-1's counts and possibly its verdict could change (FAILS, HOLDS, insufficient worlds)."
+    },
+    {
+      "id": "A2",
+      "severity": "medium",
+      "location": "PREREG §2 expected-verdict paragraph and pilot row; audit/aggregate.py:40-47",
+      "claim": "The printed expected-verdict paragraph rests on a draft-2 pilot (T-1 0.71, G8 0.30, P(HOLDS) about 0.003). The frozen code gives clearly higher development rates.",
+      "failure_scenario": "Frozen code, the 30 development test worlds of DRAW_STUDY.json and its 40 τ draws: T-1 holds on 0.786 of defined world-draws, and the T-1 verdict is HOLDS in 3 of 40 draws (20/21, 20/21, 19/20). G8 holds on 15/30 (0.50). A T-1 HOLDS would be misread as 'test worlds differ'.",
+      "verdict_impact": "Cannot change a verdict. It changes how an outcome is interpreted."
+    },
+    {
+      "id": "A3",
+      "severity": "medium",
+      "location": "PREREG §7 D1, §2 (R2-3, AQ5); audit/exact.py:70-83",
+      "claim": "The T-1 verdict is largely decided by the calibration draw (τ as extremes over 10 worlds), and a reasonable alternative draw gives another verdict. This is disclosed qualitatively.",
+      "failure_scenario": "Same 30 development test worlds under the 40 DRAW_STUDY τ draws: 3 HOLDS, 34 FAILS, 3 insufficient worlds; defined counts 11–30.",
+      "verdict_impact": "Could change T-1 between HOLDS, FAILS and insufficient worlds under another draw. Disclosed; the structure counts are printed."
+    },
+    {
+      "id": "A4",
+      "severity": "medium",
+      "location": "tesaron/worlds/generator.py:230-251; SPEC §3–§5; PREREG I-5 and §10 directional hypotheses",
+      "claim": "In these worlds weak class evidence is never wrong: class atoms are T-encoded only near the base-class prototype and are never F. The class-only window α 0.65–0.80 therefore adds only correct atoms to I. This generic factor toward T-1 holding is not listed (protocol rule 15).",
+      "failure_scenario": "40 development worlds, all α 0.95–0.50: 108–558 T-encoded class atoms per α, 0 with world value F. Window pairs can fail only through derivations that combine correct class atoms with relation reports already admitted.",
+      "verdict_impact": "Cannot change a verdict as computed. It weakens what a T-1 HOLDS or the window counts mean."
+    },
+    {
+      "id": "A5",
+      "severity": "medium",
+      "location": "PREREG §6.3 (τ calibration covered by F3), §6.1 F3; audit/run_v02.py:312-341, 430-447",
+      "claim": "No independent route recomputes τ. F3 gets τ as an input and never sees the calibration worlds, and the runner's re-check reruns the same code.",
+      "failure_scenario": "A calibration-side error (a wrong default metric on a calibration world, or min and max swapped in compute_taus) would shift every feasible set, and F3 would still report 0 disagreements.",
+      "verdict_impact": "Could change T-1 and G7a undetected. No error was found; Part 2 confirmed τ equals the extremes of the CAL_WORLDS metrics."
+    },
+    {
+      "id": "A6",
+      "severity": "low",
+      "location": "PREREG §6.1 (claim and 'not covered' list); audit/run_v02.py:338-340; audit/aggregate.py:65-81; audit/run_v02.py:500-506",
+      "claim": "These paths have no independent recomputation and are not listed as uncovered: the G1–G5 collect/judge code (F3 takes the G1–G6 outcomes as given), the aggregation of the T-1 structure counts printed in the fixed sentences, and the detector both-hold count.",
+      "failure_scenario": "A bug that made collect_g3 or judge_g5 vacuous would give a false HOLDS invisible to F3. A miscount in structure_counts would print wrong fixed sentences. None was found on reading.",
+      "verdict_impact": "None found. A defect there would go undetected."
+    },
+    {
+      "id": "A7",
+      "severity": "low",
+      "location": "audit/f3_compare.py:143-154, 178-185",
+      "claim": "For a G1–G6 verdict-table disagreement, the per-record affected_tests names the test, but `affected` (line 145) is unused and by_test counts only G7a, G8 and T-1. The summary affected_tests therefore omits G1–G6.",
+      "failure_scenario": "A G3 n_defined miscount gives all_equal false, while the summary says affected_tests [].",
+      "verdict_impact": "None directly. It could mislead the §6.1 resolution if only the summary is read."
+    },
+    {
+      "id": "A8",
+      "severity": "low",
+      "location": "audit/f3/INSTRUCTIONS_F3.md:38-46; SPEC §6 boundary band",
+      "claim": "The F3 instructions fix double comparison only for enc. boundary_share depends on whether |μ−α| < 0.05 is evaluated on doubles or on decimals.",
+      "failure_scenario": "μ 0.95 at α 0.90, or 0.6 at 0.55: as doubles the difference is 0.04999999999999993 (< 0.05), but decimally it is exactly 0.05, so a decimal-fraction agent disagrees on most worlds.",
+      "verdict_impact": "None (no affected test). It breaks F3's 0-disagreement pass rule."
+    },
+    {
+      "id": "A9",
+      "severity": "low",
+      "location": "PREREG §4 G8 sentence, §10 directional item; audit/per_world.py:107; audit/checks.py:377",
+      "claim": "The G8 'hypotheses' summary counts kept candidates, capped at k = 10 by construction, not SPEC §8 hyp_count.",
+      "failure_scenario": "10 kept candidates and 40 pass-2 hypothesis atoms print as 10, so the summary can never show 'many hypotheses'.",
+      "verdict_impact": "None."
+    },
+    {
+      "id": "A10",
+      "severity": "low",
+      "location": "prereg/PREREG_v0.2.md:3-5",
+      "claim": "The frozen pre-registration still says 'DRAFT 5, not frozen' and 'Nothing in this file is final until the freeze'.",
+      "failure_scenario": "A reader of the hashed file, or of a report that quotes it, is told it is not final.",
+      "verdict_impact": "None."
+    },
+    {
+      "id": "A11",
+      "severity": "low",
+      "location": "audit/twins/_source.py:28-34; audit/per_world.py:69-71; PREREG P3-4",
+      "claim": "N4's in-process hash uses the main process's random string-hash seed (PYTHONHASHSEED is not set for the run), so the N4 outcome and the G4 qualifier are not reproducible by construction.",
+      "failure_scenario": "It needs a world whose tie order agrees under hash seeds 0, 1 and 4242. On 30 development worlds, 12 hash seeds gave 12 distinct N4 outputs on every world, so N4 always FAILS; the case did not occur.",
+      "verdict_impact": "Cannot change a verdict in practice. In theory it could alter the G4 qualifier and the reproduce comparison."
+    }
+  ],
+  "part2": [
+    {
+      "id": "B1",
+      "severity": "medium",
+      "location": "REPORT_v0.2_DRAFT.md §2 (F3 row: 'recomputed every number from blind inputs') and §4",
+      "claim": "The report overstates F3. F3 was given τ, the G1–G6 outcomes, the units and the decoder's full and verdict lists. It did not recompute τ calibration, G1–G6, the detector diagnostic, the descriptive arms, the G8 hypothesis summary or the aggregated structure counts.",
+      "failure_scenario": "Readers take τ and G1–G6 as independently confirmed, though an error there would still give 0 disagreements. This audit found no such error: τ, the table, structure counts and descriptive aggregates recompute.",
+      "verdict_impact": "None on the verdicts. It overstates the verification."
+    },
+    {
+      "id": "B2",
+      "severity": "low",
+      "location": "Report §3, §7; PREREG §4 and §8 step 13",
+      "claim": "The limitation sentence is printed once, under the table. There is no limitations section and it is not next to each verdict.",
+      "failure_scenario": "A reader of §7 or of the G8 or T-1 paragraph alone does not see the limitation.",
+      "verdict_impact": "None."
+    },
+    {
+      "id": "B3",
+      "severity": "low",
+      "location": "Report §3 expected-verdict paragraph; §7 'The result agrees with the pilot (6 of 20 held there)'",
+      "claim": "The pilot rates (T-1 0.71, G8 0.30) are stale. The run gave 16/21 and 15/30; the frozen code gives 0.79 and 0.50 on development worlds. 'Agrees' is true of the verdict only.",
+      "failure_scenario": "A reader infers a G8 rate near 0.30 and that a T-1 HOLDS was a 0.003 event (it was 3 of 40 draws on development worlds).",
+      "verdict_impact": "None."
+    },
+    {
+      "id": "B4",
+      "severity": "low",
+      "location": "Report §3 G8 sentence; audit/per_world.py:107",
+      "claim": "'Minimum 10, median 10, maximum 10' is the cap k = 10 on kept candidates in every world, and the report does not say so.",
+      "failure_scenario": "Read as a measured abduction size, it carries no information about 'few hypotheses'.",
+      "verdict_impact": "None."
+    },
+    {
+      "id": "B5",
+      "severity": "low",
+      "location": "Report §6 rows I-2 and I-4",
+      "claim": "The report gives 'Verdict under it: FAILS' for arms that PREREG §5 defines as descriptive only.",
+      "failure_scenario": "A reader counts them as extra pre-registered verdicts.",
+      "verdict_impact": "None."
+    },
+    {
+      "id": "B6",
+      "severity": "low",
+      "location": "Report §8 and §4; run/RUN_RECORD.md F3 section; PREREG §6.1",
+      "claim": "The deviations and the control reporting are incomplete: the F3 agent got a cover note beyond the frozen instructions (content unknown, unclear impact); the agent's files were line-ending-normalised by the designer; NOTES.md is not reported with F3_COMPARE.json; and RUN_RECORD.md, F3_COMPARE.json and f3_agent/ are not in the public repository although they are linked.",
+      "failure_scenario": "The report does not show that F3 input went beyond the frozen text or that its files were edited, and the public links do not resolve yet.",
+      "verdict_impact": "None on the verdicts."
+    }
+  ],
+  "provenance": {
+    "salt_matches": true,
+    "clone_freeze_verifies": true,
+    "commit_order_ok": true,
+    "files_identical": true,
+    "notes": "The salt, freeze commit and core hash in run/SALT.json equal SALT_RECORD.json, whose SHA-256 is 277ee953… as recorded. In the fresh public clone, `python -m audit.freeze verify prereg/FREEZE_v0.2.json` gives FREEZE OK (115 files; WRITABLE warnings only). The manifest is touched only by 8b09a6f. The history is linear: 8b09a6f (freeze) -> 70960f1 (freeze record only) -> 127faa0 (SALT.json) -> f3c60ff (CAL_WORLDS, TAU) -> fcb4ea5 (63 test outputs). Each step passes merge-base --is-ancestor, origin/main = fcb4ea5, every tracked run file is touched by exactly one commit, and no frozen file changes after the freeze. The 66 committed files of part2/run are byte-identical to the clone. Not comparable because not committed: RUN_RECORD.md, F3_COMPARE.json, f3_agent/ (36 files). Seeds recompute from the salt; τ equals the extremes of the CAL_WORLDS metrics. A rerun of the frozen test step from an export of fcb4ea5 reproduced VERDICTS.json (sha256 6a0c09ab…), RESULTS.json, TEST_WORLDS.json and all per-world files byte for byte. Not checkable: push times (git records author dates only) and the content of the F3 cover note."
+  },
+  "summary": "Part 1: no high finding; no defect changes a verdict as pre-registered. Five medium findings. (A1) T-1's feasible set is in effect the k = 0 set, though τ is calibrated at k0 = 5, with no sensitivity arm. (A2) The printed expected-verdict numbers come from a stale draft-2 pilot; the frozen code gives T-1 0.79 and G8 0.50 on development worlds, and T-1 HOLDS in 3 of 40 calibration draws. (A3) The calibration draw decides T-1 (3 HOLDS, 34 FAILS, 3 insufficient over 40 development draws); disclosed. (A4) The worlds make weak class evidence error-free, which favours T-1 in the class-only window. (A5) τ is not independently recomputed, contrary to §6.3. Six low findings follow (coverage gaps, F3 summary/convention details, a capped hypothesis count, the 'not frozen' header, N4 seeding). Part 2: every verdict, count, Wilson bound, first failing world, structure count and descriptive value in the draft report equals VERDICTS.json and recomputes from the per-world outputs, and the fixed wording is verbatim. G8 FAILS (15/30, 0.356) and T-1 FAILS (16/21, 9 undefined, 0.585), as §3.3 gives. Findings: (B1, medium) the report says F3 'recomputed every number', which overstates it (τ, G1–G6 and descriptives were given or not covered); B2–B6 (low): the limitation sentence printed once with no limitations section; stale pilot comparison; the hypothesis summary at its cap; descriptive arms labelled as verdicts; incomplete deviations and F3 reporting, with run record and F3 files not yet public. Provenance: all checks pass, and the audit's own rerun reproduced VERDICTS.json byte for byte."
+}

@@ -45,3 +45,22 @@ next step ran.
 - **The agent's files:** in `run/f3_agent/` (30 world files, `verdict_table.json`, `NOTES.md`, its code), with line
   endings normalised to LF; the comparison run on these copies gives the same result. Its notes record its conventions,
   among them the IEEE-double reading of `boundary_share`, a metric that no verdict uses.
+
+## Blind post-run audit (PREREG §8, step 12; appended 2026-11-23)
+
+- **Who:** a fresh agent (general-purpose, Opus) in the Independent session, task `tesaron_v02_postrun`. It stopped
+  once on a usage limit, before writing any output, and was resumed.
+- **Part 1:** written to `PART1.md` before the agent opened any result, certificate, review or freeze record. The
+  designer confirmed the order in the transcript: the first command excluded `part2/`; `PART1.md` was written once, at
+  tool call 47, before the first access to `part2/`, and never changed.
+- **Transcript checks:**
+  - no forbidden call;
+  - the outside paths are the permitted interpreter, the salt record, the public clone and a harness file;
+  - the inputs are unchanged.
+- **Result:** no high finding. Part 1 has 5 medium and 6 low findings on the design; Part 2 has 1 medium and 5 low on
+  the draft report. Every provenance check passed: salt record, clone verification, commit order, one commit per run
+  file, byte-identical files. The audit also reproduced `VERDICTS.json` byte for byte.
+- **Files:** `run/postrun_audit/` (`INSTRUCTIONS.md`, `PART1.md`, `PART2.md`, `AUDIT.json`).
+- **Designer's check of A2:** the frozen-code development rates, G8 15 of 30 and T-1 722 of 918 world-draws with
+  verdicts 3 HOLDS / 34 FAILS / 3 insufficient over 40 draws, were recomputed with an independent script and agree.
+- **Report:** `REPORT_v0.2.md` was corrected after the audit and is final.

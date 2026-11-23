@@ -25,8 +25,18 @@ any freeze, is in [`SPEC.md`](SPEC.md).
 v0.2 is the pre-registration of the tests G1–G8 and of the author's thesis in the form T-1:
 [`prereg/PREREG_v0.2.md`](prereg/PREREG_v0.2.md), with its audit layer in [`audit/`](audit/). It was reviewed blind
 three times ([`prereg/reviews/`](prereg/reviews/)) and frozen by the manifest `prereg/FREEZE_v0.2.json`; the freeze
-record is [`prereg/FREEZE_RECORD.md`](prereg/FREEZE_RECORD.md). It is not a result: the calibration and test worlds
-are drawn only after the freeze, and no test has been run on them yet.
+record is [`prereg/FREEZE_RECORD.md`](prereg/FREEZE_RECORD.md). The calibration and test worlds were drawn only after
+the freeze was public.
+
+**v0.2 results** ([`REPORT_v0.2.md`](REPORT_v0.2.md)), on 30 synthetic test worlds:
+- the implementation and criterion checks G1–G7a hold;
+- both primary tests fail:
+  - G8 (abduction preserves meaning) holds on 15 of 30 worlds;
+  - T-1 (admitting weaker evidence does not raise new false conclusions by more than 0.05) holds on 16 of 21 defined
+    worlds.
+
+The run was reproduced byte for byte, recomputed independently from blind inputs, and audited blind. The results say
+nothing about natural-language input.
 
 ```
 py -m unittest discover -s tests
